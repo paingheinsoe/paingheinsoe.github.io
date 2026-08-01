@@ -1,0 +1,69 @@
+project:
+  type: website
+
+website:
+  title: "Paing Hein Soe"
+  description: "Portfolio and learning hub for energy, climate, AI, data analytics, programming, and technology."
+
+  navbar:
+    background: "#252321"
+    foreground: "#fffaf4"
+
+    left:
+      - href: index.qmd
+        text: Home
+
+      - href: portfolio.qmd
+        text: My Portfolio
+
+      - href: articles.qmd
+        text: Articles
+
+      - text: Topics
+        menu:
+          - href: energy-climate.qmd
+            text: Energy & Climate
+
+          - href: ai-agents.qmd
+            text: AI & Agents
+
+          - href: data-analytics.qmd
+            text: Data Analytics
+
+          - href: programming-technology.qmd
+            text: Programming & Technology
+
+      - href: about.qmd
+        text: About
+
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/paing-hein-soe/
+        aria-label: LinkedIn
+
+      - icon: github
+        href: https://github.com/paingheinsoe
+        aria-label: GitHub
+
+  search: true
+
+  page-footer:
+    background: "#252321"
+    foreground: "#d9d1c7"
+    left: "© 2026 Paing Hein Soe"
+    right:
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/paing-hein-soe/
+      - text: GitHub
+        href: https://github.com/paingheinsoe
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-after-body: article-counts.html

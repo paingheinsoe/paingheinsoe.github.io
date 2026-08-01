@@ -1,0 +1,29 @@
+Articles related to programming and technology will appear here.
+
+---
+title: "Programming & Technology"
+description: "Articles related to programming, software tools, Quarto, Git, GitHub, and technology workflows."
+toc: false
+page-layout: full
+body-classes: inner-page
+
+listing:
+  contents:
+    - articles/programming-technology/*.qmd
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  fields:
+    - image
+    - title
+    - categories
+    - description
+    - date
+  categories: false
+  filter-ui: false
+  sort-ui: false
+  page-size: 9
+  image-height: 170px
+---
+
+Browse articles and learning notes related to programming and technology.

@@ -1,0 +1,9 @@
+.quarto/
+_site/
+.vscode/
+Thumbs.db
+Desktop.ini
+*.tmp
+*.log
+
+Quarto_Project_Context_MASTER.md

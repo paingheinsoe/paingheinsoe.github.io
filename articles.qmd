@@ -1,0 +1,55 @@
+---
+title: "All Articles"
+description: "Articles and learning resources across energy, climate, AI, data analytics, programming, and technology."
+toc: false
+page-layout: full
+body-classes: inner-page
+
+listing:
+  contents:
+    - articles/**/*.qmd
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  fields:
+    - image
+    - title
+    - categories
+    - description
+    - date
+  categories: false
+  sort-ui: false
+  filter-ui: true
+  page-size: 9
+  image-height: 180px
+---
+
+Browse the latest articles below. You can also use the search box or visit the topic pages to find articles in a specific area.
+
+<p class="article-count-summary">
+  <strong><span id="article-total-count">0</span> articles</strong> currently available
+</p>
+
+<nav class="article-topic-links" aria-label="Article topic links">
+  <a href="energy-climate.qmd">
+    Energy & Climate (<span data-category-count="Energy & Climate">0</span>)
+  </a>
+
+  <span aria-hidden="true">·</span>
+
+  <a href="ai-agents.qmd">
+    AI & Agents (<span data-category-count="AI & Agents">0</span>)
+  </a>
+
+  <span aria-hidden="true">·</span>
+
+  <a href="data-analytics.qmd">
+    Data Analytics (<span data-category-count="Data Analytics">0</span>)
+  </a>
+
+  <span aria-hidden="true">·</span>
+
+  <a href="programming-technology.qmd">
+    Programming & Technology (<span data-category-count="Programming & Technology">0</span>)
+  </a>
+</nav>

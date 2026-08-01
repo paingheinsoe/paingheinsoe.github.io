@@ -1,0 +1,31 @@
+---
+title: "From Raw Data to Useful Information"
+subtitle: "Subtitle: From Raw Data"
+description: "A short sample article showing the basic steps used to prepare, analyze, and communicate data."
+author: "Paing Hein Soe"
+date: 2026-07-25
+categories:
+  - Data Analytics
+level: Beginner
+focus: Data Workflow
+image: ../../images/article-covers/sample-data-analytics.png
+toc: true
+draft: false
+---
+
+## Introduction
+
+Raw data is rarely ready for analysis immediately.
+
+A basic data-analysis workflow often includes:
+
+```text
+Collect data
+     ↓
+Check and clean the data
+     ↓
+Explore patterns
+     ↓
+Analyze the results
+     ↓
+Communicate the findings

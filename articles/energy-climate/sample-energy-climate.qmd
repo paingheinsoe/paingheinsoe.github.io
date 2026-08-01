@@ -1,0 +1,49 @@
+---
+title: "Understanding Energy Demand: A Simple Introduction"
+subtitle: "Sample Subtitle..."
+description: "A short sample article introducing energy demand and the factors that cause it to change."
+author: "Paing Hein Soe"
+date: 2026-07-26
+categories:
+  - Energy & Climate
+level: Beginner
+focus: Energy Demand
+image: ../../images/article-covers/sample-energy-climate.png
+toc: true
+draft: false
+---
+
+## Introduction
+
+Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.
+
+Demand changes over time because of factors such as:
+
+- weather;
+- population;
+- economic activity;
+- technology;
+- energy prices;
+- consumer behavior.
+
+## Electricity Demand
+
+Electricity demand can change significantly during a single day.
+
+For example, demand may rise when people return home, turn on lights, prepare meals, and use heating or cooling systems.
+
+Understanding these changes helps utilities plan electricity generation and maintain a reliable power system.
+
+## Why It Matters
+
+Energy-demand analysis supports decisions related to:
+
+- power-system planning;
+- renewable-energy integration;
+- energy efficiency;
+- infrastructure investment;
+- climate and energy policy.
+
+---
+
+*This is a sample article created to test the website's article-listing system.*

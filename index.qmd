@@ -1,0 +1,173 @@
+---
+title: ""
+toc: false
+page-layout: full
+body-classes: home-page
+
+
+listing:
+  - id: recent-articles
+    contents:
+      - articles/**/*.qmd
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    grid-columns: 3
+    fields:
+      - image
+      - title
+      - categories
+      - description
+      - date
+    categories: false
+    sort-ui: false
+    filter-ui: false
+---
+::: {.welcome-section}
+
+::: {.welcome-inner .welcome-inner-text-only}
+
+<p class="welcome-label">WELCOME TO</p>
+
+# Portfolio & Learning Hub
+
+Thank you for visiting my website.
+
+This site brings together two areas:
+
+- **My Portfolio**, where I share my background, experience, selected projects, and research work;
+- **Learning Hub**, where I share articles on energy and climate, AI and agents, data analytics, programming, and technology.
+
+I prepare each article with clear explanations and an organized workflow so it is easier to read and follow.
+
+Comments, corrections, and suggestions are welcome.
+
+::: {.welcome-actions}
+
+[Visit My Portfolio](portfolio.qmd){.button-primary}
+
+[Browse Articles](articles.qmd){.button-outline}
+
+:::
+
+::: {.welcome-topics}
+
+[Energy & Climate](energy-climate.qmd)
+
+[AI & Agents](ai-agents.qmd)
+
+[Data Analytics](data-analytics.qmd)
+
+[Programming & Technology](programming-technology.qmd)
+
+:::
+
+:::
+
+:::
+
+::: {.home-section .recent-section}
+
+<p class="section-label">RECENT ARTICLES</p>
+
+## Latest Articles Shared for Your Guidance
+
+::: {#recent-articles}
+:::
+
+[View All Articles](articles.qmd){.section-link}
+
+:::
+
+::: {#topics .home-section .topics-section}
+
+<p class="section-label">ARTICLE TOPICS</p>
+
+## Explore Articles by Topic Areas
+
+::: {.topic-grid}
+
+::: {.topic-card}
+
+### Energy & Climate
+
+Articles and learning notes related to energy systems, renewable energy, electricity markets, climate, and energy transition.
+
+[View Articles](energy-climate.qmd){.card-link}
+
+:::
+
+::: {.topic-card}
+
+### AI & Agents
+
+Articles about artificial intelligence, machine learning, AI tools, agents, and useful AI workflows.
+
+[View Articles](ai-agents.qmd){.card-link}
+
+:::
+
+::: {.topic-card}
+
+### Data Analytics
+
+Articles about data preparation, analysis, visualization, Power BI, statistics, and data-supported decisions.
+
+[View Articles](data-analytics.qmd){.card-link}
+
+:::
+
+::: {.topic-card}
+
+### Programming & Technology
+
+Practical articles related to Quarto, Git, GitHub, Python, software tools, and technology workflows.
+
+[View Articles](programming-technology.qmd){.card-link}
+
+:::
+
+:::
+
+:::
+
+::: {.about-hub-section}
+
+::: {.section-inner}
+
+<p class="section-label">ABOUT THIS LEARNING HUB</p>
+
+## Clear, Organized, and Easy to Follow
+
+The purpose of this learning hub is to share useful articles in a clean and understandable format.
+
+Whenever possible, each article will include:
+
+- a clear explanation of the topic;
+- an organized step-by-step workflow;
+- practical examples or applications;
+- notes about common questions and possible difficulties.
+
+The hub will continue to grow gradually as I learn, work on new topics, and prepare useful materials to share.
+
+Comments, corrections, and suggestions are welcome.
+
+:::
+
+:::
+
+::: {.portfolio-section}
+
+::: {.section-inner}
+
+<p class="section-label">MY PORTFOLIO</p>
+
+## Background, Experience, and Selected Work
+
+My portfolio presents my education, professional experience, technical skills, publications, and selected projects in energy systems, engineering, data analytics, and research.
+
+[Visit My Portfolio](portfolio.qmd){.button-dark}
+
+:::
+
+:::

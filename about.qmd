@@ -1,0 +1,7 @@
+---
+title: "About"
+page-layout: full
+body-classes: inner-page
+---
+
+About this site

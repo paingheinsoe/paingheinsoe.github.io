@@ -1,0 +1,46 @@
+---
+title: "Understanding AI Agents: A Simple Introduction"
+subtitle: "Sample Subtitle..."
+
+description: "A short sample article explaining what AI agents are and how they differ from ordinary AI tools."
+author: "Paing Hein Soe"
+date: 2026-07-27
+categories:
+  - AI & Agents
+level: Beginner
+focus: AI Agents
+image: ../../images/article-covers/sample-ai-agents.png
+toc: true
+draft: false
+---
+
+## Introduction
+
+An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.
+
+Unlike a basic chatbot that responds to one prompt at a time, an agent may:
+
+- interpret a task;
+- decide what steps are needed;
+- use available tools;
+- review the result;
+- continue until the task is completed.
+
+## A Simple Example
+
+Imagine asking an AI system to prepare a short overview of recent developments in renewable energy.
+
+A standard chatbot may provide an answer based on a single prompt.
+
+An AI agent could follow a broader workflow:
+
+```text
+Understand the request
+        ↓
+Search for relevant information
+        ↓
+Organize the findings
+        ↓
+Check the result
+        ↓
+Prepare the final overview

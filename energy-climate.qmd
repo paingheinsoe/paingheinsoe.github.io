@@ -1,0 +1,27 @@
+---
+title: "Energy & Climate"
+description: "Articles related to energy systems, renewable energy, climate, and energy transition."
+toc: false
+page-layout: full
+body-classes: inner-page
+
+listing:
+  contents:
+    - articles/energy-climate/*.qmd
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  fields:
+    - image
+    - title
+    - categories
+    - description
+    - date
+  categories: false
+  filter-ui: false
+  sort-ui: false
+  page-size: 9
+  image-height: 170px
+---
+
+Browse articles and learning notes related to energy and climate.
