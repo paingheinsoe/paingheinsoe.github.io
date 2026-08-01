@@ -7,3 +7,6 @@ Desktop.ini
 *.log
 
 Quarto_Project_Context_MASTER.md
+
+/.quarto/
+**/*.quarto_ipynb
