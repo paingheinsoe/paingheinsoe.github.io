@@ -1,0 +1,888 @@
+/* =========================================================
+   1. DESIGN SYSTEM
+   ========================================================= */
+
+:root {
+  --page-background: #f7f4ef;
+  --surface: #ffffff;
+  --surface-soft: #eee9e3;
+
+  --charcoal: #252321;
+  --charcoal-soft: #373330;
+
+  --text-primary: #252321;
+  --text-secondary: #68615b;
+  --text-light: #fffaf4;
+
+  --chili: #a64232;
+  --chili-dark: #7f3025;
+  --chili-soft: #e4c2ba;
+
+  --border: #ddd5cc;
+  --content-width: 1180px;
+
+  --radius-small: 5px;
+  --radius-medium: 8px;
+}
+
+
+/* =========================================================
+   2. GLOBAL STYLES
+   ========================================================= */
+
+body {
+  background: var(--page-background);
+  color: var(--text-primary);
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+
+#quarto-content {
+  padding: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width layout only for the homepage */
+
+body.home-page .page-columns {
+  display: block !important;
+  width: 100%;
+  max-width: none !important;
+}
+
+body.home-page main.content,
+body.home-page .content {
+  width: 100%;
+  max-width: none !important;
+  padding: 0;
+}
+
+
+body.home-page .quarto-title-block {
+  display: none;
+}
+
+/* =========================================================
+   CENTERED INNER-PAGE LAYOUT
+   Matches the homepage content sections
+   ========================================================= */
+
+body.inner-page #quarto-content {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+body.inner-page main.content {
+  width: min(var(--content-width), calc(100% - 3rem));
+  max-width: var(--content-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3.5rem 0 5rem;
+}
+
+body.inner-page .page-columns {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+
+/* Inner-page title block */
+
+body.inner-page .quarto-title-block {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin-bottom: 2rem;
+}
+
+body.inner-page .quarto-title-block .quarto-title-banner {
+  padding: 0;
+  background: transparent;
+}
+
+body.inner-page .quarto-title-block h1,
+body.inner-page h1.title {
+  margin-bottom: 0.6rem;
+  font-size: clamp(2.5rem, 4vw, 3.7rem);
+  line-height: 1.08;
+}
+
+body.inner-page .description {
+  max-width: 800px;
+  color: var(--text-secondary);
+  font-size: 1.04rem;
+}
+
+/* Normal headings inside inner pages */
+
+body.inner-page h2 {
+  font-size: clamp(1.7rem, 2.7vw, 2.4rem);
+}
+
+body.inner-page h3 {
+  font-size: 1.3rem;
+}
+
+/* =========================================================
+   INNER-PAGE ARTICLE LISTINGS
+   ========================================================= */
+
+body.inner-page .quarto-listing-container-grid {
+  width: 100%;
+  max-width: none;
+}
+
+body.inner-page .list.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  width: 100%;
+}
+
+body.inner-page .quarto-grid-item {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 6px 18px rgba(40, 34, 30, 0.035);
+}
+
+body.inner-page .quarto-grid-item .card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+body.inner-page .quarto-grid-item .card-body {
+  padding: 1.2rem 1.25rem;
+}
+
+body.inner-page .quarto-grid-item .card-title {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+body.inner-page .quarto-grid-item .card-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+body.inner-page .listing-actions-group {
+  margin-bottom: 1.5rem;
+}
+
+/* */ 
+
+h1,
+h2,
+h3 {
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 680;
+  line-height: 1.18;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+a {
+  color: var(--chili);
+}
+
+a:hover {
+  color: var(--chili-dark);
+}
+
+
+/* =========================================================
+   3. NAVIGATION BAR
+   ========================================================= */
+
+.navbar {
+  min-height: 70px;
+  padding: 0.65rem max(3vw, 1.2rem);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--charcoal) !important;
+  box-shadow: 0 3px 14px rgba(20, 18, 17, 0.12);
+}
+
+.navbar-brand {
+  color: var(--text-light) !important;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 0.1rem;
+  padding: 0.62rem 0.75rem !important;
+  border-radius: var(--radius-small);
+  color: #ded8d1 !important;
+  font-size: 0.94rem;
+  font-weight: 550;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background: rgba(166, 66, 50, 0.2);
+  color: #ffffff !important;
+}
+
+.navbar .dropdown-menu {
+  padding: 0.5rem;
+  border: 1px solid #49433f;
+  border-radius: 7px;
+  background: var(--charcoal-soft);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.navbar .dropdown-item {
+  padding: 0.68rem 0.82rem;
+  border-radius: 4px;
+  color: #e8e1da;
+  font-size: 0.93rem;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: var(--chili);
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+/* =========================================================
+   4. WELCOME SECTION
+   ========================================================= */
+
+.welcome-section {
+  width: 100%;
+  padding: 3.5rem max(3vw, 1.5rem) 4rem;
+  border-bottom: 1px solid var(--border);
+  background:
+    linear-gradient(
+      180deg,
+      #f7f4ef 0%,
+      #f2ede7 100%
+    );
+}
+
+.welcome-inner {
+  width: min(var(--content-width), 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background:
+    linear-gradient(
+      115deg,
+      #fffdf9 0%,
+      #fffdf9 68%,
+      #f2e6df 100%
+    );
+  box-shadow:
+    0 18px 48px rgba(38, 31, 27, 0.07),
+    0 2px 7px rgba(38, 31, 27, 0.035);
+}
+
+.welcome-inner-text-only {
+  position: relative;
+  padding: clamp(3rem, 5vw, 5.2rem);
+}
+
+.welcome-inner-text-only::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: var(--chili);
+  content: "";
+}
+
+.welcome-inner-text-only::after {
+  position: absolute;
+  top: -140px;
+  right: -120px;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(166, 66, 50, 0.13);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 70px rgba(166, 66, 50, 0.035),
+    0 0 0 140px rgba(166, 66, 50, 0.02);
+  pointer-events: none;
+  content: "";
+}
+
+.welcome-label,
+.section-label,
+.article-category {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.8rem;
+  color: var(--chili);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.welcome-inner-text-only h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0.7rem 0 1.5rem;
+  color: var(--text-primary);
+  font-size: clamp(2.7rem, 4.5vw, 4.25rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.welcome-inner-text-only h1::after {
+  display: block;
+  width: 68px;
+  height: 3px;
+  margin-top: 1.35rem;
+  background: var(--chili);
+  content: "";
+}
+
+.welcome-inner-text-only p,
+.welcome-inner-text-only li {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.welcome-inner-text-only ul {
+  max-width: 780px;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+
+.welcome-inner-text-only li {
+  margin-bottom: 0.5rem;
+}
+
+.welcome-inner-text-only strong {
+  color: var(--text-primary);
+}
+
+.welcome-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.welcome-topics {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.4rem;
+  margin-top: 2.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+}
+
+.welcome-topics p {
+  margin: 0;
+}
+
+.welcome-topics a {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.welcome-topics a:hover {
+  color: var(--chili);
+}
+
+@media (max-width: 600px) {
+  .welcome-section {
+    padding: 1rem 1rem 2.5rem;
+  }
+
+  .welcome-inner {
+    border-radius: 8px;
+  }
+
+  .welcome-inner-text-only {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .welcome-inner-text-only h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-inner-text-only::after {
+    display: none;
+  }
+
+  .welcome-actions {
+    flex-direction: column;
+  }
+
+  .welcome-topics {
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+}
+
+/* Article totals and topic links */
+
+.article-count-summary {
+  margin-top: 1.15rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+}
+
+.article-count-summary strong {
+  color: var(--text-primary);
+}
+
+.article-topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+  margin-bottom: 1.8rem;
+}
+
+.article-topic-links a {
+  color: var(--chili);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.article-topic-links a:hover {
+  color: var(--chili-dark);
+  text-decoration: underline;
+}
+
+.article-topic-links > span {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .article-topic-links {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .article-topic-links > span {
+    display: none;
+  }
+}
+
+/* =========================================================
+   5. BUTTONS
+   ========================================================= */
+
+.button-primary,
+.button-secondary,
+.button-dark,
+.button-outline {
+  display: inline-block;
+  padding: 0.78rem 1.2rem;
+  border-radius: var(--radius-small);
+  font-size: 0.94rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.button-primary {
+  border: 1px solid var(--chili);
+  background: var(--chili);
+  color: #ffffff !important;
+}
+
+.button-primary:hover {
+  transform: translateY(-1px);
+  border-color: var(--chili-dark);
+  background: var(--chili-dark);
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #ffffff !important;
+}
+
+.button-secondary:hover {
+  transform: translateY(-1px);
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.button-dark {
+  border: 1px solid var(--charcoal);
+  background: var(--charcoal);
+  color: #ffffff !important;
+}
+
+.button-dark:hover {
+  transform: translateY(-1px);
+  background: #141312;
+}
+
+.button-outline {
+  border: 1px solid var(--charcoal);
+  color: var(--charcoal) !important;
+}
+
+.button-outline:hover {
+  transform: translateY(-1px);
+  background: var(--charcoal);
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   6. SHARED HOMEPAGE SECTIONS
+   ========================================================= */
+
+.home-section {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 5.2rem 2rem;
+}
+
+.home-section h2 {
+  max-width: 800px;
+  margin: 0.7rem 0 2.3rem;
+}
+
+.section-label {
+  margin-bottom: 0.6rem;
+}
+
+
+/* =========================================================
+   7. COMPACT RECENT ARTICLE
+   ========================================================= */
+
+.compact-article-card {
+  padding: 1.8rem 2rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--chili);
+  border-radius: var(--radius-medium);
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(40, 34, 30, 0.04);
+}
+
+.compact-article-card h3 {
+  margin: 0.65rem 0 0.75rem;
+  font-size: 1.55rem;
+}
+
+.compact-article-card h3 a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.compact-article-card h3 a:hover {
+  color: var(--chili);
+}
+
+.compact-article-card > p:not(.article-category):not(.article-details) {
+  max-width: 800px;
+  color: var(--text-secondary);
+}
+
+.article-details {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.article-details span {
+  padding: 0 0.42rem;
+  color: var(--chili);
+}
+
+.section-link,
+.card-link {
+  display: inline-block;
+  margin-top: 1.3rem;
+  color: var(--chili) !important;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.section-link:hover,
+.card-link:hover {
+  color: var(--chili-dark) !important;
+}
+
+
+/* =========================================================
+   8. TOPIC SECTIONS AND CARDS
+   ========================================================= */
+
+.topics-section {
+  max-width: none;
+  padding-right: max(5vw, 2rem);
+  padding-left: max(5vw, 2rem);
+  background: var(--surface-soft);
+}
+
+.topics-section > * {
+  max-width: var(--content-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.topic-card {
+  padding: 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
+  background: var(--surface);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--chili-soft);
+  box-shadow: 0 10px 26px rgba(40, 34, 30, 0.05);
+}
+
+.topic-card h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.35rem;
+}
+
+.topic-card p {
+  color: var(--text-secondary);
+}
+
+/* =========================================================
+   9. PORTFOLIO SECTION
+   ========================================================= */
+
+.portfolio-section {
+  width: 100%;
+  padding: 5.2rem max(5vw, 2rem);
+  border-top: 1px solid var(--border);
+  background: var(--surface-soft);
+}
+
+.portfolio-section .section-inner {
+  width: min(var(--content-width), 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-section h2 {
+  max-width: 800px;
+  margin: 0.7rem 0 2.3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #d9dee2;
+}
+
+.portfolio-section p:not(.section-label) {
+  max-width: 800px;
+  color: var(--text-secondary);
+}
+
+.portfolio-section .section-label {
+  margin-bottom: 0.65rem;
+  color: var(--chili) !important;
+}
+
+.portfolio-section .button-dark {
+  margin-top: 0.6rem;
+}
+
+/* =========================================================
+   10. ABOUT THE LEARNING HUB
+   ========================================================= */
+
+.about-hub-section {
+  width: 100%;
+  padding: 5.2rem max(5vw, 2rem);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.about-hub-section .section-inner {
+  width: min(var(--content-width), 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-hub-section h2 {
+  max-width: 800px;
+  margin: 0.7rem 0 2.3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #d9dee2;
+}
+
+.about-hub-section p:not(.section-label),
+.about-hub-section ul {
+  max-width: 800px;
+}
+
+.about-hub-section p:not(.section-label),
+.about-hub-section li {
+  color: var(--text-secondary);
+}
+
+.about-hub-section .section-label {
+  margin-bottom: 0.65rem;
+  color: var(--chili) !important;
+}
+
+.about-hub-section ul {
+  margin-top: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* =========================================================
+   11. CLOSING SECTION
+   ========================================================= */
+
+
+/* =========================================================
+   12. FOOTER
+   ========================================================= */
+
+.nav-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-footer a {
+  color: #e5ddd5;
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   13. RESPONSIVE DESIGN
+   ========================================================= */
+
+/*
+   The welcome-section responsive rules are already included
+   in Section 4. This section controls only the remaining
+   homepage areas.
+*/
+
+@media (max-width: 800px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-section,
+  .topics-section,
+  .portfolio-section {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+
+  .home-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .compact-article-card,
+  .topic-card {
+    padding: 1.4rem;
+  }
+
+  .button-primary,
+  .button-secondary,
+  .button-dark,
+  .button-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  body.inner-page .list.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  body.inner-page main.content {
+    width: calc(100% - 2rem);
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  body.inner-page .list.grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.inner-page .quarto-grid-item .card-img-top {
+    height: 200px;
+  }
+}

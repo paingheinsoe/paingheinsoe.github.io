@@ -1,0 +1,44 @@
+[
+  {
+    "listing": "/energy-climate.html",
+    "items": [
+      "/articles/energy-climate/sample-energy-climate.html"
+    ]
+  },
+  {
+    "listing": "/articles.html",
+    "items": [
+      "/articles/programming-technology/getting-started-with-quarto.html",
+      "/articles/ai-agents/sample-ai-agents.html",
+      "/articles/energy-climate/sample-energy-climate.html",
+      "/articles/data-analytics/sample-data-analytics.html"
+    ]
+  },
+  {
+    "listing": "/ai-agents.html",
+    "items": [
+      "/articles/ai-agents/sample-ai-agents.html"
+    ]
+  },
+  {
+    "listing": "/data-analytics.html",
+    "items": [
+      "/articles/data-analytics/sample-data-analytics.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/articles/programming-technology/getting-started-with-quarto.html",
+      "/articles/ai-agents/sample-ai-agents.html",
+      "/articles/energy-climate/sample-energy-climate.html",
+      "/articles/data-analytics/sample-data-analytics.html"
+    ]
+  },
+  {
+    "listing": "/programming-technology.html",
+    "items": [
+      "/articles/programming-technology/getting-started-with-quarto.html"
+    ]
+  }
+]
