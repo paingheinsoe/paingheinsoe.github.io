@@ -93,7 +93,7 @@ Open the [official Quarto download page](https://quarto.org/docs/download/) and 
 
 This guide uses Windows, so we will choose the Windows installer.
 
-![The official Quarto download page for Windows.](../../images/quarto/download-quarto.png){fig-alt="Quarto download webpage showing the Windows installer" width="90%" fig-align="center"}
+![The official Quarto download page for Windows.](../../images/programming-technology/getting-started-with-quarto/download-quarto.png){fig-alt="Quarto download webpage showing the Windows installer" width="90%" fig-align="center"}
 
 ::: {.callout-tip title="Which Windows file should we choose?"}
 For a normal Windows installation, the `.msi` installer is generally the simplest option. Open the downloaded file and follow the installation instructions.
@@ -103,7 +103,7 @@ For a normal Windows installation, the `.msi` installer is generally the simples
 
 Next, open the [official Visual Studio Code download page](https://code.visualstudio.com/Download) and choose the Windows version.
 
-![The official Visual Studio Code download page.](../../images/quarto/download-vscode.png){fig-alt="Visual Studio Code download webpage with Windows, Linux, and Mac options" width="90%" fig-align="center"}
+![The official Visual Studio Code download page.](../../images/programming-technology/getting-started-with-quarto/download-vscode.png){fig-alt="Visual Studio Code download webpage with Windows, Linux, and Mac options" width="90%" fig-align="center"}
 
 Visual Studio Code is not the program that builds the website. It is the workspace where we will open, write, and manage our website files.
 
@@ -138,7 +138,7 @@ Although you could save the project anywhere, using a dedicated folder keeps eve
 
 For example, I created the following structure:
 
-![Recommended workspace for Quarto projects.](../../images/quarto/folder-structure.png){width="85%" fig-align="center"}
+![Recommended workspace for Quarto projects.](../../images/programming-technology/getting-started-with-quarto/folder-structure.png){width="85%" fig-align="center"}
 
 In this guide, my website is stored inside:
 
@@ -178,7 +178,7 @@ cd D:\Portfolio_Drive\Quarto_website
 
 The `cd` command stands for **change directory**. It simply tells PowerShell which folder we want to work in.
 
-![Navigate to the project folder using PowerShell.](../../images/quarto/powershell-cd.png){width="90%" fig-align="center"}
+![Navigate to the project folder using PowerShell.](../../images/programming-technology/getting-started-with-quarto/powershell-cd.png){width="90%" fig-align="center"}
 
 Once you're inside the correct folder, run:
 
@@ -186,7 +186,7 @@ Once you're inside the correct folder, run:
 quarto create project website .
 ```
 
-![Creating the Quarto website project.](../../images/quarto/quarto-create.png){width="90%" fig-align="center"}
+![Creating the Quarto website project.](../../images/programming-technology/getting-started-with-quarto/quarto-create.png){width="90%" fig-align="center"}
 
 Let's briefly understand what this command means.
 
@@ -229,7 +229,7 @@ Choose your `Quarto_website` folder.
 
 The project files should now appear in the **Explorer** panel on the left.
 
-![The Quarto website project opened in Visual Studio Code.](../../images/quarto/website-files.png){width="90%" fig-align="center"}
+![The Quarto website project opened in Visual Studio Code.](../../images/programming-technology/getting-started-with-quarto/website-files.png){width="90%" fig-align="center"}
 
 ### Preview the website
 
@@ -243,7 +243,7 @@ Quarto builds the website and opens it in your browser.
 
 Your browser should now display the default website created by Quarto.
 
-![The default Quarto website running locally in the browser.](../../images/quarto/browser-preview-default.png){width="90%" fig-align="center"}
+![The default Quarto website running locally in the browser.](../../images/programming-technology/getting-started-with-quarto/browser-preview-default.png){width="90%" fig-align="center"}
 
 ::: {.callout-note title="What does localhost mean?"}
 
@@ -365,7 +365,7 @@ Since `quarto preview` is still running, Quarto automatically detects the change
 
 Your homepage should now look similar to the following:
 
-![The personalized homepage after editing `index.qmd`.](../../images/quarto/browser-preview-personalized.png){width="90%" fig-align="center"}
+![The personalized homepage after editing `index.qmd`.](../../images/programming-technology/getting-started-with-quarto/browser-preview-personalized.png){width="90%" fig-align="center"}
 
 Notice how your changes in `index.qmd` are immediately reflected in the browser.
 
