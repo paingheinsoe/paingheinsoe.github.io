@@ -4,7 +4,7 @@
     "href": "programming-technology.html",
     "title": "Programming & Technology",
     "section": "",
-    "text": "Articles related to programming and technology will appear here.\nBrowse articles and learning notes related to programming and technology.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Articles related to programming and technology will appear here.\nBrowse articles and learning notes related to programming and technology.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -18,7 +18,7 @@
     "href": "index.html#latest-articles-shared-for-your-guidance",
     "title": "Portfolio & Learning Hub",
     "section": "Latest Articles Shared for Your Guidance",
-    "text": "Latest Articles Shared for Your Guidance\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\nNo matching items\n\nView All Articles"
+    "text": "Latest Articles Shared for Your Guidance\n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\nNo matching items\n\nView All Articles"
   },
   {
     "objectID": "index.html#explore-articles-by-topic-areas",
@@ -47,90 +47,6 @@
     "title": "Data Analytics",
     "section": "",
     "text": "Browse articles and learning notes related to data analytics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "articles/energy-climate/sample-energy-climate.html",
-    "href": "articles/energy-climate/sample-energy-climate.html",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "",
-    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
-  },
-  {
-    "objectID": "articles/energy-climate/sample-energy-climate.html#introduction",
-    "href": "articles/energy-climate/sample-energy-climate.html#introduction",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "",
-    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
-  },
-  {
-    "objectID": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
-    "href": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "Electricity Demand",
-    "text": "Electricity Demand\nElectricity demand can change significantly during a single day.\nFor example, demand may rise when people return home, turn on lights, prepare meals, and use heating or cooling systems.\nUnderstanding these changes helps utilities plan electricity generation and maintain a reliable power system."
-  },
-  {
-    "objectID": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
-    "href": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nEnergy-demand analysis supports decisions related to:\n\npower-system planning;\nrenewable-energy integration;\nenergy efficiency;\ninfrastructure investment;\nclimate and energy policy.\n\n\nThis is a sample article created to test the website’s article-listing system."
-  },
-  {
-    "objectID": "articles/ai-agents/sample-ai-agents.html",
-    "href": "articles/ai-agents/sample-ai-agents.html",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "",
-    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
-  },
-  {
-    "objectID": "articles/ai-agents/sample-ai-agents.html#introduction",
-    "href": "articles/ai-agents/sample-ai-agents.html#introduction",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "",
-    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
-  },
-  {
-    "objectID": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
-    "href": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "A Simple Example",
-    "text": "A Simple Example\nImagine asking an AI system to prepare a short overview of recent developments in renewable energy.\nA standard chatbot may provide an answer based on a single prompt.\nAn AI agent could follow a broader workflow:\n```text Understand the request ↓ Search for relevant information ↓ Organize the findings ↓ Check the result ↓ Prepare the final overview"
-  },
-  {
-    "objectID": "ai-agents.html",
-    "href": "ai-agents.html",
-    "title": "AI & Agents",
-    "section": "",
-    "text": "Browse articles and learning notes related to artificial intelligence, machine learning, AI tools, and agents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "articles.html",
-    "href": "articles.html",
-    "title": "All Articles",
-    "section": "",
-    "text": "Browse the latest articles below. You can also use the search box or visit the topic pages to find articles in a specific area.\n\n0 articles currently available\n\n\n Energy & Climate (0) \n·\n AI & Agents (0) \n·\n Data Analytics (0) \n·\n Programming & Technology (0) \n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "articles/data-analytics/sample-data-analytics.html",
-    "href": "articles/data-analytics/sample-data-analytics.html",
-    "title": "From Raw Data to Useful Information",
-    "section": "",
-    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
-  },
-  {
-    "objectID": "articles/data-analytics/sample-data-analytics.html#introduction",
-    "href": "articles/data-analytics/sample-data-analytics.html#introduction",
-    "title": "From Raw Data to Useful Information",
-    "section": "",
-    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
   },
   {
     "objectID": "articles/programming-technology/getting-started-with-quarto.html",
@@ -208,6 +124,230 @@
     "title": "Getting Started with Quarto",
     "section": "Connect with Me",
     "text": "Connect with Me\nI hope this guide helped you build your first Quarto website with confidence.\nIf you’d like to follow my learning journey or connect professionally, feel free to reach out.\n\n💼 LinkedIn: https://www.linkedin.com/in/paing-hein-soe/\n💻 GitHub: https://github.com/paingheinsoe\n\nAs I continue learning and building projects in energy systems, AI, data analytics, and software tools, I’ll keep sharing practical guides like this one."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html",
+    "href": "articles/energy-climate/sample-energy-climate.html",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "",
+    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html#introduction",
+    "href": "articles/energy-climate/sample-energy-climate.html#introduction",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "",
+    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
+    "href": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "Electricity Demand",
+    "text": "Electricity Demand\nElectricity demand can change significantly during a single day.\nFor example, demand may rise when people return home, turn on lights, prepare meals, and use heating or cooling systems.\nUnderstanding these changes helps utilities plan electricity generation and maintain a reliable power system."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
+    "href": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nEnergy-demand analysis supports decisions related to:\n\npower-system planning;\nrenewable-energy integration;\nenergy efficiency;\ninfrastructure investment;\nclimate and energy policy.\n\n\nThis is a sample article created to test the website’s article-listing system."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html",
+    "href": "articles/ai-agents/sample-ai-agents.html",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "",
+    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html#introduction",
+    "href": "articles/ai-agents/sample-ai-agents.html#introduction",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "",
+    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
+    "href": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "A Simple Example",
+    "text": "A Simple Example\nImagine asking an AI system to prepare a short overview of recent developments in renewable energy.\nA standard chatbot may provide an answer based on a single prompt.\nAn AI agent could follow a broader workflow:\n```text Understand the request ↓ Search for relevant information ↓ Organize the findings ↓ Check the result ↓ Prepare the final overview"
+  },
+  {
+    "objectID": "ai-agents.html",
+    "href": "ai-agents.html",
+    "title": "AI & Agents",
+    "section": "",
+    "text": "Browse articles and learning notes related to artificial intelligence, machine learning, AI tools, and agents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "All Articles",
+    "section": "",
+    "text": "Browse the latest articles below. You can also use the search box or visit the topic pages to find articles in a specific area.\n\n0 articles currently available\n\n\n Energy & Climate (0) \n·\n AI & Agents (0) \n·\n Data Analytics (0) \n·\n Programming & Technology (0) \n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/data-analytics/sample-data-analytics.html",
+    "href": "articles/data-analytics/sample-data-analytics.html",
+    "title": "From Raw Data to Useful Information",
+    "section": "",
+    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+  },
+  {
+    "objectID": "articles/data-analytics/sample-data-analytics.html#introduction",
+    "href": "articles/data-analytics/sample-data-analytics.html#introduction",
+    "title": "From Raw Data to Useful Information",
+    "section": "",
+    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html",
+    "title": "From Quarto to GitHub Pages",
+    "section": "",
+    "text": "If you are building a portfolio or personal website with Quarto, Hugo, Jekyll, MkDocs, or a similar tool, the publishing workflow can feel more confusing than the writing itself.\nYou may already know how to edit files and preview the site locally, but practical questions appear quickly:\nThis article organizes the process into three practical stages:\nThe goal is not to learn every Git command. It is to understand what each part does, why the steps are separate, and what you actually need to do."
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#from-your-local-quarto-project-to-github",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#from-your-local-quarto-project-to-github",
+    "title": "From Quarto to GitHub Pages",
+    "section": "1. From your local Quarto project to GitHub",
+    "text": "1. From your local Quarto project to GitHub\nA Quarto website normally begins on your own computer.\nYou might work in VS Code with files such as:\nindex.qmd\nabout.qmd\nportfolio.qmd\nstyles.css\n_quarto.yml\nimages/\nThese are your source files. You write and organize them locally.\n\nWhat is Quarto doing?\nQuarto takes source files such as .qmd and renders them into web-ready files such as .html.\nindex.qmd  →  Quarto renders  →  index.html\nWhile developing, you can preview the site locally:\nquarto preview\nAt this point, you can edit, test, and revise without publishing anything.\n\n\nWhere does Git come in?\nGit tracks versions of the project.\nA common sequence is:\ngit add .\ngit commit -m \"Update website content\"\ngit push\nThese commands do different things:\n\n\n\nAction\nWhat it does\nWhere it happens\n\n\n\n\nEdit files\nChanges the project\nYour computer\n\n\ngit add\nSelects changes for the next commit\nYour computer\n\n\ngit commit\nSaves a version in local Git history\nYour computer\n\n\ngit push\nSends committed changes to GitHub\nGitHub\n\n\n\n\n\n\n\n\n\nImportantCommit, push, and publish are different\n\n\n\nA git commit saves a version locally. A git push sends that version to GitHub. Neither one, by itself, means that the live website has been updated.\n\n\n\n\nWhat does GitHub do here?\nGitHub stores the project online and keeps its commit history.\nFor a Quarto website, the main branch can contain the editable source project:\nmain\n├── articles/\n├── images/\n├── index.qmd\n├── about.qmd\n├── styles.css\n└── _quarto.yml\nHere is a real example from this portfolio website:\n\n\n\nThe public GitHub repository with the editable Quarto project stored on the main branch.\n\n\nThe key idea is:\n\nGitHub is storing and versioning the project. It is not yet the same thing as serving the finished website."
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#from-the-github-repository-to-gh-pages",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#from-the-github-repository-to-gh-pages",
+    "title": "From Quarto to GitHub Pages",
+    "section": "2. From the GitHub repository to gh-pages",
+    "text": "2. From the GitHub repository to gh-pages\nThis is often the most confusing step.\n\nIf the project is already on GitHub, why do we still need another step?\n\nBecause source files and website-ready files have different jobs.\n\nSource project vs rendered website\nThe main branch may contain files such as:\nindex.qmd\nabout.qmd\nstyles.css\n_quarto.yml\nA browser ultimately receives web-ready files such as:\nindex.html\nabout.html\nCSS\nJavaScript\nimages\nSo there is a build step between the two:\nEditable Quarto source  →  Quarto render  →  Browser-ready website\nFor the branch-based setup used here:\n\n\n\nBranch\nPurpose\n\n\n\n\nmain\nEditable source project\n\n\ngh-pages\nRendered website files\n\n\n\nThis keeps the source project clean while giving GitHub Pages a branch that contains the finished website.\n\n\nWhat command connects them?\nWith Quarto’s gh-pages publishing method:\nquarto publish gh-pages\nQuarto renders the site and publishes the website-ready output to the gh-pages branch.\nmain (source)  →  quarto publish gh-pages  →  gh-pages (rendered site)\n\n\n\n\n\n\nNoteOne useful distinction\n\n\n\ngit push updates the source repository.\nquarto publish gh-pages updates the rendered website branch.\nThey solve different problems."
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#from-github-pages-to-the-live-website",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#from-github-pages-to-the-live-website",
+    "title": "From Quarto to GitHub Pages",
+    "section": "3. From GitHub Pages to the live website",
+    "text": "3. From GitHub Pages to the live website\nAt this point, the rendered files exist in gh-pages.\nSomething still needs to serve those files to visitors when they open the website URL.\nThat is the role of GitHub Pages.\ngh-pages branch  →  GitHub Pages  →  username.github.io\n\nWhy can’t VS Code do this directly?\nVS Code is an editor running on your own computer. It helps you create the site, but it is not a public web host that stays available to visitors on the internet.\nA live website needs a hosting service that can:\n\nkeep the website files available;\nrespond when someone visits the URL;\nsend the correct HTML, CSS, images, and other assets to the browser.\n\nIn this setup, GitHub Pages provides that hosting layer.\n\n\nGitHub vs GitHub Pages\n\n\n\n\n\n\n\nGitHub repository\nGitHub Pages\n\n\n\n\nStores the project\nHosts the website\n\n\nKeeps files and commit history\nServes web-ready files\n\n\nUsed for development and version control\nUsed for public web access\n\n\nCommon source branch: main\nCan serve from gh-pages\n\n\n\nFor this portfolio website, GitHub Pages is configured to deploy from the gh-pages branch at the repository root:\n\n\n\nGitHub Pages configured to deploy the site from the gh-pages branch and /(root).\n\n\nOnce that configuration is active, visitors see the rendered site at the public URL rather than the source files in the repository."
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#a-practical-example-this-portfolio-website",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#a-practical-example-this-portfolio-website",
+    "title": "From Quarto to GitHub Pages",
+    "section": "A practical example: this portfolio website",
+    "text": "A practical example: this portfolio website\nPutting the three stages together, the workflow used for this site is:\n\n1. Work locally\nEdit .qmd, CSS, images, and other files in VS Code.\nPreview locally:\nquarto preview\n\n\n2. Save and send the source to GitHub\ngit add .\ngit commit -m \"Describe the change\"\ngit push\nThe updated source and commit history are now on the main branch.\n\n\n3. Publish the website\nquarto publish gh-pages\nQuarto renders the project and updates gh-pages.\n\n\n4. GitHub Pages serves it\nGitHub Pages reads the configured publishing branch and makes the site available at the public web address.\nThe complete path is:\nVS Code + Quarto  →  GitHub main  →  gh-pages  →  GitHub Pages  →  Live website"
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#what-is-private-and-what-becomes-public",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#what-is-private-and-what-becomes-public",
+    "title": "From Quarto to GitHub Pages",
+    "section": "What is private, and what becomes public?",
+    "text": "What is private, and what becomes public?\nThis distinction is worth remembering when you are still testing or drafting.\n\n\n\nStep\nUsually local/private?\nPublic if repository/site is public?\n\n\n\n\nEdit in VS Code\nYes\nNo\n\n\ngit add\nYes\nNo\n\n\ngit commit\nYes\nNo\n\n\ngit push\nNo\nYes — source/history can be visible\n\n\nquarto publish gh-pages\nNo\nYes — published website can update\n\n\n\nSo if you want to experiment privately, the safest place is before git push and before publishing."
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#is-this-only-a-quarto-workflow",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#is-this-only-a-quarto-workflow",
+    "title": "From Quarto to GitHub Pages",
+    "section": "Is this only a Quarto workflow?",
+    "text": "Is this only a Quarto workflow?\nNo.\nQuarto is one website-building tool. Others include Hugo, Jekyll, MkDocs, Astro, and many more.\nThe exact commands differ, but the general pattern is common:\nCreate  →  Version/store  →  Build  →  Host  →  Visit\nThe hosting service also does not have to be GitHub Pages. Depending on the project, people may use services such as Netlify, Vercel, or Cloudflare Pages.\nThe useful idea is the separation of roles:\n\neditor/site generator — create the project;\nGit/GitHub — version and store it;\nbuild/publish step — create the web-ready output;\nhosting service — serve it to visitors."
+  },
+  {
+    "objectID": "articles/programming-technology/from-quarto-to-github-pages.html#quick-reference",
+    "href": "articles/programming-technology/from-quarto-to-github-pages.html#quick-reference",
+    "title": "From Quarto to GitHub Pages",
+    "section": "Quick reference",
+    "text": "Quick reference\nFor the setup used in this article:\n# Preview locally\nquarto preview\n\n# Save a source version\ngit add .\ngit commit -m \"Describe the change\"\n\n# Send source to GitHub\ngit push\n\n# Render and publish the live website\nquarto publish gh-pages\nIf you remember only three things:\n\nmain keeps the editable source project.\ngh-pages contains the rendered website in this deployment setup.\nGitHub Pages serves those rendered files as the public website.\n\nOnce those roles are clear, the publishing workflow becomes much easier to manage."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "",
+    "text": "Many software, data analytics, technical analyst, and engineering-adjacent roles now involve some form of coding assessment during the job application or interview process.\nAt the same time, the way many people write code has changed. In real work, it is normal to use documentation, search, autocomplete, examples, or AI tools. But in a timed assessment, those supports may be limited or not allowed.\nThat is why a general coding assessment can feel different from normal project work.\nIt is not only testing whether you can eventually build something. It is testing whether you can:\nThis article is a practical preparation guide. It is not a complete algorithms handbook, and it does not reproduce any company-specific test. Instead, it focuses on the Python fundamentals and common problem patterns that are easy to forget when you are working without AI."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#why-coding-assessments-still-matter-in-the-ai-era",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#why-coding-assessments-still-matter-in-the-ai-era",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "1. Why coding assessments still matter in the AI era",
+    "text": "1. Why coding assessments still matter in the AI era\nAI can be very useful for learning, debugging, and exploring alternatives. But an assessment is a different environment.\nA company may use a coding assessment to check whether you can reason through a problem independently. They may not expect advanced software architecture, but they do want to see basic fluency.\nFor example, can you:\n\nparse a string correctly?\nupdate a dictionary count?\nloop through a list without off-by-one mistakes?\ncheck whether a value exists?\nwrite a function that handles repeated values or empty input?\n\nThese are small skills, but under time pressure they matter.\nThe goal is not to reject AI. The goal is to prepare for a setting where you may not be allowed to use it."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#what-these-assessments-usually-test",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#what-these-assessments-usually-test",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "2. What these assessments usually test",
+    "text": "2. What these assessments usually test\nA general coding assessment often focuses on practical fluency rather than advanced theory.\nCommon skills include:\n\n\n\n\n\n\n\nSkill\nWhat it means in practice\n\n\n\n\nString handling\nslicing, splitting, joining, checking characters\n\n\nLists\nindexing, appending, sorting, looping\n\n\nDictionaries\ncounting, lookup, grouping\n\n\nSets\nchecking membership and removing duplicates\n\n\nLoops and conditions\nbuilding logic step by step\n\n\nMatrix/list-of-lists\nusing row and column indices correctly\n\n\nEdge cases\nempty input, repeated values, missing values, out-of-bounds cases\n\n\n\nYou do not need to know every advanced algorithm first. But you should be comfortable with these basics."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#what-they-usually-do-not-focus-on-first",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#what-they-usually-do-not-focus-on-first",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "3. What they usually do not focus on first",
+    "text": "3. What they usually do not focus on first\nFor many general assessments, especially beginner or early-career screens, you should not assume that the test is mainly about advanced libraries.\nIn normal data work, you might use:\n\nnumpy\npandas\nmatplotlib\nscikit-learn\nspecialized APIs\n\nBut in a basic coding assessment, the expectation is often closer to:\n\nbuilt-in Python types;\nloops and conditions;\nstrings and lists;\ndictionaries and sets;\nbasic standard-library tools such as collections.Counter or collections.defaultdict.\n\nThat means it is useful to practice without relying on pandas or numpy unless the assessment instructions explicitly allow or require them.\nA good rule:\n\nFor general coding assessments, first become fluent with core Python. Use advanced libraries only when the problem or platform clearly expects them."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#where-to-practice",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#where-to-practice",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "4. Where to practice",
+    "text": "4. Where to practice\nYou do not need to use every platform. Pick one or two and practice consistently.\n\n\n\nPlatform\nHow I would use it\n\n\n\n\nCodeSignal\nUseful if your assessment is on CodeSignal or you want to become familiar with assessment-style coding environments.\n\n\nLeetCode\nUseful for structured interview-style practice, especially by topic and difficulty.\n\n\nHackerRank\nUseful for beginner-friendly coding practice and timed challenge formats.\n\n\nCoderbyte\nUseful for coding challenges and interview-preparation style practice.\n\n\n\nThe platform matters less than the practice method.\nFor this type of preparation, try this sequence:\n\nSolve without AI first.\nKeep a timer.\nWrite your own test cases.\nReview after the attempt.\nUse AI or notes only after you have tried."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#python-fundamentals-to-review-first",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#python-fundamentals-to-review-first",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "5. Python fundamentals to review first",
+    "text": "5. Python fundamentals to review first\nBefore solving many practice problems, review the small Python operations that appear again and again.\n\nStrings\ns = \"hello\"\n\nlen(s)          # 5\ns[0]            # 'h'\ns[-1]           # 'o'\ns[1:4]          # 'ell'\nlist(s)         # ['h', 'e', 'l', 'l', 'o']\nCommon string operations:\ntext = \"3:hello\"\n\nparts = text.split(\":\", 1)\nindex = int(parts[0])\nword = parts[1]\n\n\"\".join([\"a\", \"b\", \"c\"])   # \"abc\"\nUse split(\":\", 1) when you only want to split on the first delimiter.\n\n\nLists\nnums = [4, 1, 3]\n\nnums.append(2)\nsorted_nums = sorted(nums)\nnums.sort()\nRemember the difference:\nsorted(nums)   # returns a new sorted list\nnums.sort()    # changes the existing list\n\n\nDictionaries\nDictionaries are common in coding assessments because they support fast lookup.\nfreq = {}\n\nfor value in [1, 2, 1, 3, 2, 1]:\n    freq[value] = freq.get(value, 0) + 1\n\nprint(freq)    # {1: 3, 2: 2, 3: 1}\nUseful dictionary loop:\nfor key, value in freq.items():\n    print(key, value)\n\n\nCounter\nFor frequency problems, Counter is often cleaner.\nfrom collections import Counter\n\nfreq = Counter(\"success\")\nprint(freq)\nThis counts how many times each character appears.\n\n\ndefaultdict\nWhen grouping values, defaultdict(list) can reduce extra checks.\nfrom collections import defaultdict\n\ngroups = defaultdict(list)\n\nfor word in [\"eat\", \"tea\", \"tan\"]:\n    key = \"\".join(sorted(word))\n    groups[key].append(word)\n\n\nSets\nSets are useful for membership checks and unique values.\nseen = set()\n\nseen.add(\"apple\")\n\nif \"apple\" in seen:\n    print(\"found\")\nA set does not preserve duplicate values.\n\n\nMatrices / list-of-lists\nA matrix is often represented as a list of lists.\nM = [\n    [1, 2, 3],\n    [4, 5, 6]\n]\n\nrows = len(M)\ncols = len(M[0])\n\nM[0][2]   # 3\nImportant syntax:\nM[0][2]   # correct\nM[0, 2]   # not correct for a normal Python list-of-lists"
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#how-to-prepare-without-ai",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#how-to-prepare-without-ai",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "6. How to prepare without AI",
+    "text": "6. How to prepare without AI\nThe goal is not to avoid AI forever. The goal is to prepare for the specific situation where AI is not allowed.\nA practical routine:\n\nReview the Python basics above.\nSolve small problems without AI.\nUse a timer.\nWrite a few test cases yourself.\nAfter finishing, use AI or notes only to review what you missed.\n\nDuring practice, ask yourself:\n\nDid I understand the input and output?\nDid I choose the right data structure?\nDid I test edge cases?\nCould I explain my solution in plain English?\nCould I write it again tomorrow without looking?"
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#common-question-types",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#common-question-types",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "7. Common question types",
+    "text": "7. Common question types\nMany general coding assessment problems can be grouped into a few patterns.\n\n\n\n\n\n\n\nType\nTypical idea\n\n\n\n\nString parsing\nsplit, slice, convert, extract\n\n\nFrequency counting\ncount characters, words, or numbers\n\n\nMatrix/simulation\nmove through a grid or process rows/columns\n\n\nQuery processing\nupdate a collection and answer after each operation\n\n\n\nThe practice sets below follow those four types."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#practice-set-a",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#practice-set-a",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "8. Practice Set A",
+    "text": "8. Practice Set A\nTry these without AI first. After attempting, compare your approach with the solution.\n\nA1. Extract characters from indexed strings\nYou are given a list of strings. Each string has the form \"index:word\".\nFor each item:\n\nread the number before :;\nuse it as an index into the word after :;\nif the index is valid, collect that character;\notherwise collect \"?\".\n\nReturn the collected characters as one string.\nExample:\nInput:  [\"0:hello\", \"2:world\", \"5:hi\"]\nOutput: \"hr?\"\n\nSolution\ndef extract_indexed_chars(items):\n    result = []\n\n    for item in items:\n        left, word = item.split(\":\", 1)\n        idx = int(left)\n\n        if 0 &lt;= idx &lt; len(word):\n            result.append(word[idx])\n        else:\n            result.append(\"?\")\n\n    return \"\".join(result)\n\n\nprint(extract_indexed_chars([\"0:hello\", \"2:world\", \"5:hi\"]))\n# \"hr?\"\nWhat this tests:\n\nsplitting strings;\nconverting string to integer;\nchecking index bounds;\njoining a list of characters.\n\n\n\n\nA2. Most common letter type\nGiven a lowercase string, find:\n\nthe highest frequency of any vowel;\nthe highest frequency of any consonant.\n\nReturn the sum of those two frequencies. If one group is missing, count it as 0.\nExample:\nInput:  \"success\"\nOutput: 4\nExplanation:\n\nvowels: u appears 1 time, e appears 1 time → max vowel frequency = 1\nconsonants: s appears 3 times, c appears 2 times → max consonant frequency = 3\nanswer = 1 + 3 = 4\n\n\nSolution\nfrom collections import Counter\n\ndef max_vowel_plus_consonant(s):\n    vowels = set(\"aeiou\")\n    freq = Counter(s)\n\n    max_vowel = 0\n    max_consonant = 0\n\n    for ch, count in freq.items():\n        if ch in vowels:\n            max_vowel = max(max_vowel, count)\n        else:\n            max_consonant = max(max_consonant, count)\n\n    return max_vowel + max_consonant\n\n\nprint(max_vowel_plus_consonant(\"success\"))\n# 4\nWhat this tests:\n\nCounter;\ndictionary-style looping;\nseparating values by condition;\ntracking maximum values.\n\n\n\n\nA3. Row totals after movement\nYou are given a matrix. For each row, start at column 0 and move to the right until the end of the row. Add all values in that row and return the list of row sums.\nExample:\nInput:\n[\n  [1, 2, 3],\n  [4, 5, 6]\n]\n\nOutput: [6, 15]\n\nSolution\ndef row_sums(matrix):\n    result = []\n\n    for row in matrix:\n        total = 0\n        for value in row:\n            total += value\n        result.append(total)\n\n    return result\n\n\nprint(row_sums([[1, 2, 3], [4, 5, 6]]))\n# [6, 15]\nWhat this tests:\n\nnested loops;\nlist-of-lists;\naccumulating totals.\n\nA shorter Python version is:\ndef row_sums(matrix):\n    return [sum(row) for row in matrix]\nBut in an assessment, the longer version can be easier to reason about when problems become more complex.\n\n\n\nA4. Process add/remove queries\nYou are given a list of queries.\nEach query is one of:\n\n\"+x\": add number x;\n\"-x\": remove one occurrence of number x if it exists.\n\nAfter each query, return the number of unique values currently stored.\nExample:\nqueries = [\"+1\", \"+2\", \"+1\", \"-1\"]\nOutput: [1, 2, 2, 2]\nExplanation:\n+1 → [1]        unique count = 1\n+2 → [1, 2]     unique count = 2\n+1 → [1, 2, 1]  unique count = 2\n-1 → [2, 1]     unique count = 2\n\nSolution\nfrom collections import Counter\n\ndef unique_counts_after_queries(queries):\n    freq = Counter()\n    result = []\n\n    for q in queries:\n        op = q[0]\n        value = int(q[1:])\n\n        if op == \"+\":\n            freq[value] += 1\n        else:\n            if freq[value] &gt; 0:\n                freq[value] -= 1\n                if freq[value] == 0:\n                    del freq[value]\n\n        result.append(len(freq))\n\n    return result\n\n\nprint(unique_counts_after_queries([\"+1\", \"+2\", \"+1\", \"-1\"]))\n# [1, 2, 2, 2]\nWhat this tests:\n\nparsing query strings;\nusing Counter;\nupdating state over time;\ndeleting keys when counts reach zero."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#practice-set-b",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#practice-set-b",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "9. Practice Set B",
+    "text": "9. Practice Set B\nThis second set uses similar skills but changes the problem wording.\n\nB1. Clean and reverse words\nGiven a sentence, split it into words and return the words in reverse order as one string.\nExample:\nInput:  \"data energy climate\"\nOutput: \"climate energy data\"\n\nSolution\ndef reverse_words(sentence):\n    words = sentence.split()\n    words.reverse()\n    return \" \".join(words)\n\n\nprint(reverse_words(\"data energy climate\"))\n# \"climate energy data\"\nWhat this tests:\n\nsplit;\nlist reversal;\njoin.\n\n\n\n\nB2. First repeated number\nGiven a list of integers, return the first number that appears twice. If no number repeats, return None.\nExample:\nInput:  [4, 2, 7, 2, 4]\nOutput: 2\n\nSolution\ndef first_repeated(nums):\n    seen = set()\n\n    for num in nums:\n        if num in seen:\n            return num\n        seen.add(num)\n\n    return None\n\n\nprint(first_repeated([4, 2, 7, 2, 4]))\n# 2\nWhat this tests:\n\nsets;\nmembership checking;\nearly return.\n\n\n\n\nB3. Count values above row average\nGiven a matrix, return a list where each value is the number of elements in that row greater than the row average.\nExample:\nInput:\n[\n  [1, 2, 6],\n  [4, 4, 4],\n  [10, 1, 1]\n]\n\nOutput: [1, 0, 1]\n\nSolution\ndef count_above_row_average(matrix):\n    result = []\n\n    for row in matrix:\n        avg = sum(row) / len(row)\n        count = 0\n\n        for value in row:\n            if value &gt; avg:\n                count += 1\n\n        result.append(count)\n\n    return result\n\n\nmatrix = [\n    [1, 2, 6],\n    [4, 4, 4],\n    [10, 1, 1]\n]\n\nprint(count_above_row_average(matrix))\n# [1, 0, 1]\nWhat this tests:\n\nmatrix traversal;\naverage calculation;\nconditions inside loops.\n\n\n\n\nB4. Running stock count\nYou manage a small inventory. Each query is:\n\n\"add:item\" — add one item;\n\"sell:item\" — sell one item if available.\n\nAfter each query, return the total number of items currently in inventory.\nExample:\nqueries = [\"add:book\", \"add:pen\", \"add:book\", \"sell:book\"]\nOutput: [1, 2, 3, 2]\n\nSolution\nfrom collections import Counter\n\ndef inventory_total_after_queries(queries):\n    inventory = Counter()\n    total = 0\n    result = []\n\n    for q in queries:\n        op, item = q.split(\":\", 1)\n\n        if op == \"add\":\n            inventory[item] += 1\n            total += 1\n        else:\n            if inventory[item] &gt; 0:\n                inventory[item] -= 1\n                total -= 1\n                if inventory[item] == 0:\n                    del inventory[item]\n\n        result.append(total)\n\n    return result\n\n\nqueries = [\"add:book\", \"add:pen\", \"add:book\", \"sell:book\"]\nprint(inventory_total_after_queries(queries))\n# [1, 2, 3, 2]\nWhat this tests:\n\nstring parsing;\ndictionary state;\nrunning totals;\nsafe removal."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#how-to-review-your-solutions",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#how-to-review-your-solutions",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "10. How to review your solutions",
+    "text": "10. How to review your solutions\nAfter solving a problem, do not only ask whether the answer matches one example.\nCheck these:\n\n\n\n\n\n\n\nReview question\nWhy it matters\n\n\n\n\nDoes it handle empty input?\nMany tests include edge cases\n\n\nDoes it handle repeated values?\nCounting problems often depend on this\n\n\nDoes it handle missing values?\nQuery problems often include removals that may not exist\n\n\nCan I explain the logic?\nInterviewers may ask you to walk through your thinking\n\n\nIs the code readable?\nSimple correct code is better than clever broken code\n\n\n\nA simple preparation rule:\n\nFirst make it correct. Then make it cleaner. Only optimize if the problem size requires it."
+  },
+  {
+    "objectID": "articles/programming-technology/preparing-for-general-coding-assessment.html#final-takeaways",
+    "href": "articles/programming-technology/preparing-for-general-coding-assessment.html#final-takeaways",
+    "title": "Preparing for a General Coding Assessment",
+    "section": "11. Final takeaways",
+    "text": "11. Final takeaways\nA general coding assessment does not always require advanced algorithms first.\nFor many entry-level or general assessments, a large part of the challenge is being fluent with:\n\nstrings;\nlists;\ndictionaries;\nsets;\nloops;\nsimple matrix logic;\nedge cases;\nclean step-by-step implementation.\n\nAI can be useful for learning and reviewing afterward. But if the assessment does not allow AI, you need enough independent fluency to solve small problems on your own.\nThat fluency comes from focused practice, not from memorizing hundreds of solutions."
   },
   {
     "objectID": "energy-climate.html",

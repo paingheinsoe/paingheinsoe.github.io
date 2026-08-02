@@ -2,12 +2,16 @@
   {
     "listing": "/programming-technology.html",
     "items": [
+      "/articles/programming-technology/from-quarto-to-github-pages.html",
+      "/articles/programming-technology/preparing-for-general-coding-assessment.html",
       "/articles/programming-technology/getting-started-with-quarto.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/articles/programming-technology/from-quarto-to-github-pages.html",
+      "/articles/programming-technology/preparing-for-general-coding-assessment.html",
       "/articles/programming-technology/getting-started-with-quarto.html",
       "/articles/ai-agents/sample-ai-agents.html",
       "/articles/energy-climate/sample-energy-climate.html",
@@ -29,6 +33,8 @@
   {
     "listing": "/articles.html",
     "items": [
+      "/articles/programming-technology/from-quarto-to-github-pages.html",
+      "/articles/programming-technology/preparing-for-general-coding-assessment.html",
       "/articles/programming-technology/getting-started-with-quarto.html",
       "/articles/ai-agents/sample-ai-agents.html",
       "/articles/energy-climate/sample-energy-climate.html",

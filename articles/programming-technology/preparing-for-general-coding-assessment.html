@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Paing Hein Soe">
+<meta name="dcterms.date" content="2026-08-01">
+<meta name="description" content="A practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.">
+
+<title>Preparing for a General Coding Assessment – Paing Hein Soe</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a936ae4e6a5e93c89dc0fa869f06dea4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Paing Hein Soe</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">My Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../articles.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../../energy-climate.html">
+ <span class="dropdown-text">Energy &amp; Climate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ai-agents.html">
+ <span class="dropdown-text">AI &amp; Agents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../data-analytics.html">
+ <span class="dropdown-text">Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../programming-technology.html">
+ <span class="dropdown-text">Programming &amp; Technology</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/paingheinsoe"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-coding-assessments-still-matter-in-the-ai-era" id="toc-why-coding-assessments-still-matter-in-the-ai-era" class="nav-link active" data-scroll-target="#why-coding-assessments-still-matter-in-the-ai-era">1. Why coding assessments still matter in the AI era</a></li>
+  <li><a href="#what-these-assessments-usually-test" id="toc-what-these-assessments-usually-test" class="nav-link" data-scroll-target="#what-these-assessments-usually-test">2. What these assessments usually test</a></li>
+  <li><a href="#what-they-usually-do-not-focus-on-first" id="toc-what-they-usually-do-not-focus-on-first" class="nav-link" data-scroll-target="#what-they-usually-do-not-focus-on-first">3. What they usually do not focus on first</a></li>
+  <li><a href="#where-to-practice" id="toc-where-to-practice" class="nav-link" data-scroll-target="#where-to-practice">4. Where to practice</a></li>
+  <li><a href="#python-fundamentals-to-review-first" id="toc-python-fundamentals-to-review-first" class="nav-link" data-scroll-target="#python-fundamentals-to-review-first">5. Python fundamentals to review first</a>
+  <ul class="collapse">
+  <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">Strings</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
+  <li><a href="#dictionaries" id="toc-dictionaries" class="nav-link" data-scroll-target="#dictionaries">Dictionaries</a></li>
+  <li><a href="#counter" id="toc-counter" class="nav-link" data-scroll-target="#counter"><code>Counter</code></a></li>
+  <li><a href="#defaultdict" id="toc-defaultdict" class="nav-link" data-scroll-target="#defaultdict"><code>defaultdict</code></a></li>
+  <li><a href="#sets" id="toc-sets" class="nav-link" data-scroll-target="#sets">Sets</a></li>
+  <li><a href="#matrices-list-of-lists" id="toc-matrices-list-of-lists" class="nav-link" data-scroll-target="#matrices-list-of-lists">Matrices / list-of-lists</a></li>
+  </ul></li>
+  <li><a href="#how-to-prepare-without-ai" id="toc-how-to-prepare-without-ai" class="nav-link" data-scroll-target="#how-to-prepare-without-ai">6. How to prepare without AI</a></li>
+  <li><a href="#common-question-types" id="toc-common-question-types" class="nav-link" data-scroll-target="#common-question-types">7. Common question types</a></li>
+  <li><a href="#practice-set-a" id="toc-practice-set-a" class="nav-link" data-scroll-target="#practice-set-a">8. Practice Set A</a>
+  <ul class="collapse">
+  <li><a href="#a1.-extract-characters-from-indexed-strings" id="toc-a1.-extract-characters-from-indexed-strings" class="nav-link" data-scroll-target="#a1.-extract-characters-from-indexed-strings">A1. Extract characters from indexed strings</a></li>
+  <li><a href="#a2.-most-common-letter-type" id="toc-a2.-most-common-letter-type" class="nav-link" data-scroll-target="#a2.-most-common-letter-type">A2. Most common letter type</a></li>
+  <li><a href="#a3.-row-totals-after-movement" id="toc-a3.-row-totals-after-movement" class="nav-link" data-scroll-target="#a3.-row-totals-after-movement">A3. Row totals after movement</a></li>
+  <li><a href="#a4.-process-addremove-queries" id="toc-a4.-process-addremove-queries" class="nav-link" data-scroll-target="#a4.-process-addremove-queries">A4. Process add/remove queries</a></li>
+  </ul></li>
+  <li><a href="#practice-set-b" id="toc-practice-set-b" class="nav-link" data-scroll-target="#practice-set-b">9. Practice Set B</a>
+  <ul class="collapse">
+  <li><a href="#b1.-clean-and-reverse-words" id="toc-b1.-clean-and-reverse-words" class="nav-link" data-scroll-target="#b1.-clean-and-reverse-words">B1. Clean and reverse words</a></li>
+  <li><a href="#b2.-first-repeated-number" id="toc-b2.-first-repeated-number" class="nav-link" data-scroll-target="#b2.-first-repeated-number">B2. First repeated number</a></li>
+  <li><a href="#b3.-count-values-above-row-average" id="toc-b3.-count-values-above-row-average" class="nav-link" data-scroll-target="#b3.-count-values-above-row-average">B3. Count values above row average</a></li>
+  <li><a href="#b4.-running-stock-count" id="toc-b4.-running-stock-count" class="nav-link" data-scroll-target="#b4.-running-stock-count">B4. Running stock count</a></li>
+  </ul></li>
+  <li><a href="#how-to-review-your-solutions" id="toc-how-to-review-your-solutions" class="nav-link" data-scroll-target="#how-to-review-your-solutions">10. How to review your solutions</a></li>
+  <li><a href="#final-takeaways" id="toc-final-takeaways" class="nav-link" data-scroll-target="#final-takeaways">11. Final takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Preparing for a General Coding Assessment</h1>
+<p class="subtitle lead">What to review when AI isn’t allowed</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Programming &amp; Technology</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Paing Hein Soe </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Many software, data analytics, technical analyst, and engineering-adjacent roles now involve some form of coding assessment during the job application or interview process.</p>
+<p>At the same time, the way many people write code has changed. In real work, it is normal to use documentation, search, autocomplete, examples, or AI tools. But in a timed assessment, those supports may be limited or not allowed.</p>
+<p>That is why a general coding assessment can feel different from normal project work.</p>
+<p>It is not only testing whether you can eventually build something. It is testing whether you can:</p>
+<ul>
+<li>understand a small problem quickly;</li>
+<li>choose a reasonable coding approach;</li>
+<li>use basic data structures correctly;</li>
+<li>write clean Python without heavy support;</li>
+<li>handle simple edge cases under time pressure.</li>
+</ul>
+<p>This article is a practical preparation guide. It is not a complete algorithms handbook, and it does not reproduce any company-specific test. Instead, it focuses on the Python fundamentals and common problem patterns that are easy to forget when you are working without AI.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="What this article covers">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What this article covers
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This article covers Python basics, common coding-assessment patterns, where to practice, and two short practice sets. The goal is to help you prepare for situations where you need to code independently during a hiring process.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/programming-technology/general-coding-assessment/coding-assessment-practice-plan.png" class="img-fluid figure-img" style="width:95.0%" alt="A clean diagram showing a coding assessment preparation loop with review, practice, and review steps"></p>
+<figcaption>A simple practice loop for coding assessment preparation: review fundamentals, practice without AI, then review mistakes afterward.</figcaption>
+</figure>
+</div>
+<section id="why-coding-assessments-still-matter-in-the-ai-era" class="level2">
+<h2 class="anchored" data-anchor-id="why-coding-assessments-still-matter-in-the-ai-era">1. Why coding assessments still matter in the AI era</h2>
+<p>AI can be very useful for learning, debugging, and exploring alternatives. But an assessment is a different environment.</p>
+<p>A company may use a coding assessment to check whether you can reason through a problem independently. They may not expect advanced software architecture, but they do want to see basic fluency.</p>
+<p>For example, can you:</p>
+<ul>
+<li>parse a string correctly?</li>
+<li>update a dictionary count?</li>
+<li>loop through a list without off-by-one mistakes?</li>
+<li>check whether a value exists?</li>
+<li>write a function that handles repeated values or empty input?</li>
+</ul>
+<p>These are small skills, but under time pressure they matter.</p>
+<p>The goal is not to reject AI. The goal is to prepare for a setting where you may not be allowed to use it.</p>
+</section>
+<section id="what-these-assessments-usually-test" class="level2">
+<h2 class="anchored" data-anchor-id="what-these-assessments-usually-test">2. What these assessments usually test</h2>
+<p>A general coding assessment often focuses on practical fluency rather than advanced theory.</p>
+<p>Common skills include:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill</th>
+<th>What it means in practice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>String handling</td>
+<td>slicing, splitting, joining, checking characters</td>
+</tr>
+<tr class="even">
+<td>Lists</td>
+<td>indexing, appending, sorting, looping</td>
+</tr>
+<tr class="odd">
+<td>Dictionaries</td>
+<td>counting, lookup, grouping</td>
+</tr>
+<tr class="even">
+<td>Sets</td>
+<td>checking membership and removing duplicates</td>
+</tr>
+<tr class="odd">
+<td>Loops and conditions</td>
+<td>building logic step by step</td>
+</tr>
+<tr class="even">
+<td>Matrix/list-of-lists</td>
+<td>using row and column indices correctly</td>
+</tr>
+<tr class="odd">
+<td>Edge cases</td>
+<td>empty input, repeated values, missing values, out-of-bounds cases</td>
+</tr>
+</tbody>
+</table>
+<p>You do not need to know every advanced algorithm first. But you should be comfortable with these basics.</p>
+</section>
+<section id="what-they-usually-do-not-focus-on-first" class="level2">
+<h2 class="anchored" data-anchor-id="what-they-usually-do-not-focus-on-first">3. What they usually do not focus on first</h2>
+<p>For many general assessments, especially beginner or early-career screens, you should not assume that the test is mainly about advanced libraries.</p>
+<p>In normal data work, you might use:</p>
+<ul>
+<li><code>numpy</code></li>
+<li><code>pandas</code></li>
+<li><code>matplotlib</code></li>
+<li>scikit-learn</li>
+<li>specialized APIs</li>
+</ul>
+<p>But in a basic coding assessment, the expectation is often closer to:</p>
+<ul>
+<li>built-in Python types;</li>
+<li>loops and conditions;</li>
+<li>strings and lists;</li>
+<li>dictionaries and sets;</li>
+<li>basic standard-library tools such as <code>collections.Counter</code> or <code>collections.defaultdict</code>.</li>
+</ul>
+<p>That means it is useful to practice without relying on <code>pandas</code> or <code>numpy</code> unless the assessment instructions explicitly allow or require them.</p>
+<p>A good rule:</p>
+<blockquote class="blockquote">
+<p><strong>For general coding assessments, first become fluent with core Python. Use advanced libraries only when the problem or platform clearly expects them.</strong></p>
+</blockquote>
+</section>
+<section id="where-to-practice" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-practice">4. Where to practice</h2>
+<p>You do not need to use every platform. Pick one or two and practice consistently.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Platform</th>
+<th>How I would use it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://codesignal.com/">CodeSignal</a></td>
+<td>Useful if your assessment is on CodeSignal or you want to become familiar with assessment-style coding environments.</td>
+</tr>
+<tr class="even">
+<td><a href="https://leetcode.com/">LeetCode</a></td>
+<td>Useful for structured interview-style practice, especially by topic and difficulty.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.hackerrank.com/">HackerRank</a></td>
+<td>Useful for beginner-friendly coding practice and timed challenge formats.</td>
+</tr>
+<tr class="even">
+<td><a href="https://coderbyte.com/developers">Coderbyte</a></td>
+<td>Useful for coding challenges and interview-preparation style practice.</td>
+</tr>
+</tbody>
+</table>
+<p>The platform matters less than the practice method.</p>
+<p>For this type of preparation, try this sequence:</p>
+<ol type="1">
+<li>Solve without AI first.</li>
+<li>Keep a timer.</li>
+<li>Write your own test cases.</li>
+<li>Review after the attempt.</li>
+<li>Use AI or notes only after you have tried.</li>
+</ol>
+</section>
+<section id="python-fundamentals-to-review-first" class="level2">
+<h2 class="anchored" data-anchor-id="python-fundamentals-to-review-first">5. Python fundamentals to review first</h2>
+<p>Before solving many practice problems, review the small Python operations that appear again and again.</p>
+<section id="strings" class="level3">
+<h3 class="anchored" data-anchor-id="strings">Strings</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">"hello"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(s)          <span class="co"># 5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>s[<span class="dv">0</span>]            <span class="co"># 'h'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>s[<span class="op">-</span><span class="dv">1</span>]           <span class="co"># 'o'</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>s[<span class="dv">1</span>:<span class="dv">4</span>]          <span class="co"># 'ell'</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(s)         <span class="co"># ['h', 'e', 'l', 'l', 'o']</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Common string operations:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"3:hello"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>parts <span class="op">=</span> text.split(<span class="st">":"</span>, <span class="dv">1</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> <span class="bu">int</span>(parts[<span class="dv">0</span>])</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>word <span class="op">=</span> parts[<span class="dv">1</span>]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">""</span>.join([<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>])   <span class="co"># "abc"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use <code>split(":", 1)</code> when you only want to split on the first delimiter.</p>
+</section>
+<section id="lists" class="level3">
+<h3 class="anchored" data-anchor-id="lists">Lists</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>nums <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">3</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>nums.append(<span class="dv">2</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>sorted_nums <span class="op">=</span> <span class="bu">sorted</span>(nums)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>nums.sort()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Remember the difference:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">sorted</span>(nums)   <span class="co"># returns a new sorted list</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>nums.sort()    <span class="co"># changes the existing list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="dictionaries" class="level3">
+<h3 class="anchored" data-anchor-id="dictionaries">Dictionaries</h3>
+<p>Dictionaries are common in coding assessments because they support fast lookup.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>freq <span class="op">=</span> {}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> value <span class="kw">in</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>]:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    freq[value] <span class="op">=</span> freq.get(value, <span class="dv">0</span>) <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(freq)    <span class="co"># {1: 3, 2: 2, 3: 1}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Useful dictionary loop:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> freq.items():</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key, value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="counter" class="level3">
+<h3 class="anchored" data-anchor-id="counter"><code>Counter</code></h3>
+<p>For frequency problems, <code>Counter</code> is often cleaner.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>freq <span class="op">=</span> Counter(<span class="st">"success"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(freq)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This counts how many times each character appears.</p>
+</section>
+<section id="defaultdict" class="level3">
+<h3 class="anchored" data-anchor-id="defaultdict"><code>defaultdict</code></h3>
+<p>When grouping values, <code>defaultdict(list)</code> can reduce extra checks.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> defaultdict</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>groups <span class="op">=</span> defaultdict(<span class="bu">list</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> word <span class="kw">in</span> [<span class="st">"eat"</span>, <span class="st">"tea"</span>, <span class="st">"tan"</span>]:</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    key <span class="op">=</span> <span class="st">""</span>.join(<span class="bu">sorted</span>(word))</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    groups[key].append(word)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="sets" class="level3">
+<h3 class="anchored" data-anchor-id="sets">Sets</h3>
+<p>Sets are useful for membership checks and unique values.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>seen <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>seen.add(<span class="st">"apple"</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"apple"</span> <span class="kw">in</span> seen:</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"found"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A set does not preserve duplicate values.</p>
+</section>
+<section id="matrices-list-of-lists" class="level3">
+<h3 class="anchored" data-anchor-id="matrices-list-of-lists">Matrices / list-of-lists</h3>
+<p>A matrix is often represented as a list of lists.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> [</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>],</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> <span class="bu">len</span>(M)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> <span class="bu">len</span>(M[<span class="dv">0</span>])</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>M[<span class="dv">0</span>][<span class="dv">2</span>]   <span class="co"># 3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Important syntax:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>M[<span class="dv">0</span>][<span class="dv">2</span>]   <span class="co"># correct</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>M[<span class="dv">0</span>, <span class="dv">2</span>]   <span class="co"># not correct for a normal Python list-of-lists</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="how-to-prepare-without-ai" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-prepare-without-ai">6. How to prepare without AI</h2>
+<p>The goal is not to avoid AI forever. The goal is to prepare for the specific situation where AI is not allowed.</p>
+<p>A practical routine:</p>
+<ol type="1">
+<li>Review the Python basics above.</li>
+<li>Solve small problems without AI.</li>
+<li>Use a timer.</li>
+<li>Write a few test cases yourself.</li>
+<li>After finishing, use AI or notes only to review what you missed.</li>
+</ol>
+<p>During practice, ask yourself:</p>
+<ul>
+<li>Did I understand the input and output?</li>
+<li>Did I choose the right data structure?</li>
+<li>Did I test edge cases?</li>
+<li>Could I explain my solution in plain English?</li>
+<li>Could I write it again tomorrow without looking?</li>
+</ul>
+</section>
+<section id="common-question-types" class="level2">
+<h2 class="anchored" data-anchor-id="common-question-types">7. Common question types</h2>
+<p>Many general coding assessment problems can be grouped into a few patterns.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Typical idea</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>String parsing</td>
+<td>split, slice, convert, extract</td>
+</tr>
+<tr class="even">
+<td>Frequency counting</td>
+<td>count characters, words, or numbers</td>
+</tr>
+<tr class="odd">
+<td>Matrix/simulation</td>
+<td>move through a grid or process rows/columns</td>
+</tr>
+<tr class="even">
+<td>Query processing</td>
+<td>update a collection and answer after each operation</td>
+</tr>
+</tbody>
+</table>
+<p>The practice sets below follow those four types.</p>
+</section>
+<section id="practice-set-a" class="level2">
+<h2 class="anchored" data-anchor-id="practice-set-a">8. Practice Set A</h2>
+<p>Try these without AI first. After attempting, compare your approach with the solution.</p>
+<section id="a1.-extract-characters-from-indexed-strings" class="level3">
+<h3 class="anchored" data-anchor-id="a1.-extract-characters-from-indexed-strings">A1. Extract characters from indexed strings</h3>
+<p>You are given a list of strings. Each string has the form <code>"index:word"</code>.</p>
+<p>For each item:</p>
+<ul>
+<li>read the number before <code>:</code>;</li>
+<li>use it as an index into the word after <code>:</code>;</li>
+<li>if the index is valid, collect that character;</li>
+<li>otherwise collect <code>"?"</code>.</li>
+</ul>
+<p>Return the collected characters as one string.</p>
+<p>Example:</p>
+<pre class="text"><code>Input:  ["0:hello", "2:world", "5:hi"]
+Output: "hr?"</code></pre>
+<section id="solution" class="level4">
+<h4 class="anchored" data-anchor-id="solution">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_indexed_chars(items):</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> []</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> item <span class="kw">in</span> items:</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>        left, word <span class="op">=</span> item.split(<span class="st">":"</span>, <span class="dv">1</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>        idx <span class="op">=</span> <span class="bu">int</span>(left)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="dv">0</span> <span class="op">&lt;=</span> idx <span class="op">&lt;</span> <span class="bu">len</span>(word):</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>            result.append(word[idx])</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>            result.append(<span class="st">"?"</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">""</span>.join(result)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(extract_indexed_chars([<span class="st">"0:hello"</span>, <span class="st">"2:world"</span>, <span class="st">"5:hi"</span>]))</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># "hr?"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li>splitting strings;</li>
+<li>converting string to integer;</li>
+<li>checking index bounds;</li>
+<li>joining a list of characters.</li>
+</ul>
+</section>
+</section>
+<section id="a2.-most-common-letter-type" class="level3">
+<h3 class="anchored" data-anchor-id="a2.-most-common-letter-type">A2. Most common letter type</h3>
+<p>Given a lowercase string, find:</p>
+<ul>
+<li>the highest frequency of any vowel;</li>
+<li>the highest frequency of any consonant.</li>
+</ul>
+<p>Return the sum of those two frequencies. If one group is missing, count it as <code>0</code>.</p>
+<p>Example:</p>
+<pre class="text"><code>Input:  "success"
+Output: 4</code></pre>
+<p>Explanation:</p>
+<ul>
+<li>vowels: <code>u</code> appears 1 time, <code>e</code> appears 1 time → max vowel frequency = 1</li>
+<li>consonants: <code>s</code> appears 3 times, <code>c</code> appears 2 times → max consonant frequency = 3</li>
+<li>answer = 1 + 3 = 4</li>
+</ul>
+<section id="solution-1" class="level4">
+<h4 class="anchored" data-anchor-id="solution-1">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> max_vowel_plus_consonant(s):</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    vowels <span class="op">=</span> <span class="bu">set</span>(<span class="st">"aeiou"</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    freq <span class="op">=</span> Counter(s)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    max_vowel <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    max_consonant <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> ch, count <span class="kw">in</span> freq.items():</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> ch <span class="kw">in</span> vowels:</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>            max_vowel <span class="op">=</span> <span class="bu">max</span>(max_vowel, count)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>            max_consonant <span class="op">=</span> <span class="bu">max</span>(max_consonant, count)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> max_vowel <span class="op">+</span> max_consonant</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(max_vowel_plus_consonant(<span class="st">"success"</span>))</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li><code>Counter</code>;</li>
+<li>dictionary-style looping;</li>
+<li>separating values by condition;</li>
+<li>tracking maximum values.</li>
+</ul>
+</section>
+</section>
+<section id="a3.-row-totals-after-movement" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-row-totals-after-movement">A3. Row totals after movement</h3>
+<p>You are given a matrix. For each row, start at column <code>0</code> and move to the right until the end of the row. Add all values in that row and return the list of row sums.</p>
+<p>Example:</p>
+<pre class="text"><code>Input:
+[
+  [1, 2, 3],
+  [4, 5, 6]
+]
+
+Output: [6, 15]</code></pre>
+<section id="solution-2" class="level4">
+<h4 class="anchored" data-anchor-id="solution-2">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> row_sums(matrix):</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> []</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> row <span class="kw">in</span> matrix:</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>        total <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> value <span class="kw">in</span> row:</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>            total <span class="op">+=</span> value</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>        result.append(total)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(row_sums([[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]]))</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="co"># [6, 15]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li>nested loops;</li>
+<li>list-of-lists;</li>
+<li>accumulating totals.</li>
+</ul>
+<p>A shorter Python version is:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> row_sums(matrix):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [<span class="bu">sum</span>(row) <span class="cf">for</span> row <span class="kw">in</span> matrix]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>But in an assessment, the longer version can be easier to reason about when problems become more complex.</p>
+</section>
+</section>
+<section id="a4.-process-addremove-queries" class="level3">
+<h3 class="anchored" data-anchor-id="a4.-process-addremove-queries">A4. Process add/remove queries</h3>
+<p>You are given a list of queries.</p>
+<p>Each query is one of:</p>
+<ul>
+<li><code>"+x"</code>: add number <code>x</code>;</li>
+<li><code>"-x"</code>: remove one occurrence of number <code>x</code> if it exists.</li>
+</ul>
+<p>After each query, return the number of unique values currently stored.</p>
+<p>Example:</p>
+<pre class="text"><code>queries = ["+1", "+2", "+1", "-1"]
+Output: [1, 2, 2, 2]</code></pre>
+<p>Explanation:</p>
+<pre class="text"><code>+1 → [1]        unique count = 1
++2 → [1, 2]     unique count = 2
++1 → [1, 2, 1]  unique count = 2
+-1 → [2, 1]     unique count = 2</code></pre>
+<section id="solution-3" class="level4">
+<h4 class="anchored" data-anchor-id="solution-3">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> unique_counts_after_queries(queries):</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    freq <span class="op">=</span> Counter()</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> []</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> q <span class="kw">in</span> queries:</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>        op <span class="op">=</span> q[<span class="dv">0</span>]</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>        value <span class="op">=</span> <span class="bu">int</span>(q[<span class="dv">1</span>:])</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"+"</span>:</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>            freq[value] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> freq[value] <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>                freq[value] <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> freq[value] <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>                    <span class="kw">del</span> freq[value]</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>        result.append(<span class="bu">len</span>(freq))</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(unique_counts_after_queries([<span class="st">"+1"</span>, <span class="st">"+2"</span>, <span class="st">"+1"</span>, <span class="st">"-1"</span>]))</span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a><span class="co"># [1, 2, 2, 2]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li>parsing query strings;</li>
+<li>using <code>Counter</code>;</li>
+<li>updating state over time;</li>
+<li>deleting keys when counts reach zero.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="practice-set-b" class="level2">
+<h2 class="anchored" data-anchor-id="practice-set-b">9. Practice Set B</h2>
+<p>This second set uses similar skills but changes the problem wording.</p>
+<section id="b1.-clean-and-reverse-words" class="level3">
+<h3 class="anchored" data-anchor-id="b1.-clean-and-reverse-words">B1. Clean and reverse words</h3>
+<p>Given a sentence, split it into words and return the words in reverse order as one string.</p>
+<p>Example:</p>
+<pre class="text"><code>Input:  "data energy climate"
+Output: "climate energy data"</code></pre>
+<section id="solution-4" class="level4">
+<h4 class="anchored" data-anchor-id="solution-4">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reverse_words(sentence):</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    words <span class="op">=</span> sentence.split()</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    words.reverse()</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">" "</span>.join(words)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(reverse_words(<span class="st">"data energy climate"</span>))</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># "climate energy data"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li><code>split</code>;</li>
+<li>list reversal;</li>
+<li><code>join</code>.</li>
+</ul>
+</section>
+</section>
+<section id="b2.-first-repeated-number" class="level3">
+<h3 class="anchored" data-anchor-id="b2.-first-repeated-number">B2. First repeated number</h3>
+<p>Given a list of integers, return the first number that appears twice. If no number repeats, return <code>None</code>.</p>
+<p>Example:</p>
+<pre class="text"><code>Input:  [4, 2, 7, 2, 4]
+Output: 2</code></pre>
+<section id="solution-5" class="level4">
+<h4 class="anchored" data-anchor-id="solution-5">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> first_repeated(nums):</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    seen <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> num <span class="kw">in</span> nums:</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> num <span class="kw">in</span> seen:</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> num</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>        seen.add(num)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(first_repeated([<span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">4</span>]))</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li>sets;</li>
+<li>membership checking;</li>
+<li>early return.</li>
+</ul>
+</section>
+</section>
+<section id="b3.-count-values-above-row-average" class="level3">
+<h3 class="anchored" data-anchor-id="b3.-count-values-above-row-average">B3. Count values above row average</h3>
+<p>Given a matrix, return a list where each value is the number of elements in that row greater than the row average.</p>
+<p>Example:</p>
+<pre class="text"><code>Input:
+[
+  [1, 2, 6],
+  [4, 4, 4],
+  [10, 1, 1]
+]
+
+Output: [1, 0, 1]</code></pre>
+<section id="solution-6" class="level4">
+<h4 class="anchored" data-anchor-id="solution-6">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_above_row_average(matrix):</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> []</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> row <span class="kw">in</span> matrix:</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>        avg <span class="op">=</span> <span class="bu">sum</span>(row) <span class="op">/</span> <span class="bu">len</span>(row)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> value <span class="kw">in</span> row:</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> value <span class="op">&gt;</span> avg:</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>                count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>        result.append(count)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>matrix <span class="op">=</span> [</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">6</span>],</span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>    [<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">4</span>],</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>    [<span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">1</span>]</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(count_above_row_average(matrix))</span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a><span class="co"># [1, 0, 1]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li>matrix traversal;</li>
+<li>average calculation;</li>
+<li>conditions inside loops.</li>
+</ul>
+</section>
+</section>
+<section id="b4.-running-stock-count" class="level3">
+<h3 class="anchored" data-anchor-id="b4.-running-stock-count">B4. Running stock count</h3>
+<p>You manage a small inventory. Each query is:</p>
+<ul>
+<li><code>"add:item"</code> — add one item;</li>
+<li><code>"sell:item"</code> — sell one item if available.</li>
+</ul>
+<p>After each query, return the total number of items currently in inventory.</p>
+<p>Example:</p>
+<pre class="text"><code>queries = ["add:book", "add:pen", "add:book", "sell:book"]
+Output: [1, 2, 3, 2]</code></pre>
+<section id="solution-7" class="level4">
+<h4 class="anchored" data-anchor-id="solution-7">Solution</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inventory_total_after_queries(queries):</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    inventory <span class="op">=</span> Counter()</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> []</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> q <span class="kw">in</span> queries:</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>        op, item <span class="op">=</span> q.split(<span class="st">":"</span>, <span class="dv">1</span>)</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> op <span class="op">==</span> <span class="st">"add"</span>:</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>            inventory[item] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>            total <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> inventory[item] <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>                inventory[item] <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>                total <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> inventory[item] <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>                    <span class="kw">del</span> inventory[item]</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>        result.append(total)</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>queries <span class="op">=</span> [<span class="st">"add:book"</span>, <span class="st">"add:pen"</span>, <span class="st">"add:book"</span>, <span class="st">"sell:book"</span>]</span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inventory_total_after_queries(queries))</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a><span class="co"># [1, 2, 3, 2]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What this tests:</p>
+<ul>
+<li>string parsing;</li>
+<li>dictionary state;</li>
+<li>running totals;</li>
+<li>safe removal.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="how-to-review-your-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-review-your-solutions">10. How to review your solutions</h2>
+<p>After solving a problem, do not only ask whether the answer matches one example.</p>
+<p>Check these:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Review question</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Does it handle empty input?</td>
+<td>Many tests include edge cases</td>
+</tr>
+<tr class="even">
+<td>Does it handle repeated values?</td>
+<td>Counting problems often depend on this</td>
+</tr>
+<tr class="odd">
+<td>Does it handle missing values?</td>
+<td>Query problems often include removals that may not exist</td>
+</tr>
+<tr class="even">
+<td>Can I explain the logic?</td>
+<td>Interviewers may ask you to walk through your thinking</td>
+</tr>
+<tr class="odd">
+<td>Is the code readable?</td>
+<td>Simple correct code is better than clever broken code</td>
+</tr>
+</tbody>
+</table>
+<p>A simple preparation rule:</p>
+<blockquote class="blockquote">
+<p><strong>First make it correct. Then make it cleaner. Only optimize if the problem size requires it.</strong></p>
+</blockquote>
+</section>
+<section id="final-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="final-takeaways">11. Final takeaways</h2>
+<p>A general coding assessment does not always require advanced algorithms first.</p>
+<p>For many entry-level or general assessments, a large part of the challenge is being fluent with:</p>
+<ul>
+<li>strings;</li>
+<li>lists;</li>
+<li>dictionaries;</li>
+<li>sets;</li>
+<li>loops;</li>
+<li>simple matrix logic;</li>
+<li>edge cases;</li>
+<li>clean step-by-step implementation.</li>
+</ul>
+<p>AI can be useful for learning and reviewing afterward. But if the assessment does not allow AI, you need enough independent fluency to solve small problems on your own.</p>
+<p>That fluency comes from focused practice, not from memorizing hundreds of solutions.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="../../article-counts.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/paingheinsoe\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Paing Hein Soe</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/">
+<p>LinkedIn</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/paingheinsoe">
+<p>GitHub</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
