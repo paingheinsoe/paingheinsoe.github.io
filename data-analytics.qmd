@@ -3,7 +3,7 @@ title: "Data Analytics"
 description: "Articles related to data preparation, analysis, visualization, and analytical tools."
 toc: false
 page-layout: full
-body-classes: inner-page
+body-classes: "inner-page topic-page"
 
 listing:
   contents:

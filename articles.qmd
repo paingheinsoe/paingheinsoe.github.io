@@ -1,16 +1,18 @@
 ---
-title: "All Articles"
-description: "Articles and learning resources across energy, climate, AI, data analytics, programming, and technology."
+title: "Learning Hub"
+description: "Practical notes, guides, workflows, and technical explorations across energy, data analytics, applied AI, programming, and related topics."
 toc: false
 page-layout: full
-body-classes: inner-page
+body-classes: learning-hub-page
 
 listing:
+  id: all-articles
   contents:
     - articles/**/*.qmd
   sort: "date desc"
   type: grid
   grid-columns: 3
+  page-size: 9
   fields:
     - image
     - title
@@ -20,36 +22,42 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: true
-  page-size: 9
-  image-height: 180px
 ---
 
-Browse the latest articles below. You can also use the search box or visit the topic pages to find articles in a specific area.
+I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.
 
-<p class="article-count-summary">
-  <strong><span id="article-total-count">0</span> articles</strong> currently available
-</p>
+:::: {#learning-hub-summary .learning-hub-summary aria-live="polite"}
 
-<nav class="article-topic-links" aria-label="Article topic links">
-  <a href="energy-climate.qmd">
-    Energy & Climate (<span data-category-count="Energy & Climate">0</span>)
-  </a>
+::: {.learning-hub-total}
+<span id="article-total" class="count-number">—</span>
+<span class="count-label">Notes & guides</span>
+:::
 
-  <span aria-hidden="true">·</span>
+::: {.learning-hub-categories}
 
-  <a href="ai-agents.qmd">
-    AI & Agents (<span data-category-count="AI & Agents">0</span>)
-  </a>
+::: {.learning-hub-category}
+[Energy & Climate](energy-climate.qmd)
+<span id="count-energy-climate" class="category-count">—</span>
+:::
 
-  <span aria-hidden="true">·</span>
+::: {.learning-hub-category}
+[AI & Agents](ai-agents.qmd)
+<span id="count-ai-agents" class="category-count">—</span>
+:::
 
-  <a href="data-analytics.qmd">
-    Data Analytics (<span data-category-count="Data Analytics">0</span>)
-  </a>
+::: {.learning-hub-category}
+[Data Analytics](data-analytics.qmd)
+<span id="count-data-analytics" class="category-count">—</span>
+:::
 
-  <span aria-hidden="true">·</span>
+::: {.learning-hub-category}
+[Programming & Technology](programming-technology.qmd)
+<span id="count-programming-technology" class="category-count">—</span>
+:::
 
-  <a href="programming-technology.qmd">
-    Programming & Technology (<span data-category-count="Programming & Technology">0</span>)
-  </a>
-</nav>
+:::
+
+::::
+
+::: {#all-articles}
+:::

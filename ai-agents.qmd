@@ -3,7 +3,7 @@ title: "AI & Agents"
 description: "Articles related to artificial intelligence, machine learning, AI tools, and agents."
 toc: false
 page-layout: full
-body-classes: inner-page
+body-classes: "inner-page topic-page"
 
 listing:
   contents:

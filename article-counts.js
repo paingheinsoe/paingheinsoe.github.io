@@ -1,58 +1,84 @@
-function updateArticleCounts() {
-  const articleCards = Array.from(
-    document.querySelectorAll(".quarto-grid-item")
-  );
-
-  if (articleCards.length === 0) {
-    return false;
+(() => {
+  function normalize(text) {
+    return (text || "").replace(/\s+/g, " ").trim();
   }
 
-  const categoryCounts = {};
+  function getListingItems(listing) {
+    if (!listing) return [];
 
-  articleCards.forEach((card) => {
-    const categories = card.querySelectorAll(".listing-category");
+    let items = Array.from(listing.querySelectorAll(".quarto-grid-item"));
+    if (items.length) return items;
 
-    categories.forEach((category) => {
-      const categoryName = category.textContent.trim();
+    items = Array.from(listing.querySelectorAll(".quarto-post"));
+    if (items.length) return items;
 
-      if (categoryName) {
-        categoryCounts[categoryName] =
-          (categoryCounts[categoryName] || 0) + 1;
+    items = Array.from(
+      listing.querySelectorAll(":scope > .grid > .card, :scope .card")
+    );
+
+    return items;
+  }
+
+  function updateCounts() {
+    const summary = document.getElementById("learning-hub-summary");
+    if (!summary) return;
+
+    const listing =
+      document.getElementById("listing-all-articles") ||
+      document.querySelector("#all-articles .quarto-listing") ||
+      document.querySelector(".quarto-listing");
+
+    const items = getListingItems(listing);
+    if (!items.length) return;
+
+    const counts = {
+      "Energy & Climate": 0,
+      "AI & Agents": 0,
+      "Data Analytics": 0,
+      "Programming & Technology": 0
+    };
+
+    items.forEach((item) => {
+      const categoryNodes = item.querySelectorAll(
+        ".listing-category, .quarto-category, .category"
+      );
+
+      categoryNodes.forEach((node) => {
+        const category = normalize(node.textContent);
+
+        if (Object.prototype.hasOwnProperty.call(counts, category)) {
+          counts[category] += 1;
+        }
+      });
+    });
+
+    const totalEl = document.getElementById("article-total");
+
+    if (totalEl) {
+      totalEl.textContent = String(items.length);
+    }
+
+    const map = {
+      "Energy & Climate": "count-energy-climate",
+      "AI & Agents": "count-ai-agents",
+      "Data Analytics": "count-data-analytics",
+      "Programming & Technology": "count-programming-technology"
+    };
+
+    Object.entries(map).forEach(([category, id]) => {
+      const el = document.getElementById(id);
+
+      if (el) {
+        el.textContent = String(counts[category] || 0);
       }
     });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateCounts();
+
+    // Quarto listings may finish rendering just after DOMContentLoaded.
+    window.setTimeout(updateCounts, 150);
+    window.setTimeout(updateCounts, 500);
   });
-
-  const totalElement = document.getElementById("article-total-count");
-
-  if (totalElement) {
-    totalElement.textContent = String(articleCards.length);
-  }
-
-  document
-    .querySelectorAll("[data-category-count]")
-    .forEach((element) => {
-      const categoryName = element.dataset.categoryCount;
-
-      element.textContent = String(
-        categoryCounts[categoryName] || 0
-      );
-    });
-
-  return true;
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (updateArticleCounts()) {
-    return;
-  }
-
-  let attempts = 0;
-
-  const interval = window.setInterval(() => {
-    attempts += 1;
-
-    if (updateArticleCounts() || attempts >= 20) {
-      window.clearInterval(interval);
-    }
-  }, 150);
-});
+})();

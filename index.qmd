@@ -4,7 +4,6 @@ toc: false
 page-layout: full
 body-classes: home-page
 
-
 listing:
   - id: recent-articles
     contents:
@@ -23,150 +22,142 @@ listing:
     sort-ui: false
     filter-ui: false
 ---
-::: {.welcome-section}
 
-::: {.welcome-inner .welcome-inner-text-only}
+::: {.home-hero}
 
-<p class="welcome-label">WELCOME TO</p>
+::: {.hero-main}
 
-# Portfolio & Learning Hub
+<span class="eyebrow">Portfolio & Learning Hub</span>
 
-Thank you for visiting my website.
+# Paing Hein Soe
 
-This site brings together two areas:
+<div class="profile-line">M.S. Graduate in Energy Systems · Northeastern University · United States</div>
 
-- **My Portfolio**, where I share my background, experience, selected projects, and research work;
-- **Learning Hub**, where I share articles on energy and climate, AI and agents, data analytics, programming, and technology.
+I built this site as two connected spaces. The portfolio brings together selected academic and professional work. The Learning Hub is where I share practical articles, guides, and examples that I hope are useful to people working through similar topics.
 
-I prepare each article with clear explanations and an organized workflow so it is easier to read and follow.
+::: {.hero-actions}
 
-Comments, corrections, and suggestions are welcome.
+[View Portfolio](portfolio.qmd){.button-primary}
 
-::: {.welcome-actions}
-
-[Visit My Portfolio](portfolio.qmd){.button-primary}
-
-[Browse Articles](articles.qmd){.button-outline}
-
-:::
-
-::: {.welcome-topics}
-
-[Energy & Climate](energy-climate.qmd)
-
-[AI & Agents](ai-agents.qmd)
-
-[Data Analytics](data-analytics.qmd)
-
-[Programming & Technology](programming-technology.qmd)
+[Visit Learning Hub](articles.qmd){.text-action}
 
 :::
 
 :::
 
+::: {.current-building}
+
+<span class="featured-label">Currently Building</span>
+
+### New site, actively developing
+
+This site is newly developed and I am actively refining it. More projects, practical notes, and useful resources are being prepared and will be added soon as the site grows.
+
+<div class="featured-rule"></div>
+
+**Thematic Areas**
+
+- Energy Systems & Economics
+- Data Analytics & Insights
+- Applied AI Workflows
+- Programming & Technology
+
+<div class="site-note">Site note · 1st August 2026</div>
+
 :::
 
-::: {.home-section .recent-section}
+:::
 
-<p class="section-label">RECENT ARTICLES</p>
+::: {.home-section .recent-writing}
 
-## Latest Articles Shared for Your Guidance
+::: {.section-heading}
+
+<span class="section-label">Learning Hub</span>
+
+## Recent notes & guides
+
+I enjoy turning useful ideas, tools, and workflows into clear articles and guides. The aim is to make them practical, easy to follow, and useful to others — especially when a topic took some time to understand or apply.
+
+:::
 
 ::: {#recent-articles}
 :::
 
-[View All Articles](articles.qmd){.section-link}
+[See all notes & guides](articles.qmd){.section-link}
 
 :::
 
-::: {#topics .home-section .topics-section}
+::: {.home-section .topics-section}
 
-<p class="section-label">ARTICLE TOPICS</p>
+::: {.section-heading}
 
-## Explore Articles by Topic Areas
+<span class="section-label">Topics</span>
 
-::: {.topic-grid}
+## Explore the Learning Hub
 
-::: {.topic-card}
+:::
+
+::: {.topic-list}
+
+::: {.topic-item}
 
 ### Energy & Climate
 
-Articles and learning notes related to energy systems, renewable energy, electricity markets, climate, and energy transition.
+Energy systems, renewable energy, electricity markets, climate risk, and the energy transition.
 
-[View Articles](energy-climate.qmd){.card-link}
+[Explore](energy-climate.qmd){.card-link}
 
 :::
 
-::: {.topic-card}
+::: {.topic-item}
 
 ### AI & Agents
 
-Articles about artificial intelligence, machine learning, AI tools, agents, and useful AI workflows.
+Artificial intelligence, machine learning, agents, AI tools, and applied workflows.
 
-[View Articles](ai-agents.qmd){.card-link}
+[Explore](ai-agents.qmd){.card-link}
 
 :::
 
-::: {.topic-card}
+::: {.topic-item}
 
 ### Data Analytics
 
-Articles about data preparation, analysis, visualization, Power BI, statistics, and data-supported decisions.
+Data preparation, analysis, visualization, Power BI, statistics, and decision-support workflows.
 
-[View Articles](data-analytics.qmd){.card-link}
+[Explore](data-analytics.qmd){.card-link}
 
 :::
 
-::: {.topic-card}
+::: {.topic-item}
 
 ### Programming & Technology
 
-Practical articles related to Quarto, Git, GitHub, Python, software tools, and technology workflows.
+Quarto, Git, GitHub, Python, software tools, and practical technical workflows.
 
-[View Articles](programming-technology.qmd){.card-link}
-
-:::
+[Explore](programming-technology.qmd){.card-link}
 
 :::
 
 :::
 
-::: {.about-hub-section}
+:::
 
-::: {.section-inner}
+::: {.home-about}
 
-<p class="section-label">ABOUT THIS LEARNING HUB</p>
+::: {.about-heading}
 
-## Clear, Organized, and Easy to Follow
+<span class="section-label">About the site</span>
 
-The purpose of this learning hub is to share useful articles in a clean and understandable format.
-
-Whenever possible, each article will include:
-
-- a clear explanation of the topic;
-- an organized step-by-step workflow;
-- practical examples or applications;
-- notes about common questions and possible difficulties.
-
-The hub will continue to grow gradually as I learn, work on new topics, and prepare useful materials to share.
-
-Comments, corrections, and suggestions are welcome.
+## Portfolio & Learning Hub
 
 :::
 
-:::
+::: {.about-copy}
 
-::: {.portfolio-section}
+The portfolio presents selected academic and professional work. The Learning Hub is where I share practical articles, guides, and useful technical notes for readers who may be exploring similar topics.
 
-::: {.section-inner}
-
-<p class="section-label">MY PORTFOLIO</p>
-
-## Background, Experience, and Selected Work
-
-My portfolio presents my education, professional experience, technical skills, publications, and selected projects in energy systems, engineering, data analytics, and research.
-
-[Visit My Portfolio](portfolio.qmd){.button-dark}
+[About this site](about.qmd){.text-action} &nbsp;&nbsp; [View Portfolio](portfolio.qmd){.text-action} &nbsp;&nbsp; [View Learning Hub](articles.qmd){.text-action}
 
 :::
 

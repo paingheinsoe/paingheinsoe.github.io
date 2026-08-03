@@ -5,7 +5,7 @@ title: "Programming & Technology"
 description: "Articles related to programming, software tools, Quarto, Git, GitHub, and technology workflows."
 toc: false
 page-layout: full
-body-classes: inner-page
+body-classes: "inner-page topic-page"
 
 listing:
   contents:
