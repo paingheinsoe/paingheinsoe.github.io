@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Articles and learning resources across energy, climate, AI, data analytics, programming, and technology.">
+<meta name="description" content="Practical notes, guides, workflows, and technical explorations across energy, data analytics, applied AI, programming, and related topics.">
 
-<title>All Articles – Paing Hein Soe</title>
+<title>Learning Hub – Paing Hein Soe</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-all-articles .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-all-articles'] = new List('listing-all-articles', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -140,7 +140,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed inner-page quarto-light">
+<body class="nav-fixed learning-hub-page quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -225,12 +225,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">All Articles</h1>
+<h1 class="title">Learning Hub</h1>
 </div>
 
 <div>
   <div class="description">
-    Articles and learning resources across energy, climate, AI, data analytics, programming, and technology.
+    Practical notes, guides, workflows, and technical explorations across energy, data analytics, applied AI, programming, and related topics.
   </div>
 </div>
 
@@ -247,24 +247,27 @@ window.Quarto = {
 </header>
 
 
-<p>Browse the latest articles below. You can also use the search box or visit the topic pages to find articles in a specific area.</p>
-<p class="article-count-summary">
-<strong><span id="article-total-count">0</span> articles</strong> currently available
-</p>
-<nav class="article-topic-links" aria-label="Article topic links">
-<p><a href="./energy-climate.html"> Energy &amp; Climate (<span data-category-count="Energy &amp; Climate">0</span>) </a></p>
-<p><span aria-hidden="true">·</span></p>
-<p><a href="./ai-agents.html"> AI &amp; Agents (<span data-category-count="AI &amp; Agents">0</span>) </a></p>
-<p><span aria-hidden="true">·</span></p>
-<p><a href="./data-analytics.html"> Data Analytics (<span data-category-count="Data Analytics">0</span>) </a></p>
-<p><span aria-hidden="true">·</span></p>
-<a href="./programming-technology.html"> Programming &amp; Technology (<span data-category-count="Programming &amp; Technology">0</span>) </a>
-</nav>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<p>I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.</p>
+<div id="learning-hub-summary" class="learning-hub-summary" aria-live="polite">
+<div class="learning-hub-total">
+<p><span id="article-total" class="count-number">—</span> <span class="count-label">Notes &amp; guides</span></p>
+</div>
+<div class="learning-hub-categories">
+<div class="learning-hub-category">
+<p><a href="./energy-climate.html">Energy &amp; Climate</a> <span id="count-energy-climate" class="category-count">—</span></p>
+</div>
+<div class="learning-hub-category">
+<p><a href="./ai-agents.html">AI &amp; Agents</a> <span id="count-ai-agents" class="category-count">—</span></p>
+</div>
+<div class="learning-hub-category">
+<p><a href="./data-analytics.html">Data Analytics</a> <span id="count-data-analytics" class="category-count">—</span></p>
+</div>
+<div class="learning-hub-category">
+<p><a href="./programming-technology.html">Programming &amp; Technology</a> <span id="count-programming-technology" class="category-count">—</span></p>
+</div>
+</div>
+</div>
+<div id="listing-all-articles" class="quarto-listing quarto-listing-container-grid">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
@@ -276,7 +279,7 @@ window.Quarto = {
 <a href="./articles/programming-technology/from-quarto-to-github-pages.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/article-covers/from-quarto-to-github-pages.png" class="thumbnail-image card-img" style="height: 180px;">
+<img loading="lazy" src="./images/article-covers/from-quarto-to-github-pages.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -302,7 +305,7 @@ Aug 1, 2026
 <a href="./articles/programming-technology/preparing-for-general-coding-assessment.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/article-covers/general-coding-assessment-prep.png" class="thumbnail-image card-img" style="height: 180px;">
+<img loading="lazy" src="./images/article-covers/general-coding-assessment-prep.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -328,7 +331,7 @@ Aug 1, 2026
 <a href="./articles/programming-technology/getting-started-with-quarto.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/article-covers/getting-started-with-quarto.png" class="thumbnail-image card-img" style="height: 180px;">
+<img loading="lazy" src="./images/article-covers/getting-started-with-quarto.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -354,7 +357,7 @@ Jul 28, 2026
 <a href="./articles/ai-agents/sample-ai-agents.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/article-covers/sample-ai-agents.png" class="thumbnail-image card-img" style="height: 180px;">
+<img loading="lazy" src="./images/article-covers/sample-ai-agents.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -380,7 +383,7 @@ Jul 27, 2026
 <a href="./articles/energy-climate/sample-energy-climate.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/article-covers/sample-energy-climate.png" class="thumbnail-image card-img" style="height: 180px;">
+<img loading="lazy" src="./images/article-covers/sample-energy-climate.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -406,7 +409,7 @@ Jul 26, 2026
 <a href="./articles/data-analytics/sample-data-analytics.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/article-covers/sample-data-analytics.png" class="thumbnail-image card-img" style="height: 180px;">
+<img loading="lazy" src="./images/article-covers/sample-data-analytics.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -430,7 +433,12 @@ Jul 25, 2026
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script src="./article-counts.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

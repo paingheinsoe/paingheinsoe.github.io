@@ -9,37 +9,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Portfolio & Learning Hub",
+    "title": "Paing Hein Soe",
     "section": "",
-    "text": "WELCOME TO\n\n\n\nThank you for visiting my website.\nThis site brings together two areas:\n\nMy Portfolio, where I share my background, experience, selected projects, and research work;\nLearning Hub, where I share articles on energy and climate, AI and agents, data analytics, programming, and technology.\n\nI prepare each article with clear explanations and an organized workflow so it is easier to read and follow.\nComments, corrections, and suggestions are welcome.\n\nVisit My Portfolio\nBrowse Articles\n\n\nEnergy & Climate\nAI & Agents\nData Analytics\nProgramming & Technology"
+    "text": "Portfolio & Learning Hub\n\n\n\nM.S. Graduate in Energy Systems · Northeastern University · United States\n\nI built this site as two connected spaces. The portfolio brings together selected academic and professional work. The Learning Hub is where I share practical articles, guides, and examples that I hope are useful to people working through similar topics.\n\nView Portfolio\nVisit Learning Hub\n\n\n\n\nCurrently Building\n\n\nThis site is newly developed and I am actively refining it. More projects, practical notes, and useful resources are being prepared and will be added soon as the site grows.\n\n\n\nThematic Areas\n\nEnergy Systems & Economics\nData Analytics & Insights\nApplied AI Workflows\nProgramming & Technology\n\n\nSite note · 1st August 2026"
   },
   {
-    "objectID": "index.html#latest-articles-shared-for-your-guidance",
-    "href": "index.html#latest-articles-shared-for-your-guidance",
-    "title": "Portfolio & Learning Hub",
-    "section": "Latest Articles Shared for Your Guidance",
-    "text": "Latest Articles Shared for Your Guidance\n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\nNo matching items\n\nView All Articles"
+    "objectID": "index.html#recent-notes-guides",
+    "href": "index.html#recent-notes-guides",
+    "title": "Paing Hein Soe",
+    "section": "Recent notes & guides",
+    "text": "Recent notes & guides\nI enjoy turning useful ideas, tools, and workflows into clear articles and guides. The aim is to make them practical, easy to follow, and useful to others — especially when a topic took some time to understand or apply."
   },
   {
-    "objectID": "index.html#explore-articles-by-topic-areas",
-    "href": "index.html#explore-articles-by-topic-areas",
-    "title": "Portfolio & Learning Hub",
-    "section": "Explore Articles by Topic Areas",
-    "text": "Explore Articles by Topic Areas\n\n\nEnergy & Climate\nArticles and learning notes related to energy systems, renewable energy, electricity markets, climate, and energy transition.\nView Articles\n\n\nAI & Agents\nArticles about artificial intelligence, machine learning, AI tools, agents, and useful AI workflows.\nView Articles\n\n\nData Analytics\nArticles about data preparation, analysis, visualization, Power BI, statistics, and data-supported decisions.\nView Articles\n\n\nProgramming & Technology\nPractical articles related to Quarto, Git, GitHub, Python, software tools, and technology workflows.\nView Articles"
+    "objectID": "index.html#explore-the-learning-hub",
+    "href": "index.html#explore-the-learning-hub",
+    "title": "Paing Hein Soe",
+    "section": "Explore the Learning Hub",
+    "text": "Explore the Learning Hub"
   },
   {
-    "objectID": "index.html#clear-organized-and-easy-to-follow",
-    "href": "index.html#clear-organized-and-easy-to-follow",
-    "title": "Portfolio & Learning Hub",
-    "section": "Clear, Organized, and Easy to Follow",
-    "text": "Clear, Organized, and Easy to Follow\nThe purpose of this learning hub is to share useful articles in a clean and understandable format.\nWhenever possible, each article will include:\n\na clear explanation of the topic;\nan organized step-by-step workflow;\npractical examples or applications;\nnotes about common questions and possible difficulties.\n\nThe hub will continue to grow gradually as I learn, work on new topics, and prepare useful materials to share.\nComments, corrections, and suggestions are welcome."
-  },
-  {
-    "objectID": "index.html#background-experience-and-selected-work",
-    "href": "index.html#background-experience-and-selected-work",
-    "title": "Portfolio & Learning Hub",
-    "section": "Background, Experience, and Selected Work",
-    "text": "Background, Experience, and Selected Work\nMy portfolio presents my education, professional experience, technical skills, publications, and selected projects in energy systems, engineering, data analytics, and research.\nVisit My Portfolio"
+    "objectID": "index.html#portfolio-learning-hub",
+    "href": "index.html#portfolio-learning-hub",
+    "title": "Paing Hein Soe",
+    "section": "Portfolio & Learning Hub",
+    "text": "Portfolio & Learning Hub"
   },
   {
     "objectID": "data-analytics.html",
@@ -186,14 +179,42 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\n\n\nThanks for stopping by. I built this website to bring together two things that matter to me: presenting my work clearly, and sharing useful knowledge with others."
+  },
+  {
+    "objectID": "about.html#a-portfolio-for-my-work.-a-learning-hub-for-useful-ideas.",
+    "href": "about.html#a-portfolio-for-my-work.-a-learning-hub-for-useful-ideas.",
+    "title": "About",
+    "section": "",
+    "text": "Thanks for stopping by. I built this website to bring together two things that matter to me: presenting my work clearly, and sharing useful knowledge with others."
+  },
+  {
+    "objectID": "about.html#energy-systems-analytics-and-applied-technology",
+    "href": "about.html#energy-systems-analytics-and-applied-technology",
+    "title": "About",
+    "section": "Energy systems, analytics, and applied technology",
+    "text": "Energy systems, analytics, and applied technology\nI recently completed an M.S. in Energy Systems at Northeastern University. My background is in mechanical and energy engineering, with experience across renewable energy, energy and climate data, research, analytics, and technical software work.\nMy interests often sit between disciplines — energy systems and economics, data analytics, and the growing use of AI in technical and analytical work. This site gives me one place to connect those areas without forcing everything into the format of a resume or a formal publication."
+  },
+  {
+    "objectID": "about.html#useful-when-it-is-clear-enough-to-use",
+    "href": "about.html#useful-when-it-is-clear-enough-to-use",
+    "title": "About",
+    "section": "Useful when it is clear enough to use",
+    "text": "Useful when it is clear enough to use\nI like sharing things that are practical and genuinely useful.\nSometimes an article starts with a project, a tool I had to learn, a coding problem, or an energy question. If I can turn what I learned into a clearer explanation, workflow, or example that may help someone else, I would rather share it than keep it in my own notes.\nThat is the main purpose of the Learning Hub."
+  },
+  {
+    "objectID": "about.html#ideas-feedback-and-collaboration-are-welcome",
+    "href": "about.html#ideas-feedback-and-collaboration-are-welcome",
+    "title": "About",
+    "section": "Ideas, feedback, and collaboration are welcome",
+    "text": "Ideas, feedback, and collaboration are welcome\nI am always happy to hear from people working in energy, analytics, research, technology, or related areas. Feel free to reach out about a project or research idea, a suggestion for the site, a correction to an article, collaboration, networking, or simply to exchange ideas."
   },
   {
     "objectID": "articles.html",
     "href": "articles.html",
-    "title": "All Articles",
+    "title": "Learning Hub",
     "section": "",
-    "text": "Browse the latest articles below. You can also use the search box or visit the topic pages to find articles in a specific area.\n\n0 articles currently available\n\n\n Energy & Climate (0) \n·\n AI & Agents (0) \n·\n Data Analytics (0) \n·\n Programming & Technology (0) \n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.\n\n\n— Notes & guides\n\n\n\nEnergy & Climate —\n\n\nAI & Agents —\n\n\nData Analytics —\n\n\nProgramming & Technology —\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "articles/data-analytics/sample-data-analytics.html",
