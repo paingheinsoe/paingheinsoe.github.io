@@ -1412,3 +1412,25 @@ footer.footer a {
   border-radius: 0.1px;
 }
 
+
+/* =========================================================
+   Mobile Navbar — do not keep header permanently pinned
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+  #quarto-header {
+    position: relative !important;
+    top: auto !important;
+  }
+
+  #quarto-header.headroom,
+  #quarto-header.headroom--top,
+  #quarto-header.headroom--not-top,
+  #quarto-header.headroom--pinned,
+  #quarto-header.headroom--unpinned {
+    position: relative !important;
+    transform: none !important;
+  }
+
+}
