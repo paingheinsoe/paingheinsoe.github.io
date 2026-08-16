@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Paing Hein Soe">
+<meta name="dcterms.date" content="2026-08-15">
+<meta name="description" content="How Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.">
+
+<title>From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border – Paing Hein Soe</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a936ae4e6a5e93c89dc0fa869f06dea4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Paing Hein Soe</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">My Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../articles.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../../energy-climate.html">
+ <span class="dropdown-text">Energy &amp; Climate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ai-agents.html">
+ <span class="dropdown-text">AI &amp; Agents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../data-analytics.html">
+ <span class="dropdown-text">Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../programming-technology.html">
+ <span class="dropdown-text">Programming &amp; Technology</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/paingheinsoe"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#the-bigger-picture-eu-ets-and-cbam-are-connected" id="toc-the-bigger-picture-eu-ets-and-cbam-are-connected" class="nav-link active" data-scroll-target="#the-bigger-picture-eu-ets-and-cbam-are-connected">1. The bigger picture: EU ETS and CBAM are connected</a></li>
+  <li><a href="#how-does-the-eu-ets-put-a-price-on-emissions" id="toc-how-does-the-eu-ets-put-a-price-on-emissions" class="nav-link" data-scroll-target="#how-does-the-eu-ets-put-a-price-on-emissions">2. How does the EU ETS put a price on emissions?</a></li>
+  <li><a href="#why-carbon-intensive-traded-products-matter" id="toc-why-carbon-intensive-traded-products-matter" class="nav-link" data-scroll-target="#why-carbon-intensive-traded-products-matter">3. Why carbon-intensive traded products matter</a></li>
+  <li><a href="#the-carbon-leakage-problem" id="toc-the-carbon-leakage-problem" class="nav-link" data-scroll-target="#the-carbon-leakage-problem">4. The carbon-leakage problem</a></li>
+  <li><a href="#the-first-response-free-allocation" id="toc-the-first-response-free-allocation" class="nav-link" data-scroll-target="#the-first-response-free-allocation">5. The first response: free allocation</a></li>
+  <li><a href="#what-does-an-ets-benchmark-actually-mean" id="toc-what-does-an-ets-benchmark-actually-mean" class="nav-link" data-scroll-target="#what-does-an-ets-benchmark-actually-mean">6. What does an ETS benchmark actually mean?</a></li>
+  <li><a href="#putting-the-benchmark-into-numbers-a-steel-example" id="toc-putting-the-benchmark-into-numbers-a-steel-example" class="nav-link" data-scroll-target="#putting-the-benchmark-into-numbers-a-steel-example">7. Putting the benchmark into numbers: a steel example</a></li>
+  <li><a href="#why-free-allocation-was-not-the-final-solution" id="toc-why-free-allocation-was-not-the-final-solution" class="nav-link" data-scroll-target="#why-free-allocation-was-not-the-final-solution">8. Why free allocation was not the final solution</a></li>
+  <li><a href="#cbam-brings-embedded-emissions-into-the-picture" id="toc-cbam-brings-embedded-emissions-into-the-picture" class="nav-link" data-scroll-target="#cbam-brings-embedded-emissions-into-the-picture">9. CBAM brings embedded emissions into the picture</a></li>
+  <li><a href="#what-sets-the-price-of-a-cbam-certificate" id="toc-what-sets-the-price-of-a-cbam-certificate" class="nav-link" data-scroll-target="#what-sets-the-price-of-a-cbam-certificate">10. What sets the price of a CBAM certificate?</a></li>
+  <li><a href="#what-if-carbon-has-already-been-priced-abroad" id="toc-what-if-carbon-has-already-been-priced-abroad" class="nav-link" data-scroll-target="#what-if-carbon-has-already-been-priced-abroad">11. What if carbon has already been priced abroad?</a></li>
+  <li><a href="#where-does-the-carbon-money-go" id="toc-where-does-the-carbon-money-go" class="nav-link" data-scroll-target="#where-does-the-carbon-money-go">12. Where does the carbon money go?</a></li>
+  <li><a href="#what-i-hope-you-take-away-from-this-article" id="toc-what-i-hope-you-take-away-from-this-article" class="nav-link" data-scroll-target="#what-i-hope-you-take-away-from-this-article">13. What I hope you take away from this article</a></li>
+  <li><a href="#sources-and-further-reading" id="toc-sources-and-further-reading" class="nav-link" data-scroll-target="#sources-and-further-reading">Sources and further reading</a></li>
+  <li><a href="#a-personal-note" id="toc-a-personal-note" class="nav-link" data-scroll-target="#a-personal-note">A personal note</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border</h1>
+<p class="subtitle lead">Carbon leakage, free allocation, benchmarks, and the logic behind CBAM</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Energy &amp; Climate</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    How Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Paing Hein Soe </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 15, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>CBAM is one of those policies that sounds simple at first: <em>put a carbon price on certain imports</em>. But once terms such as <strong>EUAs, carbon leakage, free allocation, benchmarks, embedded emissions, and CBAM certificates</strong> start appearing together, the picture can become surprisingly difficult to follow.</p>
+<p>When I started breaking CBAM down, I found that the clearest way to understand it was not to begin at the border. It was to follow the policy in the order it developed.</p>
+<p>Europe first created the <strong>EU Emissions Trading System (EU ETS)</strong> and put a price on emissions from major parts of its own economy. That raised a practical question:</p>
+<blockquote class="blockquote">
+<p><strong>What happens when a producer inside the EU pays for carbon, while a competing imported product does not face an equivalent carbon cost?</strong></p>
+</blockquote>
+<p>That question connects the main pieces of the story: <strong>carbon leakage, free allocation, industrial benchmarks, and finally the Carbon Border Adjustment Mechanism (CBAM)</strong>.</p>
+<p>I have organized the article in two parts. <strong>Part I</strong> explains why CBAM emerged. <strong>Part II</strong> then looks at how the mechanism works in practice and what it means for importers, exporters, carbon pricing, and industrial decarbonisation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>What I hope this article helps you understand</strong></p>
+<ul>
+<li>how the EU ETS creates a carbon price inside Europe;</li>
+<li>why carbon leakage became a concern for traded, emissions-intensive products;</li>
+<li>what free allocation and industrial benchmarks actually do;</li>
+<li>why CBAM was added instead of relying on free allocation indefinitely; and</li>
+<li>how embedded emissions, CBAM certificates, and carbon prices paid abroad fit together.</li>
+</ul>
+</div>
+</div>
+<p><strong>I use Figure 1 as a map of the whole story.</strong> Read it from left to right. The EU ETS prices emissions inside Europe. Differences in carbon costs create a leakage concern. CBAM then brings a comparable carbon-price signal to covered imports at the EU border.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/energy-climate/from-eu-ets-to-cbam/figure-1-eu-ets-cbam-overview.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Overview of the EU ETS inside the European Union, the carbon leakage concern, and CBAM applying to covered imports at the EU border."></p>
+</figure>
+</div>
+<hr>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Part I: Why CBAM emerged</strong></p>
+<p>Start with the EU ETS, then follow the problem it created for trade-exposed industries, the role of free allocation, and why a border mechanism was introduced.</p>
+</div>
+</div>
+<section id="the-bigger-picture-eu-ets-and-cbam-are-connected" class="level2">
+<h2 class="anchored" data-anchor-id="the-bigger-picture-eu-ets-and-cbam-are-connected">1. The bigger picture: EU ETS and CBAM are connected</h2>
+<p>The most important starting point is this:</p>
+<blockquote class="blockquote">
+<p><strong>CBAM did not replace the EU ETS. It was designed to complement it.</strong></p>
+</blockquote>
+<p>The two mechanisms operate at different points in the system.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>EU ETS</th>
+<th>CBAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Where?</strong></td>
+<td>Mainly within the European carbon market</td>
+<td>At the EU border for covered imports</td>
+</tr>
+<tr class="even">
+<td><strong>What is priced?</strong></td>
+<td>Emissions from covered installations and operators</td>
+<td>Embedded emissions in covered imported goods</td>
+</tr>
+<tr class="odd">
+<td><strong>Compliance instrument</strong></td>
+<td>EU Allowance (EUA)</td>
+<td>CBAM certificate</td>
+</tr>
+<tr class="even">
+<td><strong>Main legal instrument</strong></td>
+<td>Directive 2003/87/EC</td>
+<td>Regulation (EU) 2023/956</td>
+</tr>
+</tbody>
+</table>
+<p>The EU ETS Directive was adopted in <strong>2003</strong>, and the system began operating in <strong>2005</strong>. CBAM came much later. Its regulation was adopted in <strong>2023</strong>, followed by a transitional reporting period from October 2023 through the end of 2025 and the definitive regime from <strong>1 January 2026</strong>.</p>
+<p>That twenty-year gap is important. CBAM was not introduced as an isolated trade measure. It grew out of questions that became more important as Europe’s domestic carbon-pricing system matured.</p>
+<p><strong>I use Figure 2 as the historical map for the rest of Part I.</strong> It shows the sequence clearly: the EU first developed its domestic carbon market, strengthened it over time, and only later added CBAM as part of the wider climate-policy framework.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/energy-climate/from-eu-ets-to-cbam/figure-2-eu-ets-cbam-timeline.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Timeline showing major milestones from the EU ETS Directive in 2003 through the launch of the EU ETS, CBAM legislation, the definitive regime, and the first annual settlement."></p>
+</figure>
+</div>
+</section>
+<section id="how-does-the-eu-ets-put-a-price-on-emissions" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-the-eu-ets-put-a-price-on-emissions">2. How does the EU ETS put a price on emissions?</h2>
+<p>The EU ETS is a <strong>cap-and-trade system</strong>, not simply a carbon tax.</p>
+<p>I find it helpful to think about the basic mechanism in three steps:</p>
+<ol type="1">
+<li><strong>Set the cap:</strong> the EU limits the total emissions available to covered activities.</li>
+<li><strong>Create allowances:</strong> the cap is represented by tradable EU Allowances, or <strong>EUAs</strong>.</li>
+<li><strong>Meet the obligation:</strong> covered companies must use enough allowances to cover their verified emissions. In the legal language of the ETS, this final compliance step is called <strong>surrendering allowances</strong>.</li>
+</ol>
+<p>One EUA represents one tonne of carbon-dioxide equivalent:</p>
+<p><span class="math display">\[
+1\ \mathrm{EUA} = 1\ \mathrm{tCO_2e}
+\]</span></p>
+<p>So if an installation reports <strong>100,000 tCO₂e</strong> of verified emissions, it ultimately needs <strong>100,000 allowances</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Why does this create a carbon price?</strong></p>
+<p>Allowances are limited and tradable. If reducing one tonne of emissions costs less than obtaining the allowance needed for that tonne, reducing emissions can become financially attractive. Continuing to emit means continuing to manage the allowance cost.</p>
+</div>
+</div>
+<p>The cap also becomes tighter over time. Under the current framework, the EU ETS is intended to reduce emissions from covered sectors by <strong>62% by 2030 compared with 2005 levels</strong>.</p>
+<p>Today, the system covers electricity and heat generation, major industrial activities, aviation and maritime transport and accounts for roughly <strong>40% of total EU greenhouse-gas emissions</strong>.</p>
+<p>So the domestic logic is fairly intuitive. The EU limits total emissions, allowances become scarce, and trading gives those allowances a market price.</p>
+<p>The complication begins when firms subject to that carbon price compete in international markets.</p>
+</section>
+<section id="why-carbon-intensive-traded-products-matter" class="level2">
+<h2 class="anchored" data-anchor-id="why-carbon-intensive-traded-products-matter">3. Why carbon-intensive traded products matter</h2>
+<p>Carbon pricing does not affect every product equally.</p>
+<p>For industries such as <strong>steel, aluminium, and cement</strong>, emissions and energy use can be large enough that carbon pricing becomes a meaningful production cost. These products are also traded internationally at large scale.</p>
+<p>Two examples make that concrete:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Example</th>
+<th>Why carbon matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Primary steel</strong></td>
+<td>A 2023 JRC analysis estimated about <strong>2.28 tCO₂ per tonne of steel</strong> for the primary route under comparable analytical boundaries.</td>
+</tr>
+<tr class="even">
+<td><strong>Primary aluminium</strong></td>
+<td>The same JRC analysis used about <strong>14.79 MWh of electricity per tonne</strong> under its EU+EFTA modelling assumptions, in addition to carbon anodes used in the Hall–Héroult process.</td>
+</tr>
+</tbody>
+</table>
+<p>The aluminium example is especially useful because electricity supply can differ dramatically from one producing country to another. Two plants can make broadly the same product but have very different carbon intensities.</p>
+<p>That is where carbon policy begins to interact with <strong>international competitiveness</strong>.</p>
+</section>
+<section id="the-carbon-leakage-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-carbon-leakage-problem">4. The carbon-leakage problem</h2>
+<p>Imagine two producers selling similar steel into the same European market.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>EU producer</th>
+<th>Competing foreign producer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Produces inside the EU</td>
+<td>Produces outside the EU</td>
+</tr>
+<tr class="even">
+<td>Covered by the EU ETS</td>
+<td>May face a lower or no comparable carbon price</td>
+</tr>
+<tr class="odd">
+<td>Carbon enters production cost through the ETS</td>
+<td>Carbon cost may be lower</td>
+</tr>
+</tbody>
+</table>
+<p>The concern is not simply that the EU producer pays more.</p>
+<p>If that cost difference causes production or investment to move outside Europe, global demand for steel has not disappeared. The steel may simply be produced somewhere else. A similar effect can occur if EU production is replaced by more carbon-intensive imports.</p>
+<p>That is the basic idea of <strong>carbon leakage</strong>: emissions may shift rather than genuinely fall.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>One important qualification</strong></p>
+<p>Carbon leakage is not usually a number that can simply be observed in a database. Much of the analysis is <strong>counterfactual</strong>: researchers must estimate what production, trade, and emissions would have looked like under different policy conditions.</p>
+<p>For context, an OECD study covering <strong>14 manufacturing sectors and 49 countries</strong> estimated a median leakage rate of around <strong>3%</strong> and an average of around <strong>14%</strong>, with greater exposure in some emissions-intensive sectors. These are not a single “EU leakage rate”; they show that leakage risk can vary substantially by sector and economy.</p>
+</div>
+</div>
+<p>Trade volumes show why the issue can matter commercially. The JRC estimated that the EU27 imported around <strong>8.1 million tonnes of aluminium in 2019</strong>, supplied by a wide range of external producers.</p>
+<p>But CBAM was not the EU’s first response.</p>
+</section>
+<section id="the-first-response-free-allocation" class="level2">
+<h2 class="anchored" data-anchor-id="the-first-response-free-allocation">5. The first response: free allocation</h2>
+<p>The EU ETS has historically used <strong>free allocation</strong> to reduce some of the carbon-cost pressure on industries exposed to international competition.</p>
+<p>The easiest way to understand it is to separate what free allocation <strong>does</strong> from what it <strong>does not do</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Free allocation <strong>does</strong></th>
+<th>Free allocation <strong>does not</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Give an eligible installation some EUAs without an upfront purchase</td>
+<td>Remove the installation from the EU ETS</td>
+</tr>
+<tr class="even">
+<td>Reduce part of the plant’s out-of-pocket carbon-cost exposure</td>
+<td>Make the plant’s actual emissions disappear</td>
+</tr>
+<tr class="odd">
+<td>Help manage carbon-leakage risk</td>
+<td>Automatically cover every tonne the plant emits</td>
+</tr>
+</tbody>
+</table>
+<p>The installation still measures its emissions and must provide enough allowances to meet its annual compliance obligation.</p>
+<p>So the next question becomes more interesting:</p>
+<blockquote class="blockquote">
+<p><strong>If allowances are given free, how does the EU decide how many a plant should receive?</strong></p>
+</blockquote>
+<p>Simply giving a plant more free allowances because it emits more would weaken the incentive to become more efficient.</p>
+<p>That is why the system uses <strong>benchmarks</strong>.</p>
+</section>
+<section id="what-does-an-ets-benchmark-actually-mean" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-an-ets-benchmark-actually-mean">6. What does an ETS benchmark actually mean?</h2>
+<p>An ETS benchmark is a <strong>reference emissions-performance level used in calculating free allocation</strong>.</p>
+<p>It is not a legal emissions ceiling.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Common misunderstanding: benchmark ≠ emissions limit</strong></p>
+<p>A plant can emit above the benchmark. It simply still needs enough allowances to cover its actual emissions. The benchmark helps calculate free allocation; it does not define the maximum amount the plant is legally allowed to emit.</p>
+</div>
+</div>
+<p>Imagine three plants producing the same product:</p>
+<ul>
+<li>Plant A: <strong>1.1 tCO₂/t product</strong></li>
+<li>Plant B: <strong>1.5 tCO₂/t product</strong></li>
+<li>Plant C: <strong>1.9 tCO₂/t product</strong></li>
+</ul>
+<p>Instead of asking, <em>Which plant emits the most?</em>, the benchmark approach asks:</p>
+<blockquote class="blockquote">
+<p><strong>What emissions performance is already being achieved by the more efficient installations producing this product?</strong></p>
+</blockquote>
+<p>EU product benchmarks are developed using emissions-intensity performance from the <strong>10% most greenhouse-gas-efficient installations</strong> producing the relevant product.</p>
+<p>There is one technical refinement worth keeping in mind. The legally applicable benchmark for an allocation period is <strong>not necessarily numerically identical to the latest average of that top-performing 10%</strong>. Those performance data feed into a regulatory benchmark-update methodology that also applies prescribed reduction rules.</p>
+<p>For <strong>2026–2030</strong>, some current legal benchmark values are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>EU ETS product benchmark</th>
+<th style="text-align: right;">2026–2030 value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hot metal</td>
+<td style="text-align: right;"><strong>1.248 allowances/t</strong></td>
+</tr>
+<tr class="even">
+<td>Aluminium</td>
+<td style="text-align: right;"><strong>1.423 allowances/t</strong></td>
+</tr>
+<tr class="odd">
+<td>Grey cement clinker</td>
+<td style="text-align: right;"><strong>0.656 allowances/t</strong></td>
+</tr>
+<tr class="even">
+<td>EAF carbon steel</td>
+<td style="text-align: right;"><strong>0.142 allowances/t</strong></td>
+</tr>
+</tbody>
+</table>
+<p>These values should not be compared casually across products because process boundaries and the treatment of inputs such as electricity differ.</p>
+<p><strong>Figure 3 pulls three ideas together:</strong> the competitive problem, the benchmark concept, and an illustrative steel calculation. The middle panel is especially useful: it shows why the benchmark is a reference point rather than an emissions ceiling.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/energy-climate/from-eu-ets-to-cbam/figure-3-carbon-leakage-free-allocation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Illustration comparing an EU steel producer and a foreign producer, explaining carbon leakage, the EU ETS benchmark, and an illustrative steel free-allocation calculation."></p>
+</figure>
+</div>
+</section>
+<section id="putting-the-benchmark-into-numbers-a-steel-example" class="level2">
+<h2 class="anchored" data-anchor-id="putting-the-benchmark-into-numbers-a-steel-example">7. Putting the benchmark into numbers: a steel example</h2>
+<p>The benchmark becomes easier to understand when we put numbers around it.</p>
+<p>Consider an <strong>illustrative integrated steelworks</strong> producing hot metal. The plant is hypothetical, but the benchmark is the official <strong>2026–2030 hot-metal benchmark</strong>.</p>
+<section id="assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th style="text-align: right;">Illustrative value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Annual hot-metal production</td>
+<td style="text-align: right;"><strong>100,000 t</strong></td>
+</tr>
+<tr class="even">
+<td>Actual emissions intensity</td>
+<td style="text-align: right;"><strong>1.60 tCO₂/t</strong></td>
+</tr>
+<tr class="odd">
+<td>Hot-metal benchmark</td>
+<td style="text-align: right;"><strong>1.248 allowances/t</strong></td>
+</tr>
+<tr class="even">
+<td>2026 CBAM factor</td>
+<td style="text-align: right;"><strong>97.5%</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-1-actual-emissions" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-actual-emissions">Step 1: Actual emissions</h3>
+<p><span class="math display">\[
+100{,}000 \times 1.60
+=
+160{,}000\ \mathrm{tCO_2}
+\]</span></p>
+</section>
+<section id="step-2-illustrative-free-allocation" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-illustrative-free-allocation">Step 2: Illustrative free allocation</h3>
+<p>Ignoring other installation-specific adjustments:</p>
+<p><span class="math display">\[
+100{,}000 \times 1.248 \times 0.975
+\approx
+121{,}680\ \mathrm{free\ EUAs}
+\]</span></p>
+</section>
+<section id="step-3-remaining-allowance-requirement" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-remaining-allowance-requirement">Step 3: Remaining allowance requirement</h3>
+<p><span class="math display">\[
+160{,}000 - 121{,}680
+=
+38{,}320\ \mathrm{EUAs}
+\]</span></p>
+<p>The plant has therefore received substantial protection, but its carbon exposure has <strong>not disappeared</strong>.</p>
+<p>For scale, the published CBAM certificate price for <strong>Q2 2026 was €75.28/tCO₂</strong>. If an EUA were valued at approximately the same level purely for illustration, 38,320 allowances would correspond to roughly <strong>€2.9 million</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>What this example is showing</strong></p>
+<p>Free allocation can materially reduce carbon-cost exposure, but it does not turn the EU ETS into a zero-cost system for the plant.</p>
+<p>The example is for learning purposes only; real allocation calculations can involve additional regulatory and installation-specific factors.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="why-free-allocation-was-not-the-final-solution" class="level2">
+<h2 class="anchored" data-anchor-id="why-free-allocation-was-not-the-final-solution">8. Why free allocation was not the final solution</h2>
+<p>Free allocation helped with competitiveness, but it did not remove the underlying difference between EU production and imported production.</p>
+<p>The broad picture was still uneven:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>EU production</th>
+<th>Covered imports</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Faced an EU ETS carbon obligation, partly protected by free allocation</td>
+<td>Historically did not face an equivalent EU ETS obligation at the EU border</td>
+</tr>
+</tbody>
+</table>
+<p>There was also a policy tension: maintaining large amounts of free allocation indefinitely would weaken part of the carbon-price signal intended to encourage cleaner industrial production.</p>
+<p>This is the bridge to CBAM.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>As CBAM is phased in</th>
+<th>What changes?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Free allocation for CBAM sectors</td>
+<td><strong>Gradually decreases</strong></td>
+</tr>
+<tr class="even">
+<td>Carbon-price exposure for covered imports</td>
+<td><strong>Gradually increases</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Under the legislation currently in force, the CBAM factor declines from <strong>97.5% in 2026</strong>, to <strong>95% in 2027</strong>, <strong>90% in 2028</strong>, <strong>77.5% in 2029</strong>, and progressively further until no CBAM factor applies from <strong>2034</strong>.</p>
+<p>So this is not a sudden switch from one system to another. It is a gradual transition from <strong>protecting EU industry mainly through free allocation</strong> toward <strong>applying a more comparable carbon-price signal to covered domestic and imported production</strong>.</p>
+<hr>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Part II: How CBAM works in practice</strong></p>
+<p>Once the policy history is clear, the practical questions become easier: what emissions are counted, who is responsible, how certificates are priced, and what happens when carbon has already been priced abroad?</p>
+</div>
+</div>
+</section>
+<section id="cbam-brings-embedded-emissions-into-the-picture" class="level2">
+<h2 class="anchored" data-anchor-id="cbam-brings-embedded-emissions-into-the-picture">9. CBAM brings embedded emissions into the picture</h2>
+<p>CBAM was established by <strong>Regulation (EU) 2023/956</strong>.</p>
+<p>Its transitional period began on <strong>1 October 2023</strong>, when the main requirement was emissions reporting. The definitive regime began on <strong>1 January 2026</strong>.</p>
+<p>CBAM currently covers selected goods in six areas:</p>
+<p><strong>cement · iron and steel · aluminium · fertilisers · electricity · hydrogen</strong></p>
+<p>The key word is <strong>embedded</strong>.</p>
+<p>CBAM is concerned not only with how many tonnes of a product enter Europe, but with the greenhouse-gas emissions associated with producing those goods under the applicable CBAM methodology.</p>
+<p>The legal responsibility generally falls on the <strong>authorised CBAM declarant</strong>, usually the EU importer or, in some circumstances, an indirect customs representative.</p>
+<p>A simplified CBAM flow is:</p>
+<ol type="1">
+<li>a covered good enters the EU;</li>
+<li>its embedded emissions are determined;</li>
+<li>the EU carbon-price reference is applied;</li>
+<li>qualifying carbon prices already effectively paid abroad can be taken into account; and</li>
+<li>the authorised declarant ultimately submits the required CBAM certificates to settle the annual obligation.</li>
+</ol>
+<p><strong>I use Figure 4 to connect the policy to a real trade context.</strong> The upper section shows how exposed the EU aluminium market is to external suppliers. The lower section follows the CBAM process from import through to the final certificate-compliance step.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/energy-climate/from-eu-ets-to-cbam/figure-4-trade-exposure-cbam-flow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="EU aluminium import exposure followed by a simplified explanation of how CBAM determines embedded emissions, applies an EU carbon-price reference, recognises qualifying foreign carbon prices, and requires certificate submission for compliance."></p>
+</figure>
+</div>
+</section>
+<section id="what-sets-the-price-of-a-cbam-certificate" class="level2">
+<h2 class="anchored" data-anchor-id="what-sets-the-price-of-a-cbam-certificate">10. What sets the price of a CBAM certificate?</h2>
+<p>The certificate price is tied to the <strong>EU ETS carbon price</strong>.</p>
+<p>For 2026, the European Commission calculates a quarterly certificate price from EU ETS auction information:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quarter</th>
+<th style="text-align: right;">Published CBAM certificate price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Q1 2026</td>
+<td style="text-align: right;"><strong>€75.36/tCO₂</strong></td>
+</tr>
+<tr class="even">
+<td>Q2 2026</td>
+<td style="text-align: right;"><strong>€75.28/tCO₂</strong></td>
+</tr>
+</tbody>
+</table>
+<p>From 2027, the calculation moves to a weekly basis.</p>
+<p>The dates can be confusing because the <strong>definitive regime starts in 2026</strong>, while the first certificate purchase and annual compliance cycle follows later.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>2026 liability does not mean certificates are settled in 2026</strong></p>
+<ul>
+<li><strong>1 Jan 2026:</strong> the definitive CBAM regime applies to covered imports.</li>
+<li><strong>From Feb 2027:</strong> certificates corresponding to 2026 embedded emissions become available for purchase through the common central platform.</li>
+<li><strong>30 Sep 2027:</strong> the first annual CBAM declaration is due, and the required certificates for 2026 imports must be submitted for compliance under the current timetable.</li>
+</ul>
+<p>So the carbon obligation attaches to 2026 imports, but the first annual settlement follows in 2027.</p>
+</div>
+</div>
+</section>
+<section id="what-if-carbon-has-already-been-priced-abroad" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-carbon-has-already-been-priced-abroad">11. What if carbon has already been priced abroad?</h2>
+<p>A reasonable question is:</p>
+<blockquote class="blockquote">
+<p><strong>If the exporting country already charges a carbon price, does the EU simply charge for the same carbon again?</strong></p>
+</blockquote>
+<p>Not necessarily.</p>
+<p>CBAM allows an authorised declarant to take account of a qualifying carbon price that has already been <strong>effectively paid in the country of origin</strong>, subject to the applicable rules and evidence. Rebates and compensation also matter when determining the amount effectively paid.</p>
+<p>A simple illustrative example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EU-equivalent carbon exposure</td>
+<td style="text-align: right;"><strong>€100</strong></td>
+</tr>
+<tr class="even">
+<td>Recognised carbon price already paid abroad</td>
+<td style="text-align: right;"><strong>− €35</strong></td>
+</tr>
+<tr class="odd">
+<td>Illustrative remaining exposure</td>
+<td style="text-align: right;"><strong>€65</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The €35 is <strong>not transferred from the foreign government to the EU</strong>. It remains within the foreign carbon-pricing system; recognition of that price reduces the remaining CBAM obligation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Why this matters beyond Europe</strong></p>
+<p>For an exporting country, credible domestic carbon pricing can have a trade dimension. If a qualifying carbon price is recognised under CBAM, more of the carbon-pricing revenue can remain within the exporting economy rather than leaving the full adjustment to take place at the EU border.</p>
+<p>That does not mean every foreign climate policy automatically qualifies. The details of the price, rebates, verification, and supporting evidence matter.</p>
+</div>
+</div>
+</section>
+<section id="where-does-the-carbon-money-go" class="level2">
+<h2 class="anchored" data-anchor-id="where-does-the-carbon-money-go">12. Where does the carbon money go?</h2>
+<p>It helps to keep three different things separate.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Instrument</th>
+<th>What happens financially?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Auctioned EUA</strong></td>
+<td>A company buys an allowance; the auction generates public revenue.</td>
+</tr>
+<tr class="even">
+<td><strong>Free EUA</strong></td>
+<td>The allowance is initially allocated without an auction purchase; it remains a compliance asset.</td>
+</tr>
+<tr class="odd">
+<td><strong>CBAM certificate</strong></td>
+<td>An authorised declarant purchases certificates through the CBAM system and later uses the required amount to settle the annual obligation.</td>
+</tr>
+</tbody>
+</table>
+<section id="eu-ets-auction-revenue" class="level3">
+<h3 class="anchored" data-anchor-id="eu-ets-auction-revenue">EU ETS auction revenue</h3>
+<p>In <strong>2024</strong>, EU ETS auctions generated approximately <strong>€38.8 billion</strong>. About <strong>€24.4 billion</strong> went directly to Member States, while the remainder supported EU-level mechanisms including the <strong>Innovation Fund</strong>, <strong>Modernisation Fund</strong>, and the Recovery and Resilience Facility associated with REPowerEU.</p>
+<p>In practical terms, auctioning turns allowances into <strong>public revenue</strong>, and the relevant budget rules then determine how that revenue supports climate and energy-transition purposes.</p>
+<p>It is not a direct one-to-one payment from an emitting company to a particular wind farm or solar project.</p>
+</section>
+<section id="cbam-revenue" class="level3">
+<h3 class="anchored" data-anchor-id="cbam-revenue">CBAM revenue</h3>
+<p>CBAM certificates are likewise part of a public compliance mechanism. The broader fiscal treatment of CBAM revenues within the EU budget is a separate question from the mechanism that determines an importer’s compliance obligation.</p>
+<p>A useful distinction is:</p>
+<blockquote class="blockquote">
+<p><strong>The carbon-pricing rule determines what has to be paid. Budget rules determine what happens to the resulting public revenue.</strong></p>
+</blockquote>
+</section>
+</section>
+<section id="what-i-hope-you-take-away-from-this-article" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-hope-you-take-away-from-this-article">13. What I hope you take away from this article</h2>
+<p>For me, CBAM becomes much easier to understand once it is treated as the next stage of a longer policy story rather than as a stand-alone “green tariff.”</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Five points worth remembering</strong></p>
+<ol type="1">
+<li><strong>The EU ETS came first.</strong> Europe began pricing covered domestic emissions in 2005.</li>
+<li><strong>Trade created a difficult policy question.</strong> Carbon costs can affect competitiveness when imported goods face different carbon-pricing conditions.</li>
+<li><strong>Free allocation became an important protection.</strong> It reduced some carbon-cost exposure for leakage-exposed EU industry, but it did not remove the ETS obligation.</li>
+<li><strong>Benchmarks are reference points, not emissions ceilings.</strong> They help determine free allocation.</li>
+<li><strong>CBAM changes the border side of the system.</strong> Covered imports increasingly face a carbon-price signal linked to the EU ETS as free allocation for corresponding EU sectors is reduced.</li>
+</ol>
+</div>
+</div>
+<p>I find three questions especially useful for keeping the whole system straight:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Main policy response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>How does Europe put a price on emissions from covered domestic activities?</td>
+<td><strong>EU ETS</strong></td>
+</tr>
+<tr class="even">
+<td>How has the EU tried to reduce the risk that emissions-intensive production shifts elsewhere?</td>
+<td><strong>Free allocation and other carbon-leakage protections</strong></td>
+</tr>
+<tr class="odd">
+<td>How are covered imports treated when producers may face different carbon-pricing conditions?</td>
+<td><strong>CBAM</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Once those three pieces are clear, the harder questions become much easier to approach: <strong>How are embedded emissions calculated? Which exporters and economies are most exposed? How will CBAM interact with carbon pricing outside Europe? And what might it mean for individual sectors such as steel, aluminium, cement, and fertilisers?</strong></p>
+<p>Those are natural directions for the next articles in this series.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Policy status: August 2026</strong></p>
+<p>The EU ETS and CBAM are still evolving.</p>
+<p>Under the legislation currently in force, the CBAM factor reduces free allocation for CBAM-covered sectors through 2033, with no CBAM factor applying from <strong>2034</strong>.</p>
+<p>On <strong>17 July 2026</strong>, however, the European Commission proposed a targeted revision of the EU ETS. The proposal would reintroduce part of the free allocation phased out through the CBAM factor from 2028 and delay the complete phase-out of free allocation for CBAM sectors to <strong>2038</strong>.</p>
+<p>At the time of writing, this remains a <strong>legislative proposal, not adopted law</strong>. The article therefore keeps the rules currently in force separate from proposed future changes.</p>
+</div>
+</div>
+</section>
+<section id="sources-and-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-further-reading">Sources and further reading</h2>
+<p>The main sources used for this article include:</p>
+<ul>
+<li><a href="https://climate.ec.europa.eu/areas-action/carbon-markets/about-eu-ets_en">European Commission: About the EU Emissions Trading System</a></li>
+<li><a href="https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en">European Commission: Carbon Border Adjustment Mechanism</a></li>
+<li><a href="https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/price-cbam-certificates_en">European Commission: Price of CBAM certificates</a></li>
+<li><a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets/what-are-ets-revenues-used_en">European Commission: ETS revenues and their use</a></li>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02003L0087-20240301">Directive 2003/87/EC: EU ETS legal framework</a></li>
+<li><a href="https://eur-lex.europa.eu/eli/reg/2023/956/oj">Regulation (EU) 2023/956: CBAM legal framework</a></li>
+<li><a href="https://eur-lex.europa.eu/eli/reg_impl/2026/1412/oj/eng">Commission Implementing Regulation (EU) 2026/1412: 2026–2030 ETS benchmarks</a></li>
+<li><a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC134682">European Commission Joint Research Centre: Greenhouse gas emission intensities of the steel, fertilisers, aluminium and cement industries</a></li>
+<li><a href="https://www.oecd.org/en/publications/how-different-climate-policies-affect-carbon-leakage-through-trade_5819ce91-en.html">OECD: How different climate policies affect carbon leakage through trade</a></li>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=COM:2026:616:FIN">European Commission proposal COM(2026) 616: proposed revision of the EU ETS</a></li>
+</ul>
+<p><em>This article is intended as a learning and policy-analysis resource. It is not legal, customs, tax, or regulatory-compliance advice.</em></p>
+</section>
+<section id="a-personal-note" class="level2">
+<h2 class="anchored" data-anchor-id="a-personal-note">A personal note</h2>
+<p>Thanks for reading. I hope this article has made the path from the EU ETS to CBAM clearer, especially the parts that can be easy to mix up, such as <strong>carbon leakage, free allocation, benchmarks, embedded emissions, and CBAM certificates</strong>.</p>
+<p>I am continuing this topic as a series, with later articles going deeper into questions such as embedded-emissions calculations, sector-specific exposure, and what CBAM may mean for exporters and carbon pricing outside the EU.</p>
+<p>If you have a question, comment, or a different perspective worth discussing, feel free to reach out to me through <strong>LinkedIn or email using the contact details on my portfolio</strong>. I would be glad to hear from you.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="../../article-counts.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/paingheinsoe\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Paing Hein Soe</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/">
+<p>LinkedIn</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/paingheinsoe">
+<p>GitHub</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

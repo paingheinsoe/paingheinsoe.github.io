@@ -10,6 +10,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/articles/energy-climate/from-eu-ets-to-cbam.html",
       "/articles/programming-technology/from-quarto-to-github-pages.html",
       "/articles/programming-technology/preparing-for-general-coding-assessment.html",
       "/articles/programming-technology/getting-started-with-quarto.html",
@@ -25,14 +26,9 @@
     ]
   },
   {
-    "listing": "/ai-agents.html",
-    "items": [
-      "/articles/ai-agents/sample-ai-agents.html"
-    ]
-  },
-  {
     "listing": "/articles.html",
     "items": [
+      "/articles/energy-climate/from-eu-ets-to-cbam.html",
       "/articles/programming-technology/from-quarto-to-github-pages.html",
       "/articles/programming-technology/preparing-for-general-coding-assessment.html",
       "/articles/programming-technology/getting-started-with-quarto.html",
@@ -42,8 +38,15 @@
     ]
   },
   {
+    "listing": "/ai-agents.html",
+    "items": [
+      "/articles/ai-agents/sample-ai-agents.html"
+    ]
+  },
+  {
     "listing": "/energy-climate.html",
     "items": [
+      "/articles/energy-climate/from-eu-ets-to-cbam.html",
       "/articles/energy-climate/sample-energy-climate.html"
     ]
   }

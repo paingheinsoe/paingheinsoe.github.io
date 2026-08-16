@@ -147,32 +147,25 @@
     "text": "Why It Matters\nEnergy-demand analysis supports decisions related to:\n\npower-system planning;\nrenewable-energy integration;\nenergy efficiency;\ninfrastructure investment;\nclimate and energy policy.\n\n\nThis is a sample article created to test the website’s article-listing system."
   },
   {
-    "objectID": "articles/ai-agents/sample-ai-agents.html",
-    "href": "articles/ai-agents/sample-ai-agents.html",
-    "title": "Understanding AI Agents: A Simple Introduction",
+    "objectID": "articles/data-analytics/sample-data-analytics.html",
+    "href": "articles/data-analytics/sample-data-analytics.html",
+    "title": "From Raw Data to Useful Information",
     "section": "",
-    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
   },
   {
-    "objectID": "articles/ai-agents/sample-ai-agents.html#introduction",
-    "href": "articles/ai-agents/sample-ai-agents.html#introduction",
-    "title": "Understanding AI Agents: A Simple Introduction",
+    "objectID": "articles/data-analytics/sample-data-analytics.html#introduction",
+    "href": "articles/data-analytics/sample-data-analytics.html#introduction",
+    "title": "From Raw Data to Useful Information",
     "section": "",
-    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
   },
   {
-    "objectID": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
-    "href": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "A Simple Example",
-    "text": "A Simple Example\nImagine asking an AI system to prepare a short overview of recent developments in renewable energy.\nA standard chatbot may provide an answer based on a single prompt.\nAn AI agent could follow a broader workflow:\n```text Understand the request ↓ Search for relevant information ↓ Organize the findings ↓ Check the result ↓ Prepare the final overview"
-  },
-  {
-    "objectID": "ai-agents.html",
-    "href": "ai-agents.html",
-    "title": "AI & Agents",
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Learning Hub",
     "section": "",
-    "text": "Browse articles and learning notes related to artificial intelligence, machine learning, AI tools, and agents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.\n\n\n— Notes & guides\n\n\n\nEnergy & Climate —\n\n\nAI & Agents —\n\n\nData Analytics —\n\n\nProgramming & Technology —\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom EU ETS to CBAM: Why Europe Put a Carbon Price at the Border\n\n\n\nEnergy & Climate\n\n\n\nHow Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.\n\n\n\nAug 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -210,25 +203,144 @@
     "text": "Ideas, feedback, and collaboration are welcome\nI am always happy to hear from people working in energy, analytics, research, technology, or related areas. Feel free to reach out about a project or research idea, a suggestion for the site, a correction to an article, collaboration, networking, or simply to exchange ideas."
   },
   {
-    "objectID": "articles.html",
-    "href": "articles.html",
-    "title": "Learning Hub",
+    "objectID": "ai-agents.html",
+    "href": "ai-agents.html",
+    "title": "AI & Agents",
     "section": "",
-    "text": "I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.\n\n\n— Notes & guides\n\n\n\nEnergy & Climate —\n\n\nAI & Agents —\n\n\nData Analytics —\n\n\nProgramming & Technology —\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Browse articles and learning notes related to artificial intelligence, machine learning, AI tools, and agents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "articles/data-analytics/sample-data-analytics.html",
-    "href": "articles/data-analytics/sample-data-analytics.html",
-    "title": "From Raw Data to Useful Information",
+    "objectID": "articles/ai-agents/sample-ai-agents.html",
+    "href": "articles/ai-agents/sample-ai-agents.html",
+    "title": "Understanding AI Agents: A Simple Introduction",
     "section": "",
-    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
   },
   {
-    "objectID": "articles/data-analytics/sample-data-analytics.html#introduction",
-    "href": "articles/data-analytics/sample-data-analytics.html#introduction",
-    "title": "From Raw Data to Useful Information",
+    "objectID": "articles/ai-agents/sample-ai-agents.html#introduction",
+    "href": "articles/ai-agents/sample-ai-agents.html#introduction",
+    "title": "Understanding AI Agents: A Simple Introduction",
     "section": "",
-    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
+    "href": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "A Simple Example",
+    "text": "A Simple Example\nImagine asking an AI system to prepare a short overview of recent developments in renewable energy.\nA standard chatbot may provide an answer based on a single prompt.\nAn AI agent could follow a broader workflow:\n```text Understand the request ↓ Search for relevant information ↓ Organize the findings ↓ Check the result ↓ Prepare the final overview"
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "",
+    "text": "CBAM is one of those policies that sounds simple at first: put a carbon price on certain imports. But once terms such as EUAs, carbon leakage, free allocation, benchmarks, embedded emissions, and CBAM certificates start appearing together, the picture can become surprisingly difficult to follow.\nWhen I started breaking CBAM down, I found that the clearest way to understand it was not to begin at the border. It was to follow the policy in the order it developed.\nEurope first created the EU Emissions Trading System (EU ETS) and put a price on emissions from major parts of its own economy. That raised a practical question:\nThat question connects the main pieces of the story: carbon leakage, free allocation, industrial benchmarks, and finally the Carbon Border Adjustment Mechanism (CBAM).\nI have organized the article in two parts. Part I explains why CBAM emerged. Part II then looks at how the mechanism works in practice and what it means for importers, exporters, carbon pricing, and industrial decarbonisation.\nI use Figure 1 as a map of the whole story. Read it from left to right. The EU ETS prices emissions inside Europe. Differences in carbon costs create a leakage concern. CBAM then brings a comparable carbon-price signal to covered imports at the EU border."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#the-bigger-picture-eu-ets-and-cbam-are-connected",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#the-bigger-picture-eu-ets-and-cbam-are-connected",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "1. The bigger picture: EU ETS and CBAM are connected",
+    "text": "1. The bigger picture: EU ETS and CBAM are connected\nThe most important starting point is this:\n\nCBAM did not replace the EU ETS. It was designed to complement it.\n\nThe two mechanisms operate at different points in the system.\n\n\n\n\n\n\n\n\n\nEU ETS\nCBAM\n\n\n\n\nWhere?\nMainly within the European carbon market\nAt the EU border for covered imports\n\n\nWhat is priced?\nEmissions from covered installations and operators\nEmbedded emissions in covered imported goods\n\n\nCompliance instrument\nEU Allowance (EUA)\nCBAM certificate\n\n\nMain legal instrument\nDirective 2003/87/EC\nRegulation (EU) 2023/956\n\n\n\nThe EU ETS Directive was adopted in 2003, and the system began operating in 2005. CBAM came much later. Its regulation was adopted in 2023, followed by a transitional reporting period from October 2023 through the end of 2025 and the definitive regime from 1 January 2026.\nThat twenty-year gap is important. CBAM was not introduced as an isolated trade measure. It grew out of questions that became more important as Europe’s domestic carbon-pricing system matured.\nI use Figure 2 as the historical map for the rest of Part I. It shows the sequence clearly: the EU first developed its domestic carbon market, strengthened it over time, and only later added CBAM as part of the wider climate-policy framework."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#how-does-the-eu-ets-put-a-price-on-emissions",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#how-does-the-eu-ets-put-a-price-on-emissions",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "2. How does the EU ETS put a price on emissions?",
+    "text": "2. How does the EU ETS put a price on emissions?\nThe EU ETS is a cap-and-trade system, not simply a carbon tax.\nI find it helpful to think about the basic mechanism in three steps:\n\nSet the cap: the EU limits the total emissions available to covered activities.\nCreate allowances: the cap is represented by tradable EU Allowances, or EUAs.\nMeet the obligation: covered companies must use enough allowances to cover their verified emissions. In the legal language of the ETS, this final compliance step is called surrendering allowances.\n\nOne EUA represents one tonne of carbon-dioxide equivalent:\n\\[\n1\\ \\mathrm{EUA} = 1\\ \\mathrm{tCO_2e}\n\\]\nSo if an installation reports 100,000 tCO₂e of verified emissions, it ultimately needs 100,000 allowances.\n\n\n\n\n\n\nTip\n\n\n\nWhy does this create a carbon price?\nAllowances are limited and tradable. If reducing one tonne of emissions costs less than obtaining the allowance needed for that tonne, reducing emissions can become financially attractive. Continuing to emit means continuing to manage the allowance cost.\n\n\nThe cap also becomes tighter over time. Under the current framework, the EU ETS is intended to reduce emissions from covered sectors by 62% by 2030 compared with 2005 levels.\nToday, the system covers electricity and heat generation, major industrial activities, aviation and maritime transport and accounts for roughly 40% of total EU greenhouse-gas emissions.\nSo the domestic logic is fairly intuitive. The EU limits total emissions, allowances become scarce, and trading gives those allowances a market price.\nThe complication begins when firms subject to that carbon price compete in international markets."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#why-carbon-intensive-traded-products-matter",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#why-carbon-intensive-traded-products-matter",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "3. Why carbon-intensive traded products matter",
+    "text": "3. Why carbon-intensive traded products matter\nCarbon pricing does not affect every product equally.\nFor industries such as steel, aluminium, and cement, emissions and energy use can be large enough that carbon pricing becomes a meaningful production cost. These products are also traded internationally at large scale.\nTwo examples make that concrete:\n\n\n\n\n\n\n\nExample\nWhy carbon matters\n\n\n\n\nPrimary steel\nA 2023 JRC analysis estimated about 2.28 tCO₂ per tonne of steel for the primary route under comparable analytical boundaries.\n\n\nPrimary aluminium\nThe same JRC analysis used about 14.79 MWh of electricity per tonne under its EU+EFTA modelling assumptions, in addition to carbon anodes used in the Hall–Héroult process.\n\n\n\nThe aluminium example is especially useful because electricity supply can differ dramatically from one producing country to another. Two plants can make broadly the same product but have very different carbon intensities.\nThat is where carbon policy begins to interact with international competitiveness."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#the-carbon-leakage-problem",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#the-carbon-leakage-problem",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "4. The carbon-leakage problem",
+    "text": "4. The carbon-leakage problem\nImagine two producers selling similar steel into the same European market.\n\n\n\n\n\n\n\nEU producer\nCompeting foreign producer\n\n\n\n\nProduces inside the EU\nProduces outside the EU\n\n\nCovered by the EU ETS\nMay face a lower or no comparable carbon price\n\n\nCarbon enters production cost through the ETS\nCarbon cost may be lower\n\n\n\nThe concern is not simply that the EU producer pays more.\nIf that cost difference causes production or investment to move outside Europe, global demand for steel has not disappeared. The steel may simply be produced somewhere else. A similar effect can occur if EU production is replaced by more carbon-intensive imports.\nThat is the basic idea of carbon leakage: emissions may shift rather than genuinely fall.\n\n\n\n\n\n\nNote\n\n\n\nOne important qualification\nCarbon leakage is not usually a number that can simply be observed in a database. Much of the analysis is counterfactual: researchers must estimate what production, trade, and emissions would have looked like under different policy conditions.\nFor context, an OECD study covering 14 manufacturing sectors and 49 countries estimated a median leakage rate of around 3% and an average of around 14%, with greater exposure in some emissions-intensive sectors. These are not a single “EU leakage rate”; they show that leakage risk can vary substantially by sector and economy.\n\n\nTrade volumes show why the issue can matter commercially. The JRC estimated that the EU27 imported around 8.1 million tonnes of aluminium in 2019, supplied by a wide range of external producers.\nBut CBAM was not the EU’s first response."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#the-first-response-free-allocation",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#the-first-response-free-allocation",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "5. The first response: free allocation",
+    "text": "5. The first response: free allocation\nThe EU ETS has historically used free allocation to reduce some of the carbon-cost pressure on industries exposed to international competition.\nThe easiest way to understand it is to separate what free allocation does from what it does not do.\n\n\n\n\n\n\n\nFree allocation does\nFree allocation does not\n\n\n\n\nGive an eligible installation some EUAs without an upfront purchase\nRemove the installation from the EU ETS\n\n\nReduce part of the plant’s out-of-pocket carbon-cost exposure\nMake the plant’s actual emissions disappear\n\n\nHelp manage carbon-leakage risk\nAutomatically cover every tonne the plant emits\n\n\n\nThe installation still measures its emissions and must provide enough allowances to meet its annual compliance obligation.\nSo the next question becomes more interesting:\n\nIf allowances are given free, how does the EU decide how many a plant should receive?\n\nSimply giving a plant more free allowances because it emits more would weaken the incentive to become more efficient.\nThat is why the system uses benchmarks."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#what-does-an-ets-benchmark-actually-mean",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#what-does-an-ets-benchmark-actually-mean",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "6. What does an ETS benchmark actually mean?",
+    "text": "6. What does an ETS benchmark actually mean?\nAn ETS benchmark is a reference emissions-performance level used in calculating free allocation.\nIt is not a legal emissions ceiling.\n\n\n\n\n\n\nWarning\n\n\n\nCommon misunderstanding: benchmark ≠ emissions limit\nA plant can emit above the benchmark. It simply still needs enough allowances to cover its actual emissions. The benchmark helps calculate free allocation; it does not define the maximum amount the plant is legally allowed to emit.\n\n\nImagine three plants producing the same product:\n\nPlant A: 1.1 tCO₂/t product\nPlant B: 1.5 tCO₂/t product\nPlant C: 1.9 tCO₂/t product\n\nInstead of asking, Which plant emits the most?, the benchmark approach asks:\n\nWhat emissions performance is already being achieved by the more efficient installations producing this product?\n\nEU product benchmarks are developed using emissions-intensity performance from the 10% most greenhouse-gas-efficient installations producing the relevant product.\nThere is one technical refinement worth keeping in mind. The legally applicable benchmark for an allocation period is not necessarily numerically identical to the latest average of that top-performing 10%. Those performance data feed into a regulatory benchmark-update methodology that also applies prescribed reduction rules.\nFor 2026–2030, some current legal benchmark values are:\n\n\n\nEU ETS product benchmark\n2026–2030 value\n\n\n\n\nHot metal\n1.248 allowances/t\n\n\nAluminium\n1.423 allowances/t\n\n\nGrey cement clinker\n0.656 allowances/t\n\n\nEAF carbon steel\n0.142 allowances/t\n\n\n\nThese values should not be compared casually across products because process boundaries and the treatment of inputs such as electricity differ.\nFigure 3 pulls three ideas together: the competitive problem, the benchmark concept, and an illustrative steel calculation. The middle panel is especially useful: it shows why the benchmark is a reference point rather than an emissions ceiling."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#putting-the-benchmark-into-numbers-a-steel-example",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#putting-the-benchmark-into-numbers-a-steel-example",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "7. Putting the benchmark into numbers: a steel example",
+    "text": "7. Putting the benchmark into numbers: a steel example\nThe benchmark becomes easier to understand when we put numbers around it.\nConsider an illustrative integrated steelworks producing hot metal. The plant is hypothetical, but the benchmark is the official 2026–2030 hot-metal benchmark.\n\nAssumptions\n\n\n\nItem\nIllustrative value\n\n\n\n\nAnnual hot-metal production\n100,000 t\n\n\nActual emissions intensity\n1.60 tCO₂/t\n\n\nHot-metal benchmark\n1.248 allowances/t\n\n\n2026 CBAM factor\n97.5%\n\n\n\n\n\nStep 1: Actual emissions\n\\[\n100{,}000 \\times 1.60\n=\n160{,}000\\ \\mathrm{tCO_2}\n\\]\n\n\nStep 2: Illustrative free allocation\nIgnoring other installation-specific adjustments:\n\\[\n100{,}000 \\times 1.248 \\times 0.975\n\\approx\n121{,}680\\ \\mathrm{free\\ EUAs}\n\\]\n\n\nStep 3: Remaining allowance requirement\n\\[\n160{,}000 - 121{,}680\n=\n38{,}320\\ \\mathrm{EUAs}\n\\]\nThe plant has therefore received substantial protection, but its carbon exposure has not disappeared.\nFor scale, the published CBAM certificate price for Q2 2026 was €75.28/tCO₂. If an EUA were valued at approximately the same level purely for illustration, 38,320 allowances would correspond to roughly €2.9 million.\n\n\n\n\n\n\nTip\n\n\n\nWhat this example is showing\nFree allocation can materially reduce carbon-cost exposure, but it does not turn the EU ETS into a zero-cost system for the plant.\nThe example is for learning purposes only; real allocation calculations can involve additional regulatory and installation-specific factors."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#why-free-allocation-was-not-the-final-solution",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#why-free-allocation-was-not-the-final-solution",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "8. Why free allocation was not the final solution",
+    "text": "8. Why free allocation was not the final solution\nFree allocation helped with competitiveness, but it did not remove the underlying difference between EU production and imported production.\nThe broad picture was still uneven:\n\n\n\n\n\n\n\nEU production\nCovered imports\n\n\n\n\nFaced an EU ETS carbon obligation, partly protected by free allocation\nHistorically did not face an equivalent EU ETS obligation at the EU border\n\n\n\nThere was also a policy tension: maintaining large amounts of free allocation indefinitely would weaken part of the carbon-price signal intended to encourage cleaner industrial production.\nThis is the bridge to CBAM.\n\n\n\nAs CBAM is phased in\nWhat changes?\n\n\n\n\nFree allocation for CBAM sectors\nGradually decreases\n\n\nCarbon-price exposure for covered imports\nGradually increases\n\n\n\nUnder the legislation currently in force, the CBAM factor declines from 97.5% in 2026, to 95% in 2027, 90% in 2028, 77.5% in 2029, and progressively further until no CBAM factor applies from 2034.\nSo this is not a sudden switch from one system to another. It is a gradual transition from protecting EU industry mainly through free allocation toward applying a more comparable carbon-price signal to covered domestic and imported production.\n\n\n\n\n\n\n\nNote\n\n\n\nPart II: How CBAM works in practice\nOnce the policy history is clear, the practical questions become easier: what emissions are counted, who is responsible, how certificates are priced, and what happens when carbon has already been priced abroad?"
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#cbam-brings-embedded-emissions-into-the-picture",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#cbam-brings-embedded-emissions-into-the-picture",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "9. CBAM brings embedded emissions into the picture",
+    "text": "9. CBAM brings embedded emissions into the picture\nCBAM was established by Regulation (EU) 2023/956.\nIts transitional period began on 1 October 2023, when the main requirement was emissions reporting. The definitive regime began on 1 January 2026.\nCBAM currently covers selected goods in six areas:\ncement · iron and steel · aluminium · fertilisers · electricity · hydrogen\nThe key word is embedded.\nCBAM is concerned not only with how many tonnes of a product enter Europe, but with the greenhouse-gas emissions associated with producing those goods under the applicable CBAM methodology.\nThe legal responsibility generally falls on the authorised CBAM declarant, usually the EU importer or, in some circumstances, an indirect customs representative.\nA simplified CBAM flow is:\n\na covered good enters the EU;\nits embedded emissions are determined;\nthe EU carbon-price reference is applied;\nqualifying carbon prices already effectively paid abroad can be taken into account; and\nthe authorised declarant ultimately submits the required CBAM certificates to settle the annual obligation.\n\nI use Figure 4 to connect the policy to a real trade context. The upper section shows how exposed the EU aluminium market is to external suppliers. The lower section follows the CBAM process from import through to the final certificate-compliance step."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#what-sets-the-price-of-a-cbam-certificate",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#what-sets-the-price-of-a-cbam-certificate",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "10. What sets the price of a CBAM certificate?",
+    "text": "10. What sets the price of a CBAM certificate?\nThe certificate price is tied to the EU ETS carbon price.\nFor 2026, the European Commission calculates a quarterly certificate price from EU ETS auction information:\n\n\n\nQuarter\nPublished CBAM certificate price\n\n\n\n\nQ1 2026\n€75.36/tCO₂\n\n\nQ2 2026\n€75.28/tCO₂\n\n\n\nFrom 2027, the calculation moves to a weekly basis.\nThe dates can be confusing because the definitive regime starts in 2026, while the first certificate purchase and annual compliance cycle follows later.\n\n\n\n\n\n\nImportant\n\n\n\n2026 liability does not mean certificates are settled in 2026\n\n1 Jan 2026: the definitive CBAM regime applies to covered imports.\nFrom Feb 2027: certificates corresponding to 2026 embedded emissions become available for purchase through the common central platform.\n30 Sep 2027: the first annual CBAM declaration is due, and the required certificates for 2026 imports must be submitted for compliance under the current timetable.\n\nSo the carbon obligation attaches to 2026 imports, but the first annual settlement follows in 2027."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#what-if-carbon-has-already-been-priced-abroad",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#what-if-carbon-has-already-been-priced-abroad",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "11. What if carbon has already been priced abroad?",
+    "text": "11. What if carbon has already been priced abroad?\nA reasonable question is:\n\nIf the exporting country already charges a carbon price, does the EU simply charge for the same carbon again?\n\nNot necessarily.\nCBAM allows an authorised declarant to take account of a qualifying carbon price that has already been effectively paid in the country of origin, subject to the applicable rules and evidence. Rebates and compensation also matter when determining the amount effectively paid.\nA simple illustrative example:\n\n\n\n\nAmount\n\n\n\n\nEU-equivalent carbon exposure\n€100\n\n\nRecognised carbon price already paid abroad\n− €35\n\n\nIllustrative remaining exposure\n€65\n\n\n\nThe €35 is not transferred from the foreign government to the EU. It remains within the foreign carbon-pricing system; recognition of that price reduces the remaining CBAM obligation.\n\n\n\n\n\n\nNote\n\n\n\nWhy this matters beyond Europe\nFor an exporting country, credible domestic carbon pricing can have a trade dimension. If a qualifying carbon price is recognised under CBAM, more of the carbon-pricing revenue can remain within the exporting economy rather than leaving the full adjustment to take place at the EU border.\nThat does not mean every foreign climate policy automatically qualifies. The details of the price, rebates, verification, and supporting evidence matter."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#where-does-the-carbon-money-go",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#where-does-the-carbon-money-go",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "12. Where does the carbon money go?",
+    "text": "12. Where does the carbon money go?\nIt helps to keep three different things separate.\n\n\n\n\n\n\n\nInstrument\nWhat happens financially?\n\n\n\n\nAuctioned EUA\nA company buys an allowance; the auction generates public revenue.\n\n\nFree EUA\nThe allowance is initially allocated without an auction purchase; it remains a compliance asset.\n\n\nCBAM certificate\nAn authorised declarant purchases certificates through the CBAM system and later uses the required amount to settle the annual obligation.\n\n\n\n\nEU ETS auction revenue\nIn 2024, EU ETS auctions generated approximately €38.8 billion. About €24.4 billion went directly to Member States, while the remainder supported EU-level mechanisms including the Innovation Fund, Modernisation Fund, and the Recovery and Resilience Facility associated with REPowerEU.\nIn practical terms, auctioning turns allowances into public revenue, and the relevant budget rules then determine how that revenue supports climate and energy-transition purposes.\nIt is not a direct one-to-one payment from an emitting company to a particular wind farm or solar project.\n\n\nCBAM revenue\nCBAM certificates are likewise part of a public compliance mechanism. The broader fiscal treatment of CBAM revenues within the EU budget is a separate question from the mechanism that determines an importer’s compliance obligation.\nA useful distinction is:\n\nThe carbon-pricing rule determines what has to be paid. Budget rules determine what happens to the resulting public revenue."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#what-i-hope-you-take-away-from-this-article",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#what-i-hope-you-take-away-from-this-article",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "13. What I hope you take away from this article",
+    "text": "13. What I hope you take away from this article\nFor me, CBAM becomes much easier to understand once it is treated as the next stage of a longer policy story rather than as a stand-alone “green tariff.”\n\n\n\n\n\n\nTip\n\n\n\nFive points worth remembering\n\nThe EU ETS came first. Europe began pricing covered domestic emissions in 2005.\nTrade created a difficult policy question. Carbon costs can affect competitiveness when imported goods face different carbon-pricing conditions.\nFree allocation became an important protection. It reduced some carbon-cost exposure for leakage-exposed EU industry, but it did not remove the ETS obligation.\nBenchmarks are reference points, not emissions ceilings. They help determine free allocation.\nCBAM changes the border side of the system. Covered imports increasingly face a carbon-price signal linked to the EU ETS as free allocation for corresponding EU sectors is reduced.\n\n\n\nI find three questions especially useful for keeping the whole system straight:\n\n\n\n\n\n\n\nQuestion\nMain policy response\n\n\n\n\nHow does Europe put a price on emissions from covered domestic activities?\nEU ETS\n\n\nHow has the EU tried to reduce the risk that emissions-intensive production shifts elsewhere?\nFree allocation and other carbon-leakage protections\n\n\nHow are covered imports treated when producers may face different carbon-pricing conditions?\nCBAM\n\n\n\nOnce those three pieces are clear, the harder questions become much easier to approach: How are embedded emissions calculated? Which exporters and economies are most exposed? How will CBAM interact with carbon pricing outside Europe? And what might it mean for individual sectors such as steel, aluminium, cement, and fertilisers?\nThose are natural directions for the next articles in this series.\n\n\n\n\n\n\nWarning\n\n\n\nPolicy status: August 2026\nThe EU ETS and CBAM are still evolving.\nUnder the legislation currently in force, the CBAM factor reduces free allocation for CBAM-covered sectors through 2033, with no CBAM factor applying from 2034.\nOn 17 July 2026, however, the European Commission proposed a targeted revision of the EU ETS. The proposal would reintroduce part of the free allocation phased out through the CBAM factor from 2028 and delay the complete phase-out of free allocation for CBAM sectors to 2038.\nAt the time of writing, this remains a legislative proposal, not adopted law. The article therefore keeps the rules currently in force separate from proposed future changes."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#sources-and-further-reading",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#sources-and-further-reading",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "Sources and further reading",
+    "text": "Sources and further reading\nThe main sources used for this article include:\n\nEuropean Commission: About the EU Emissions Trading System\nEuropean Commission: Carbon Border Adjustment Mechanism\nEuropean Commission: Price of CBAM certificates\nEuropean Commission: ETS revenues and their use\nDirective 2003/87/EC: EU ETS legal framework\nRegulation (EU) 2023/956: CBAM legal framework\nCommission Implementing Regulation (EU) 2026/1412: 2026–2030 ETS benchmarks\nEuropean Commission Joint Research Centre: Greenhouse gas emission intensities of the steel, fertilisers, aluminium and cement industries\nOECD: How different climate policies affect carbon leakage through trade\nEuropean Commission proposal COM(2026) 616: proposed revision of the EU ETS\n\nThis article is intended as a learning and policy-analysis resource. It is not legal, customs, tax, or regulatory-compliance advice."
+  },
+  {
+    "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html#a-personal-note",
+    "href": "articles/energy-climate/from-eu-ets-to-cbam.html#a-personal-note",
+    "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
+    "section": "A personal note",
+    "text": "A personal note\nThanks for reading. I hope this article has made the path from the EU ETS to CBAM clearer, especially the parts that can be easy to mix up, such as carbon leakage, free allocation, benchmarks, embedded emissions, and CBAM certificates.\nI am continuing this topic as a series, with later articles going deeper into questions such as embedded-emissions calculations, sector-specific exposure, and what CBAM may mean for exporters and carbon pricing outside the EU.\nIf you have a question, comment, or a different perspective worth discussing, feel free to reach out to me through LinkedIn or email using the contact details on my portfolio. I would be glad to hear from you."
   },
   {
     "objectID": "articles/programming-technology/from-quarto-to-github-pages.html",
@@ -375,7 +487,7 @@
     "href": "energy-climate.html",
     "title": "Energy & Climate",
     "section": "",
-    "text": "Browse articles and learning notes related to energy and climate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Browse articles and learning notes related to energy and climate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom EU ETS to CBAM: Why Europe Put a Carbon Price at the Border\n\n\n\nEnergy & Climate\n\n\n\nHow Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.\n\n\n\nAug 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "portfolio.html",
