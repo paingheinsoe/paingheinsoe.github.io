@@ -119,116 +119,88 @@
     "text": "Connect with Me\nI hope this guide helped you build your first Quarto website with confidence.\nIf you’d like to follow my learning journey or connect professionally, feel free to reach out.\n\n💼 LinkedIn: https://www.linkedin.com/in/paing-hein-soe/\n💻 GitHub: https://github.com/paingheinsoe\n\nAs I continue learning and building projects in energy systems, AI, data analytics, and software tools, I’ll keep sharing practical guides like this one."
   },
   {
-    "objectID": "articles/energy-climate/sample-energy-climate.html",
-    "href": "articles/energy-climate/sample-energy-climate.html",
-    "title": "Understanding Energy Demand: A Simple Introduction",
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
     "section": "",
-    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
+    "text": "Industrial carbon is often reduced to a single number, such as tonnes of CO\\(_2\\) per tonne of steel, aluminium or cement. That number is useful, but it can hide an equally important question: where did those emissions actually occur?\nSome emissions are released directly inside the plant. Others arise from the electricity used to run the process. Still others occur upstream or downstream in the value chain.\nWhen I started comparing industrial products more closely, I found that Scope 1, Scope 2 and Scope 3 became much easier to understand once I followed the physical production process instead of starting with the accounting definitions alone.\nA primary aluminium smelter, a conventional steelworks, a cement kiln and an ammonia plant can all be carbon-intensive, but for different reasons. This article follows those differences from the organization to the product, and then to the wider industrial and policy context.\nI use Figure 1 as the map for the article. Read it from left to right: organization, product, then policy or trade."
   },
   {
-    "objectID": "articles/energy-climate/sample-energy-climate.html#introduction",
-    "href": "articles/energy-climate/sample-energy-climate.html#introduction",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "",
-    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#the-bigger-picture-three-accounting-views",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#the-bigger-picture-three-accounting-views",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "1. The bigger picture: three accounting views",
+    "text": "1. The bigger picture: three accounting views\nBefore comparing industrial products, I find it useful to separate three questions.\n\n\n\n\n\n\n\n\nView\nMain question\nTypical output\n\n\n\n\nOrganization\nWhere do the reporting organization’s emissions occur?\nScope 1, Scope 2, Scope 3\n\n\nProduct\nHow much GHG is associated with one unit of product?\ntCO\\(_2\\)e/t product\n\n\nPolicy / trade\nWhich emissions count under a particular legal mechanism?\nRegulatory emissions measure\n\n\n\nThese views are connected, but they are not interchangeable. A corporate GHG inventory organizes emissions around the reporting organization. A product calculation uses a defined product boundary. A regulatory system can define another boundary for its own legal purpose.\nThat distinction becomes easier to see once we follow emissions around an industrial plant."
   },
   {
-    "objectID": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
-    "href": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "Electricity Demand",
-    "text": "Electricity Demand\nElectricity demand can change significantly during a single day.\nFor example, demand may rise when people return home, turn on lights, prepare meals, and use heating or cooling systems.\nUnderstanding these changes helps utilities plan electricity generation and maintain a reliable power system."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#what-scope-1-scope-2-and-scope-3-actually-tell-us",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#what-scope-1-scope-2-and-scope-3-actually-tell-us",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "2. What Scope 1, Scope 2 and Scope 3 actually tell us",
+    "text": "2. What Scope 1, Scope 2 and Scope 3 actually tell us\nThe GHG Protocol Corporate Standard organizes a reporting organization’s emissions into three scopes (Greenhouse Gas Protocol 2004).\n\n\n\n\n\n\n\n\nWarningScope 1\n\n\n\nDirect emissions from owned or controlled sources.\nIndustrial examples include fuel combustion, process reactions and gases released during plant operation (Greenhouse Gas Protocol 2004).\n\n\n\n\n\n\n\n\n\nNoteScope 2\n\n\n\nEmissions from purchased or acquired energy.\nThis includes electricity, steam, heat and cooling consumed by the reporting organization (Greenhouse Gas Protocol 2015).\n\n\n\n\n\n\n\n\n\nTipScope 3\n\n\n\nOther indirect value-chain emissions.\nExamples include purchased raw materials, third-party transport, downstream processing and end-of-life activities where relevant (Greenhouse Gas Protocol 2011a).\n\n\n\n\nOne rule is especially useful:\n\nScopes depend on whose inventory we are looking at.\n\nIf an aluminium smelter buys electricity from the grid, the CO\\(_2\\) is physically released at the power station. Those emissions can be Scope 1 for the utility operating the power station and Scope 2 for the aluminium company purchasing the electricity.\nFigure 2 shows the three scopes around one industrial plant.\n\n\n\n\n\n\nFigure 2: Scope 1, Scope 2 and Scope 3 around an industrial plant. Scopes describe where emissions sit relative to the reporting organization.\n\n\n\nFor the rest of this article, I keep Scope 3 brief and concentrate mainly on Scope 1, electricity use and Scope 2, because those differences are particularly useful for understanding industrial processes."
   },
   {
-    "objectID": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
-    "href": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
-    "title": "Understanding Energy Demand: A Simple Introduction",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nEnergy-demand analysis supports decisions related to:\n\npower-system planning;\nrenewable-energy integration;\nenergy efficiency;\ninfrastructure investment;\nclimate and energy policy.\n\n\nThis is a sample article created to test the website’s article-listing system."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#moving-from-the-organization-to-the-product",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#moving-from-the-organization-to-the-product",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "3. Moving from the organization to the product",
+    "text": "3. Moving from the organization to the product\nScope 1, Scope 2 and Scope 3 are organizational accounting categories. Industrial analysis often needs another step: relating emissions to the quantity of material produced.\n\n\n\n\n\n\nTipProduct emissions intensity\n\n\n\n\\[\n\\text{Emissions intensity}\n=\n\\frac{\\text{GHG emissions}}{\\text{quantity of product}}\n\\]\nTypical units are tCO\\(_2\\)e per tonne of product.\n\n\nFor example, we might report:\n\\[\n\\mathrm{tCO_2e/t\\ primary\\ aluminium}\n\\]\nor:\n\\[\n\\mathrm{tCO_2e/t\\ steel}.\n\\]\nThe GHG Protocol distinguishes corporate value-chain accounting from product-level life-cycle accounting (Greenhouse Gas Protocol 2011b). So when I see an industrial carbon-intensity number, I first check four things:\n\n\n\n\n\n\nBefore comparing an intensity, ask:\n\nWhat exact product is being measured?\nWhich production route is included?\nWhich emissions are inside the calculation boundary?\nWhich geography and year does the value represent?\n\n\n\n\nWithout that context, two numbers that look comparable may describe different systems."
   },
   {
-    "objectID": "articles/data-analytics/sample-data-analytics.html",
-    "href": "articles/data-analytics/sample-data-analytics.html",
-    "title": "From Raw Data to Useful Information",
-    "section": "",
-    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#electricity-first-why-mwh-per-tonne-matters",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#electricity-first-why-mwh-per-tonne-matters",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "4. Electricity first: why MWh per tonne matters",
+    "text": "4. Electricity first: why MWh per tonne matters\nBefore calculating electricity-related emissions, it helps to ask a physical engineering question:\n\nHow much electricity does producing one tonne actually require?\n\nFor a simple location-based illustration:\n\\[\n\\text{Electricity-related Scope 2 intensity}\n\\approx\n\\text{Electricity use}\n\\times\n\\text{electricity emission factor}\n\\]\nor, in units:\n\\[\n\\frac{\\mathrm{tCO_2e}}{\\mathrm{t\\ product}}\n\\approx\n\\frac{\\mathrm{MWh}}{\\mathrm{t\\ product}}\n\\times\n\\frac{\\mathrm{tCO_2e}}{\\mathrm{MWh}}.\n\\]\nThe GHG Protocol location-based method uses grid-average emissions information for a defined geographic area. Its market-based method instead reflects qualifying contractual instruments and supplier-specific information where available (Greenhouse Gas Protocol 2015).\n\nA primary aluminium example\nThe European Commission Joint Research Centre (JRC) used approximately 14.79 MWh of electricity per tonne of primary aluminium in its EU+EFTA modelling assumptions (Vidovic et al. 2023).\nKeep the physical electricity requirement fixed and change only the illustrative electricity factor:\n\\[\n14.79\\times0.10\n\\approx\n1.48\\ \\mathrm{tCO_2e/t}\n\\]\n\\[\n14.79\\times0.50\n\\approx\n7.40\\ \\mathrm{tCO_2e/t}.\n\\]\nThe process still uses 14.79 MWh/t. What changes is the carbon intensity assigned to the electricity supplying that demand. The two emission factors above are separate scenarios, not values that are multiplied together.\nFigure 3 shows the two alternatives visually.\n\n\n\n\n\n\nFigure 3: Electricity use comes before electricity-related Scope 2. The same electricity requirement can produce very different electricity-related emissions when the electricity emission factor changes.\n\n\n\n\n\n\n\n\n\nNoteAverage grid factor and marginal factor are not the same\n\n\n\nAn average grid emission factor represents the average carbon intensity of electricity supplied across a defined grid or geographic area. That is the type of factor aligned with the location-based Scope 2 inventory method (Greenhouse Gas Protocol 2015).\nA marginal emission factor answers a different question: which generating unit changes output when electricity demand changes, and what emissions change with it?\n\n\n\n\n\n\n\nFactor\nQuestion it answers\n\n\n\n\nAverage\nWhat is the average carbon intensity of the electricity system?\n\n\nMarginal\nWhat generation changes when electricity demand changes?\n\n\n\nFor this introductory article, the average-factor concept is the relevant starting point for ordinary Scope 2 inventory accounting.\n\n\nThe main message is therefore straightforward:\n\nElectricity intensity tells us how much electricity a process requires. The electricity emission factor determines the emissions associated with supplying that electricity.\n\n\n\n\n\n\n\n\nNotePart II: Comparing industrial processes\n\n\n\nWith the accounting framework in place, we can now compare how four industrial production systems create and use carbon differently."
   },
   {
-    "objectID": "articles/data-analytics/sample-data-analytics.html#introduction",
-    "href": "articles/data-analytics/sample-data-analytics.html#introduction",
-    "title": "From Raw Data to Useful Information",
-    "section": "",
-    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#four-industrial-systems-four-different-emissions-profiles",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#four-industrial-systems-four-different-emissions-profiles",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "5. Four industrial systems, four different emissions profiles",
+    "text": "5. Four industrial systems, four different emissions profiles\n\n\n\n\n\n\n\n\nNotePrimary aluminium\n\n\n\nProcess: Hall-Héroult electrolysis.\nDirect sources: carbon anodes, perfluorocarbons and fuels.\nElectricity: about 14.79 MWh/t in the JRC EU+EFTA modelling input (Vidovic et al. 2023).\nRepresentative JRC result: 1.87 tCO\\(_2\\)e/t direct + 2.26 tCO\\(_2\\)e/t indirect = 4.13 tCO\\(_2\\)e/t within the study’s 2019 boundary (Vidovic et al. 2023).\nBoundary note: these JRC direct/indirect categories are product-level analytical categories, not simply corporate Scope 1 and Scope 2 labels.\n\n\n\n\n\n\n\n\n\nTipSteel: route matters\n\n\n\nA BF-BOF route relies heavily on coal and coke in reducing iron ore. An EAF instead uses electricity to melt metallic inputs, often including recycled steel.\nPrimary-route intensity: about 2.28 tCO\\(_2\\)/t under the JRC Worldsteel-aligned comparison (Vidovic et al. 2023).\nEAF melting electricity: 2.07 GJ/t, equivalent to:\n\\[\n2.07/3.6\\approx0.575\\ \\mathrm{MWh/t}.\n\\]\n(Vidovic et al. 2023)\nThe key physical point is that changing the production route changes where energy is used and where emissions arise.\n\n\n\n\n\n\n\n\n\n\n\n\nWarningCement and clinker\n\n\n\nA substantial share of cement-sector emissions comes from calcination, the chemical conversion of limestone during clinker production.\nThe JRC attributes roughly 60% of EU cement-industry emissions to limestone calcination, about 30% to thermal processing and about 10% to electricity consumption (Marmier 2023).\nGrey clinker direct emissions: about 0.79 tCO\\(_2\\)/t clinker (Vidovic et al. 2023).\nCement electricity: about 113.5 kWh/t, or 0.1135 MWh/t (Marmier 2023).\nBoundary note: clinker and cement are not the same product boundary.\n\n\n\n\n\n\n\n\n\nNoteAmmonia\n\n\n\nConventional European ammonia production commonly produces hydrogen from natural gas before combining it with nitrogen in the Haber-Bosch process.\nDirect emissions: about 1.91 tCO\\(_2\\)/t ammonia in the JRC EU estimate (Vidovic et al. 2023).\nElectricity input: about 0.84 GJ/t, equivalent to:\n\\[\n0.84/3.6\\approx0.233\\ \\mathrm{MWh/t}.\n\\]\n(Vidovic et al. 2023)\nHere, the fossil feedstock used to produce hydrogen is a major part of the conventional production emissions profile.\n\n\n\n\nFigure 4 puts the four examples together using source-specific values.\n\n\n\n\n\n\nFigure 4: Representative industrial evidence for primary aluminium, steel, cement or clinker, and ammonia. Values are source-specific and should be read with their stated process boundaries."
   },
   {
-    "objectID": "articles.html",
-    "href": "articles.html",
-    "title": "Learning Hub",
-    "section": "",
-    "text": "I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.\n\n\n— Notes & guides\n\n\n\nEnergy & Climate —\n\n\nAI & Agents —\n\n\nData Analytics —\n\n\nProgramming & Technology —\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom EU ETS to CBAM: Why Europe Put a Carbon Price at the Border\n\n\n\nEnergy & Climate\n\n\n\nHow Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.\n\n\n\nAug 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#a-compact-comparison",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#a-compact-comparison",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "6. A compact comparison",
+    "text": "6. A compact comparison\nThe table below is deliberately compact. It is a reference summary, not a ranking of industries.\n\n\n\nTable 1: Representative industrial emissions and electricity data. Values are source-specific and should not be interpreted as if every accounting boundary were identical.\n\n\n\n\n\n\n\n\n\n\n\nProduct / route\nRepresentative emissions data\nElectricity requirement\nReference boundary\n\n\n\n\nPrimary aluminium\n4.13 tCO\\(_2\\)e/t total in JRC EU modelling: 1.87 direct + 2.26 indirect (Vidovic et al. 2023)\n14.79 MWh/t (Vidovic et al. 2023)\nJRC 2019 modelling boundary\n\n\nPrimary steel route\n2.28 tCO\\(_2\\)/t (Vidovic et al. 2023)\nRoute-dependent\nWorldsteel-aligned JRC comparison\n\n\nEAF steel, melting step\nRoute and metallic-input dependent\n~0.575 MWh/t semi-finished steel (Vidovic et al. 2023)\nEAF melting subprocess\n\n\nGrey clinker / cement\nGrey clinker direct: ~0.79 tCO\\(_2\\)/t clinker (Vidovic et al. 2023)\nCement: ~0.1135 MWh/t (Marmier 2023)\nClinker and cement use different boundaries\n\n\nAmmonia\nEU direct: ~1.91 tCO\\(_2\\)/t ammonia (Vidovic et al. 2023)\n~0.233 MWh/t (Vidovic et al. 2023)\nJRC EU process data\n\n\n\n\n\n\n\n\n\n\n\n\nDo not compare every number as if the boundaries were identical. Product definition, process stage, year, geography and accounting method all matter."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n\nThanks for stopping by. I built this website to bring together two things that matter to me: presenting my work clearly, and sharing useful knowledge with others."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#from-one-tonne-to-european-scale",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#from-one-tonne-to-european-scale",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "7. From one tonne to European scale",
+    "text": "7. From one tonne to European scale\nPer-tonne intensity is only half of the picture. The wider significance of a sector also depends on how much material is produced.\n\n\n\n\n\n\n\n\n\nProduct\nSelected Europe-scale quantity\nGeography / year\nSource\n\n\n\n\nPrimary aluminium\n0.9 Mt\nEU, 2023\n(European Aluminium 2025)\n\n\nFinished steel\n~146 Mt/year\nEU, recent average\n(European Steel Association (EUROFER) 2026)\n\n\nCement\n165 Mt\nEU27, 2020\n(Marmier 2023)\n\n\nAmmonia\n15.4 Mt\nEurope, 2020\n(Fertilizers Europe 2023)\n\n\n\nThese values provide scale, but they are not a harmonized same-year dataset. I therefore use them as context rather than as a direct statistical ranking.\n\n\n\n\n\n\nTipIntensity and scale answer different questions\n\n\n\nIntensity asks how much carbon or electricity is associated with one tonne.\nScale asks how many tonnes the industrial system produces.\nBoth are needed to understand system-wide significance.\n\n\n\nScaling electricity from one tonne to annual production\nA transparent first-order estimate is:\n\\[\n\\text{Annual electricity requirement}\n\\approx\n\\text{annual production}\n\\times\n\\text{electricity intensity}.\n\\]\nFor example, combining 0.9 Mt of EU primary aluminium production with the representative JRC intensity of 14.79 MWh/t gives:\n\\[\n0.9\\ \\mathrm{Mt}\\times14.79\\ \\mathrm{MWh/t}\n\\approx\n13.3\\ \\mathrm{TWh}.\n\\]\nThis is an order-of-magnitude scaling example, not an official EU electricity-consumption inventory. The production quantity and electricity-intensity parameter come from different sources and years (European Aluminium 2025; Vidovic et al. 2023).\n\n\n\n\n\n\nNoteProduction and consumption are different geographical views\n\n\n\nElectricity used to make EU-produced material is physically consumed in Europe. Electricity embodied in an imported material was consumed in the exporting country.\nSo multiplying EU production by a representative electricity intensity can approximate electricity associated with European production. Apparent European consumption should not automatically be multiplied by a European electricity factor."
   },
   {
-    "objectID": "about.html#a-portfolio-for-my-work.-a-learning-hub-for-useful-ideas.",
-    "href": "about.html#a-portfolio-for-my-work.-a-learning-hub-for-useful-ideas.",
-    "title": "About",
-    "section": "",
-    "text": "Thanks for stopping by. I built this website to bring together two things that matter to me: presenting my work clearly, and sharing useful knowledge with others."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#organization-product-and-policy-connected-not-identical",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#organization-product-and-policy-connected-not-identical",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "8. Organization, product and policy: connected, not identical",
+    "text": "8. Organization, product and policy: connected, not identical\nWe can now return to the three views from the beginning.\n\n\n\n\n\n\n\n\nNoteOrganization\n\n\n\nQuestion: Where do the reporting organization’s emissions occur?\nOutput: Scope 1, Scope 2 and Scope 3 (Greenhouse Gas Protocol 2004).\n\n\n\n\n\n\n\n\n\nTipProduct\n\n\n\nQuestion: How much GHG is associated with producing one unit of product under a defined boundary?\nOutput: values such as tCO\\(_2\\)e/t product (Greenhouse Gas Protocol 2011b).\n\n\n\n\n\n\n\n\n\nWarningPolicy / trade\n\n\n\nQuestion: Which emissions count under this legal mechanism?\nOutput: a regulatory emissions measure defined by the relevant rules.\n\n\n\n\nThe EU Emissions Trading System and the Carbon Border Adjustment Mechanism are examples of policy systems with legally defined emissions boundaries (European Commission 2026). Those boundaries can overlap with corporate or product accounting, but they are designed for a different purpose.\n\nNot every carbon number is trying to answer the same question."
   },
   {
-    "objectID": "about.html#energy-systems-analytics-and-applied-technology",
-    "href": "about.html#energy-systems-analytics-and-applied-technology",
-    "title": "About",
-    "section": "Energy systems, analytics, and applied technology",
-    "text": "Energy systems, analytics, and applied technology\nI recently completed an M.S. in Energy Systems at Northeastern University. My background is in mechanical and energy engineering, with experience across renewable energy, energy and climate data, research, analytics, and technical software work.\nMy interests often sit between disciplines — energy systems and economics, data analytics, and the growing use of AI in technical and analytical work. This site gives me one place to connect those areas without forcing everything into the format of a resume or a formal publication."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#closing-perspective",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#closing-perspective",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "9. Closing perspective",
+    "text": "9. Closing perspective\nScope 1, Scope 2 and Scope 3 become easier to understand when they are connected to the physical production process.\nFor primary aluminium, electricity demand is a major part of the production system. For conventional steelmaking, carbon-based reduction is central. For cement, process chemistry itself releases substantial CO\\(_2\\). For conventional ammonia, the hydrogen-production feedstock is critical.\nThe scopes organize emissions from the perspective of a reporting organization. Product-level intensities connect those emissions to a tonne of material. Production volumes then show why per-tonne emissions are only one part of the industrial picture. Regulation can add yet another accounting boundary for its own purpose.\n\n\n\n\n\n\nTipFour questions I keep in mind\n\n\n\nBefore comparing industrial carbon numbers, I ask:\n\nWhat exactly is being measured?\nWhose boundary is being used?\nPer tonne of what product?\nUnder which production route and accounting method?\n\n\n\nThose questions often matter just as much as the number itself."
   },
   {
-    "objectID": "about.html#useful-when-it-is-clear-enough-to-use",
-    "href": "about.html#useful-when-it-is-clear-enough-to-use",
-    "title": "About",
-    "section": "Useful when it is clear enough to use",
-    "text": "Useful when it is clear enough to use\nI like sharing things that are practical and genuinely useful.\nSometimes an article starts with a project, a tool I had to learn, a coding problem, or an energy question. If I can turn what I learned into a clearer explanation, workflow, or example that may help someone else, I would rather share it than keep it in my own notes.\nThat is the main purpose of the Learning Hub."
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#sources-and-further-reading",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#sources-and-further-reading",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "Sources and further reading",
+    "text": "Sources and further reading\n\n\nEuropean Aluminium. 2025. EU Free Trade Agenda. https://european-aluminium.eu/wp-content/uploads/2025/11/2025-11-14_EA_FTAs_position_paper.pdf.\n\n\nEuropean Commission. 2026. “Carbon Border Adjustment Mechanism.” https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en.\n\n\nEuropean Steel Association (EUROFER). 2026. “Statistics.” https://www.eurofer.eu/statistics.\n\n\nFertilizers Europe. 2023. Decarbonisation Roadmap 2050. https://www.fertilizerseurope.com/wp-content/uploads/2023/11/DEF_2023_Decarbonisation_Roadmap_digital.pdf.\n\n\nGreenhouse Gas Protocol. 2004. The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard (Revised Edition). https://ghgprotocol.org/corporate-standard.\n\n\nGreenhouse Gas Protocol. 2011a. Corporate Value Chain (Scope 3) Accounting and Reporting Standard. https://ghgprotocol.org/corporate-value-chain-scope-3-standard.\n\n\nGreenhouse Gas Protocol. 2011b. Product Life Cycle Accounting and Reporting Standard. https://ghgprotocol.org/product-standard.\n\n\nGreenhouse Gas Protocol. 2015. GHG Protocol Scope 2 Guidance: An Amendment to the GHG Protocol Corporate Standard. https://ghgprotocol.org/scope-2-guidance.\n\n\nMarmier, A. 2023. Decarbonisation Options for the Cement Industry. Publications Office of the European Union. https://publications.jrc.ec.europa.eu/repository/handle/JRC131246.\n\n\nVidovic, D., A. Marmier, L. Zore, and J. Moya. 2023. Greenhouse Gas Emission Intensities of the Steel, Fertilisers, Aluminium and Cement Industries in the EU and Its Main Trading Partners. Publications Office of the European Union. https://doi.org/10.2760/359533."
   },
   {
-    "objectID": "about.html#ideas-feedback-and-collaboration-are-welcome",
-    "href": "about.html#ideas-feedback-and-collaboration-are-welcome",
-    "title": "About",
-    "section": "Ideas, feedback, and collaboration are welcome",
-    "text": "Ideas, feedback, and collaboration are welcome\nI am always happy to hear from people working in energy, analytics, research, technology, or related areas. Feel free to reach out about a project or research idea, a suggestion for the site, a correction to an article, collaboration, networking, or simply to exchange ideas."
-  },
-  {
-    "objectID": "ai-agents.html",
-    "href": "ai-agents.html",
-    "title": "AI & Agents",
-    "section": "",
-    "text": "Browse articles and learning notes related to artificial intelligence, machine learning, AI tools, and agents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "articles/ai-agents/sample-ai-agents.html",
-    "href": "articles/ai-agents/sample-ai-agents.html",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "",
-    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
-  },
-  {
-    "objectID": "articles/ai-agents/sample-ai-agents.html#introduction",
-    "href": "articles/ai-agents/sample-ai-agents.html#introduction",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "",
-    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
-  },
-  {
-    "objectID": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
-    "href": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
-    "title": "Understanding AI Agents: A Simple Introduction",
-    "section": "A Simple Example",
-    "text": "A Simple Example\nImagine asking an AI system to prepare a short overview of recent developments in renewable energy.\nA standard chatbot may provide an answer based on a single prompt.\nAn AI agent could follow a broader workflow:\n```text Understand the request ↓ Search for relevant information ↓ Organize the findings ↓ Check the result ↓ Prepare the final overview"
+    "objectID": "articles/energy-climate/tracing-industrial-carbon.html#a-personal-note",
+    "href": "articles/energy-climate/tracing-industrial-carbon.html#a-personal-note",
+    "title": "Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions",
+    "section": "A personal note",
+    "text": "A personal note\nI prepared this article as part of my own effort to connect carbon-accounting terminology with the physical energy and industrial processes behind the numbers.\nScope 1, Scope 2 and Scope 3 can look like simple labels when we first encounter them. I find them much more useful when I ask what is physically happening inside the plant, where its electricity comes from, what sits outside the company boundary, and what changes when we move from a company inventory to a product or regulatory calculation.\nThanks for reading. I hope this gives you a clearer framework for interpreting industrial carbon numbers when you encounter them in company reports, technical studies or climate-policy discussions."
   },
   {
     "objectID": "articles/energy-climate/from-eu-ets-to-cbam.html",
@@ -341,6 +313,118 @@
     "title": "From EU ETS to CBAM: Why Europe Put a Carbon Price at the Border",
     "section": "A personal note",
     "text": "A personal note\nThanks for reading. I hope this article has made the path from the EU ETS to CBAM clearer, especially the parts that can be easy to mix up, such as carbon leakage, free allocation, benchmarks, embedded emissions, and CBAM certificates.\nI am continuing this topic as a series, with later articles going deeper into questions such as embedded-emissions calculations, sector-specific exposure, and what CBAM may mean for exporters and carbon pricing outside the EU.\nIf you have a question, comment, or a different perspective worth discussing, feel free to reach out to me through LinkedIn or email using the contact details on my portfolio. I would be glad to hear from you."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html",
+    "href": "articles/ai-agents/sample-ai-agents.html",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "",
+    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html#introduction",
+    "href": "articles/ai-agents/sample-ai-agents.html#introduction",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "",
+    "text": "An AI agent is a software system that can work toward a goal by choosing and carrying out a sequence of actions.\nUnlike a basic chatbot that responds to one prompt at a time, an agent may:\n\ninterpret a task;\ndecide what steps are needed;\nuse available tools;\nreview the result;\ncontinue until the task is completed."
+  },
+  {
+    "objectID": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
+    "href": "articles/ai-agents/sample-ai-agents.html#a-simple-example",
+    "title": "Understanding AI Agents: A Simple Introduction",
+    "section": "A Simple Example",
+    "text": "A Simple Example\nImagine asking an AI system to prepare a short overview of recent developments in renewable energy.\nA standard chatbot may provide an answer based on a single prompt.\nAn AI agent could follow a broader workflow:\n```text Understand the request ↓ Search for relevant information ↓ Organize the findings ↓ Check the result ↓ Prepare the final overview"
+  },
+  {
+    "objectID": "ai-agents.html",
+    "href": "ai-agents.html",
+    "title": "AI & Agents",
+    "section": "",
+    "text": "Browse articles and learning notes related to artificial intelligence, machine learning, AI tools, and agents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\nThanks for stopping by. I built this website to bring together two things that matter to me: presenting my work clearly, and sharing useful knowledge with others."
+  },
+  {
+    "objectID": "about.html#a-portfolio-for-my-work.-a-learning-hub-for-useful-ideas.",
+    "href": "about.html#a-portfolio-for-my-work.-a-learning-hub-for-useful-ideas.",
+    "title": "About",
+    "section": "",
+    "text": "Thanks for stopping by. I built this website to bring together two things that matter to me: presenting my work clearly, and sharing useful knowledge with others."
+  },
+  {
+    "objectID": "about.html#energy-systems-analytics-and-applied-technology",
+    "href": "about.html#energy-systems-analytics-and-applied-technology",
+    "title": "About",
+    "section": "Energy systems, analytics, and applied technology",
+    "text": "Energy systems, analytics, and applied technology\nI recently completed an M.S. in Energy Systems at Northeastern University. My background is in mechanical and energy engineering, with experience across renewable energy, energy and climate data, research, analytics, and technical software work.\nMy interests often sit between disciplines — energy systems and economics, data analytics, and the growing use of AI in technical and analytical work. This site gives me one place to connect those areas without forcing everything into the format of a resume or a formal publication."
+  },
+  {
+    "objectID": "about.html#useful-when-it-is-clear-enough-to-use",
+    "href": "about.html#useful-when-it-is-clear-enough-to-use",
+    "title": "About",
+    "section": "Useful when it is clear enough to use",
+    "text": "Useful when it is clear enough to use\nI like sharing things that are practical and genuinely useful.\nSometimes an article starts with a project, a tool I had to learn, a coding problem, or an energy question. If I can turn what I learned into a clearer explanation, workflow, or example that may help someone else, I would rather share it than keep it in my own notes.\nThat is the main purpose of the Learning Hub."
+  },
+  {
+    "objectID": "about.html#ideas-feedback-and-collaboration-are-welcome",
+    "href": "about.html#ideas-feedback-and-collaboration-are-welcome",
+    "title": "About",
+    "section": "Ideas, feedback, and collaboration are welcome",
+    "text": "Ideas, feedback, and collaboration are welcome\nI am always happy to hear from people working in energy, analytics, research, technology, or related areas. Feel free to reach out about a project or research idea, a suggestion for the site, a correction to an article, collaboration, networking, or simply to exchange ideas."
+  },
+  {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Learning Hub",
+    "section": "",
+    "text": "I created this Learning Hub to share practical articles, guides, and examples that may be useful to others. Many of them grow out of questions, tools, or workflows I have worked through myself, but the goal is to explain them clearly enough that another reader can use them too.\n\n\n— Notes & guides\n\n\n\nEnergy & Climate —\n\n\nAI & Agents —\n\n\nData Analytics —\n\n\nProgramming & Technology —\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nTracing Industrial Carbon: From GHG Scopes to Product-Level Emissions\n\n\n\nEnergy & Climate\n\n\n\nA practical guide to Scope 1, Scope 2 and Scope 3 through major industrial products, connecting organizational GHG accounting with product-level emissions and industrial…\n\n\n\nAug 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom EU ETS to CBAM: Why Europe Put a Carbon Price at the Border\n\n\n\nEnergy & Climate\n\n\n\nHow Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.\n\n\n\nAug 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Quarto to GitHub Pages\n\n\n\nProgramming & Technology\n\n\n\nA practical guide to understanding how a local Quarto website moves through GitHub and GitHub Pages before becoming a live website.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparing for a General Coding Assessment\n\n\n\nProgramming & Technology\n\n\n\nA practical Python-focused guide for preparing for a general coding assessment during a job application or interview process, especially when AI tools are not allowed.\n\n\n\nAug 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto\n\n\n\nProgramming & Technology\n\n\n\nBuild your first Quarto website with a clear step-by-step guide for Windows.\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding AI Agents: A Simple Introduction\n\n\n\nAI & Agents\n\n\n\nA short sample article explaining what AI agents are and how they differ from ordinary AI tools.\n\n\n\nJul 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Raw Data to Useful Information\n\n\n\nData Analytics\n\n\n\nA short sample article showing the basic steps used to prepare, analyze, and communicate data.\n\n\n\nJul 25, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/data-analytics/sample-data-analytics.html",
+    "href": "articles/data-analytics/sample-data-analytics.html",
+    "title": "From Raw Data to Useful Information",
+    "section": "",
+    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+  },
+  {
+    "objectID": "articles/data-analytics/sample-data-analytics.html#introduction",
+    "href": "articles/data-analytics/sample-data-analytics.html#introduction",
+    "title": "From Raw Data to Useful Information",
+    "section": "",
+    "text": "Raw data is rarely ready for analysis immediately.\nA basic data-analysis workflow often includes:\n```text Collect data ↓ Check and clean the data ↓ Explore patterns ↓ Analyze the results ↓ Communicate the findings"
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html",
+    "href": "articles/energy-climate/sample-energy-climate.html",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "",
+    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html#introduction",
+    "href": "articles/energy-climate/sample-energy-climate.html#introduction",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "",
+    "text": "Energy demand refers to the amount of energy used by households, businesses, industries, transportation systems, and other parts of society.\nDemand changes over time because of factors such as:\n\nweather;\npopulation;\neconomic activity;\ntechnology;\nenergy prices;\nconsumer behavior."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
+    "href": "articles/energy-climate/sample-energy-climate.html#electricity-demand",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "Electricity Demand",
+    "text": "Electricity Demand\nElectricity demand can change significantly during a single day.\nFor example, demand may rise when people return home, turn on lights, prepare meals, and use heating or cooling systems.\nUnderstanding these changes helps utilities plan electricity generation and maintain a reliable power system."
+  },
+  {
+    "objectID": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
+    "href": "articles/energy-climate/sample-energy-climate.html#why-it-matters",
+    "title": "Understanding Energy Demand: A Simple Introduction",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nEnergy-demand analysis supports decisions related to:\n\npower-system planning;\nrenewable-energy integration;\nenergy efficiency;\ninfrastructure investment;\nclimate and energy policy.\n\n\nThis is a sample article created to test the website’s article-listing system."
   },
   {
     "objectID": "articles/programming-technology/from-quarto-to-github-pages.html",
@@ -487,7 +571,7 @@
     "href": "energy-climate.html",
     "title": "Energy & Climate",
     "section": "",
-    "text": "Browse articles and learning notes related to energy and climate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom EU ETS to CBAM: Why Europe Put a Carbon Price at the Border\n\n\n\nEnergy & Climate\n\n\n\nHow Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.\n\n\n\nAug 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Browse articles and learning notes related to energy and climate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTracing Industrial Carbon: From GHG Scopes to Product-Level Emissions\n\n\n\nEnergy & Climate\n\n\n\nA practical guide to Scope 1, Scope 2 and Scope 3 through major industrial products, connecting organizational GHG accounting with product-level emissions and industrial…\n\n\n\nAug 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom EU ETS to CBAM: Why Europe Put a Carbon Price at the Border\n\n\n\nEnergy & Climate\n\n\n\nHow Europe moved from domestic carbon pricing under the EU ETS to a border adjustment for covered imports.\n\n\n\nAug 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding Energy Demand: A Simple Introduction\n\n\n\nEnergy & Climate\n\n\n\nA short sample article introducing energy demand and the factors that cause it to change.\n\n\n\nJul 26, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "portfolio.html",

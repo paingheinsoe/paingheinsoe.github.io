@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Paing Hein Soe">
+<meta name="dcterms.date" content="2026-08-17">
+<meta name="description" content="A practical guide to Scope 1, Scope 2 and Scope 3 through major industrial products, connecting organizational GHG accounting with product-level emissions and industrial energy use.">
+
+<title>Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions – Paing Hein Soe</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a936ae4e6a5e93c89dc0fa869f06dea4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Paing Hein Soe</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">My Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../articles.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../../energy-climate.html">
+ <span class="dropdown-text">Energy &amp; Climate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ai-agents.html">
+ <span class="dropdown-text">AI &amp; Agents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../data-analytics.html">
+ <span class="dropdown-text">Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../programming-technology.html">
+ <span class="dropdown-text">Programming &amp; Technology</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/paingheinsoe"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#the-bigger-picture-three-accounting-views" id="toc-the-bigger-picture-three-accounting-views" class="nav-link active" data-scroll-target="#the-bigger-picture-three-accounting-views">1. The bigger picture: three accounting views</a></li>
+  <li><a href="#what-scope-1-scope-2-and-scope-3-actually-tell-us" id="toc-what-scope-1-scope-2-and-scope-3-actually-tell-us" class="nav-link" data-scroll-target="#what-scope-1-scope-2-and-scope-3-actually-tell-us">2. What Scope 1, Scope 2 and Scope 3 actually tell us</a></li>
+  <li><a href="#moving-from-the-organization-to-the-product" id="toc-moving-from-the-organization-to-the-product" class="nav-link" data-scroll-target="#moving-from-the-organization-to-the-product">3. Moving from the organization to the product</a></li>
+  <li><a href="#electricity-first-why-mwh-per-tonne-matters" id="toc-electricity-first-why-mwh-per-tonne-matters" class="nav-link" data-scroll-target="#electricity-first-why-mwh-per-tonne-matters">4. Electricity first: why MWh per tonne matters</a></li>
+  <li><a href="#four-industrial-systems-four-different-emissions-profiles" id="toc-four-industrial-systems-four-different-emissions-profiles" class="nav-link" data-scroll-target="#four-industrial-systems-four-different-emissions-profiles">5. Four industrial systems, four different emissions profiles</a></li>
+  <li><a href="#a-compact-comparison" id="toc-a-compact-comparison" class="nav-link" data-scroll-target="#a-compact-comparison">6. A compact comparison</a></li>
+  <li><a href="#from-one-tonne-to-european-scale" id="toc-from-one-tonne-to-european-scale" class="nav-link" data-scroll-target="#from-one-tonne-to-european-scale">7. From one tonne to European scale</a></li>
+  <li><a href="#organization-product-and-policy-connected-not-identical" id="toc-organization-product-and-policy-connected-not-identical" class="nav-link" data-scroll-target="#organization-product-and-policy-connected-not-identical">8. Organization, product and policy: connected, not identical</a></li>
+  <li><a href="#closing-perspective" id="toc-closing-perspective" class="nav-link" data-scroll-target="#closing-perspective">9. Closing perspective</a></li>
+  <li><a href="#sources-and-further-reading" id="toc-sources-and-further-reading" class="nav-link" data-scroll-target="#sources-and-further-reading">Sources and further reading</a></li>
+  <li><a href="#a-personal-note" id="toc-a-personal-note" class="nav-link" data-scroll-target="#a-personal-note">A personal note</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tracing Industrial Carbon: From GHG Scopes to Product-Level Emissions</h1>
+<p class="subtitle lead">What aluminium, steel, cement and ammonia reveal about direct emissions, electricity use and industrial carbon accounting</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Energy &amp; Climate</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A practical guide to Scope 1, Scope 2 and Scope 3 through major industrial products, connecting organizational GHG accounting with product-level emissions and industrial energy use.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Paing Hein Soe </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Industrial carbon is often reduced to a single number, such as <em>tonnes of CO<span class="math inline">\(_2\)</span> per tonne of steel, aluminium or cement</em>. That number is useful, but it can hide an equally important question: <strong>where did those emissions actually occur?</strong></p>
+<p>Some emissions are released directly inside the plant. Others arise from the electricity used to run the process. Still others occur upstream or downstream in the value chain.</p>
+<p>When I started comparing industrial products more closely, I found that <strong>Scope 1, Scope 2 and Scope 3 became much easier to understand once I followed the physical production process instead of starting with the accounting definitions alone</strong>.</p>
+<p>A primary aluminium smelter, a conventional steelworks, a cement kiln and an ammonia plant can all be carbon-intensive, but for different reasons. This article follows those differences from the organization to the product, and then to the wider industrial and policy context.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What this article helps you understand
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>what Scope 1, Scope 2 and Scope 3 actually describe;</li>
+<li>how organizational emissions become product-level intensities such as tCO<span class="math inline">\(_2\)</span>e/t;</li>
+<li>why electricity use should be understood before interpreting Scope 2;</li>
+<li>how aluminium, steel, cement and ammonia differ physically;</li>
+<li>why both emissions intensity and production scale matter; and</li>
+<li>why corporate, product and regulatory carbon boundaries are related but not identical.</li>
+</ul>
+</div>
+</div>
+<p>I use <a href="#fig-three-views" class="quarto-xref">Figure&nbsp;1</a> as the map for the article. Read it from left to right: <strong>organization</strong>, <strong>product</strong>, then <strong>policy or trade</strong>.</p>
+<div id="fig-three-views" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Three connected views of industrial carbon: organization, product, and policy or trade">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-three-views-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/energy-climate/tracing-industrial-carbon/figure-1-tracing-industrial-carbon-three-views.png" class="img-fluid figure-img" alt="Three connected views of industrial carbon: organization, product, and policy or trade">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-three-views-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Three connected views of industrial carbon. The same physical emissions can be organized differently depending on the accounting question.
+</figcaption>
+</figure>
+</div>
+<hr>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Part I: From the organization to the product
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>First locate emissions around the reporting organization. Then translate the relevant emissions into a product-level intensity.</p>
+</div>
+</div>
+<section id="the-bigger-picture-three-accounting-views" class="level2">
+<h2 class="anchored" data-anchor-id="the-bigger-picture-three-accounting-views">1. The bigger picture: three accounting views</h2>
+<p>Before comparing industrial products, I find it useful to separate three questions.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>View</th>
+<th>Main question</th>
+<th>Typical output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Organization</strong></td>
+<td>Where do the reporting organization’s emissions occur?</td>
+<td>Scope 1, Scope 2, Scope 3</td>
+</tr>
+<tr class="even">
+<td><strong>Product</strong></td>
+<td>How much GHG is associated with one unit of product?</td>
+<td>tCO<span class="math inline">\(_2\)</span>e/t product</td>
+</tr>
+<tr class="odd">
+<td><strong>Policy / trade</strong></td>
+<td>Which emissions count under a particular legal mechanism?</td>
+<td>Regulatory emissions measure</td>
+</tr>
+</tbody>
+</table>
+<p>These views are connected, but they are not interchangeable. A corporate GHG inventory organizes emissions around the reporting organization. A product calculation uses a defined product boundary. A regulatory system can define another boundary for its own legal purpose.</p>
+<p>That distinction becomes easier to see once we follow emissions around an industrial plant.</p>
+</section>
+<section id="what-scope-1-scope-2-and-scope-3-actually-tell-us" class="level2">
+<h2 class="anchored" data-anchor-id="what-scope-1-scope-2-and-scope-3-actually-tell-us">2. What Scope 1, Scope 2 and Scope 3 actually tell us</h2>
+<p>The GHG Protocol Corporate Standard organizes a reporting organization’s emissions into three scopes <span class="citation" data-cites="ghgprotocol_corporate">(<a href="#ref-ghgprotocol_corporate" role="doc-biblioref">Greenhouse Gas Protocol 2004</a>)</span>.</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Scope 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Direct emissions from owned or controlled sources.</strong></p>
+<p>Industrial examples include fuel combustion, process reactions and gases released during plant operation <span class="citation" data-cites="ghgprotocol_corporate">(<a href="#ref-ghgprotocol_corporate" role="doc-biblioref">Greenhouse Gas Protocol 2004</a>)</span>.</p>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Scope 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Emissions from purchased or acquired energy.</strong></p>
+<p>This includes electricity, steam, heat and cooling consumed by the reporting organization <span class="citation" data-cites="ghgprotocol_scope2">(<a href="#ref-ghgprotocol_scope2" role="doc-biblioref">Greenhouse Gas Protocol 2015</a>)</span>.</p>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Scope 3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Other indirect value-chain emissions.</strong></p>
+<p>Examples include purchased raw materials, third-party transport, downstream processing and end-of-life activities where relevant <span class="citation" data-cites="ghgprotocol_scope3">(<a href="#ref-ghgprotocol_scope3" role="doc-biblioref">Greenhouse Gas Protocol 2011a</a>)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>One rule is especially useful:</p>
+<blockquote class="blockquote">
+<p><strong>Scopes depend on whose inventory we are looking at.</strong></p>
+</blockquote>
+<p>If an aluminium smelter buys electricity from the grid, the CO<span class="math inline">\(_2\)</span> is physically released at the power station. Those emissions can be <strong>Scope 1 for the utility</strong> operating the power station and <strong>Scope 2 for the aluminium company</strong> purchasing the electricity.</p>
+<p><a href="#fig-ghg-scopes" class="quarto-xref">Figure&nbsp;2</a> shows the three scopes around one industrial plant.</p>
+<div id="fig-ghg-scopes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Scope 1, Scope 2 and Scope 3 around an industrial plant">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ghg-scopes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/energy-climate/tracing-industrial-carbon/figure-2-ghg-scopes-around-an-industrial-plant.png" class="img-fluid figure-img" alt="Scope 1, Scope 2 and Scope 3 around an industrial plant">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ghg-scopes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Scope 1, Scope 2 and Scope 3 around an industrial plant. Scopes describe where emissions sit relative to the reporting organization.
+</figcaption>
+</figure>
+</div>
+<p>For the rest of this article, I keep Scope 3 brief and concentrate mainly on <strong>Scope 1, electricity use and Scope 2</strong>, because those differences are particularly useful for understanding industrial processes.</p>
+</section>
+<section id="moving-from-the-organization-to-the-product" class="level2">
+<h2 class="anchored" data-anchor-id="moving-from-the-organization-to-the-product">3. Moving from the organization to the product</h2>
+<p>Scope 1, Scope 2 and Scope 3 are organizational accounting categories. Industrial analysis often needs another step: relating emissions to the quantity of material produced.</p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Product emissions intensity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\text{Emissions intensity}
+=
+\frac{\text{GHG emissions}}{\text{quantity of product}}
+\]</span></p>
+<p>Typical units are <strong>tCO<span class="math inline">\(_2\)</span>e per tonne of product</strong>.</p>
+</div>
+</div>
+<p>For example, we might report:</p>
+<p><span class="math display">\[
+\mathrm{tCO_2e/t\ primary\ aluminium}
+\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[
+\mathrm{tCO_2e/t\ steel}.
+\]</span></p>
+<p>The GHG Protocol distinguishes corporate value-chain accounting from product-level life-cycle accounting <span class="citation" data-cites="ghgprotocol_product">(<a href="#ref-ghgprotocol_product" role="doc-biblioref">Greenhouse Gas Protocol 2011b</a>)</span>. So when I see an industrial carbon-intensity number, I first check four things:</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Before comparing an intensity, ask:</strong></p>
+<ol type="1">
+<li>What exact product is being measured?</li>
+<li>Which production route is included?</li>
+<li>Which emissions are inside the calculation boundary?</li>
+<li>Which geography and year does the value represent?</li>
+</ol>
+</div>
+</div>
+</div>
+<p>Without that context, two numbers that look comparable may describe different systems.</p>
+</section>
+<section id="electricity-first-why-mwh-per-tonne-matters" class="level2">
+<h2 class="anchored" data-anchor-id="electricity-first-why-mwh-per-tonne-matters">4. Electricity first: why MWh per tonne matters</h2>
+<p>Before calculating electricity-related emissions, it helps to ask a physical engineering question:</p>
+<blockquote class="blockquote">
+<p><strong>How much electricity does producing one tonne actually require?</strong></p>
+</blockquote>
+<p>For a simple location-based illustration:</p>
+<p><span class="math display">\[
+\text{Electricity-related Scope 2 intensity}
+\approx
+\text{Electricity use}
+\times
+\text{electricity emission factor}
+\]</span></p>
+<p>or, in units:</p>
+<p><span class="math display">\[
+\frac{\mathrm{tCO_2e}}{\mathrm{t\ product}}
+\approx
+\frac{\mathrm{MWh}}{\mathrm{t\ product}}
+\times
+\frac{\mathrm{tCO_2e}}{\mathrm{MWh}}.
+\]</span></p>
+<p>The GHG Protocol location-based method uses grid-average emissions information for a defined geographic area. Its market-based method instead reflects qualifying contractual instruments and supplier-specific information where available <span class="citation" data-cites="ghgprotocol_scope2">(<a href="#ref-ghgprotocol_scope2" role="doc-biblioref">Greenhouse Gas Protocol 2015</a>)</span>.</p>
+<section id="a-primary-aluminium-example" class="level3">
+<h3 class="anchored" data-anchor-id="a-primary-aluminium-example">A primary aluminium example</h3>
+<p>The European Commission Joint Research Centre (JRC) used approximately <strong>14.79 MWh of electricity per tonne of primary aluminium</strong> in its EU+EFTA modelling assumptions <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<p>Keep the physical electricity requirement fixed and change only the illustrative electricity factor:</p>
+<p><span class="math display">\[
+14.79\times0.10
+\approx
+1.48\ \mathrm{tCO_2e/t}
+\]</span></p>
+<p><span class="math display">\[
+14.79\times0.50
+\approx
+7.40\ \mathrm{tCO_2e/t}.
+\]</span></p>
+<p>The process still uses 14.79 MWh/t. What changes is the carbon intensity assigned to the electricity supplying that demand. <strong>The two emission factors above are separate scenarios, not values that are multiplied together.</strong></p>
+<p><a href="#fig-scope2-electricity" class="quarto-xref">Figure&nbsp;3</a> shows the two alternatives visually.</p>
+<div id="fig-scope2-electricity" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Electricity requirement, electricity emission factor, and resulting electricity-related Scope 2 intensity">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scope2-electricity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/energy-climate/tracing-industrial-carbon/figure-3-electricity-use-and-scope-2-intensity.png" class="img-fluid figure-img" alt="Electricity requirement, electricity emission factor, and resulting electricity-related Scope 2 intensity">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scope2-electricity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Electricity use comes before electricity-related Scope 2. The same electricity requirement can produce very different electricity-related emissions when the electricity emission factor changes.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Average grid factor and marginal factor are not the same
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>An <strong>average grid emission factor</strong> represents the average carbon intensity of electricity supplied across a defined grid or geographic area. That is the type of factor aligned with the location-based Scope 2 inventory method <span class="citation" data-cites="ghgprotocol_scope2">(<a href="#ref-ghgprotocol_scope2" role="doc-biblioref">Greenhouse Gas Protocol 2015</a>)</span>.</p>
+<p>A <strong>marginal emission factor</strong> answers a different question: which generating unit changes output when electricity demand changes, and what emissions change with it?</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Question it answers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Average</strong></td>
+<td>What is the average carbon intensity of the electricity system?</td>
+</tr>
+<tr class="even">
+<td><strong>Marginal</strong></td>
+<td>What generation changes when electricity demand changes?</td>
+</tr>
+</tbody>
+</table>
+<p>For this introductory article, the average-factor concept is the relevant starting point for ordinary Scope 2 inventory accounting.</p>
+</div>
+</div>
+<p>The main message is therefore straightforward:</p>
+<blockquote class="blockquote">
+<p><strong>Electricity intensity tells us how much electricity a process requires. The electricity emission factor determines the emissions associated with supplying that electricity.</strong></p>
+</blockquote>
+<hr>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Part II: Comparing industrial processes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With the accounting framework in place, we can now compare how four industrial production systems create and use carbon differently.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="four-industrial-systems-four-different-emissions-profiles" class="level2">
+<h2 class="anchored" data-anchor-id="four-industrial-systems-four-different-emissions-profiles">5. Four industrial systems, four different emissions profiles</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Primary aluminium
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Process:</strong> Hall-Héroult electrolysis.</p>
+<p><strong>Direct sources:</strong> carbon anodes, perfluorocarbons and fuels.</p>
+<p><strong>Electricity:</strong> about <strong>14.79 MWh/t</strong> in the JRC EU+EFTA modelling input <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<p><strong>Representative JRC result:</strong> <strong>1.87 tCO<span class="math inline">\(_2\)</span>e/t direct + 2.26 tCO<span class="math inline">\(_2\)</span>e/t indirect = 4.13 tCO<span class="math inline">\(_2\)</span>e/t</strong> within the study’s 2019 boundary <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<p><em>Boundary note:</em> these JRC direct/indirect categories are product-level analytical categories, not simply corporate Scope 1 and Scope 2 labels.</p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Steel: route matters
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>BF-BOF</strong> route relies heavily on coal and coke in reducing iron ore. An <strong>EAF</strong> instead uses electricity to melt metallic inputs, often including recycled steel.</p>
+<p><strong>Primary-route intensity:</strong> about <strong>2.28 tCO<span class="math inline">\(_2\)</span>/t</strong> under the JRC Worldsteel-aligned comparison <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<p><strong>EAF melting electricity:</strong> <strong>2.07 GJ/t</strong>, equivalent to:</p>
+<p><span class="math display">\[
+2.07/3.6\approx0.575\ \mathrm{MWh/t}.
+\]</span></p>
+<p><span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></p>
+<p>The key physical point is that <strong>changing the production route changes where energy is used and where emissions arise</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Cement and clinker
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A substantial share of cement-sector emissions comes from <strong>calcination</strong>, the chemical conversion of limestone during clinker production.</p>
+<p>The JRC attributes roughly <strong>60%</strong> of EU cement-industry emissions to limestone calcination, about <strong>30%</strong> to thermal processing and about <strong>10%</strong> to electricity consumption <span class="citation" data-cites="jrc131246">(<a href="#ref-jrc131246" role="doc-biblioref">Marmier 2023</a>)</span>.</p>
+<p><strong>Grey clinker direct emissions:</strong> about <strong>0.79 tCO<span class="math inline">\(_2\)</span>/t clinker</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<p><strong>Cement electricity:</strong> about <strong>113.5 kWh/t</strong>, or <strong>0.1135 MWh/t</strong> <span class="citation" data-cites="jrc131246">(<a href="#ref-jrc131246" role="doc-biblioref">Marmier 2023</a>)</span>.</p>
+<p><em>Boundary note:</em> clinker and cement are not the same product boundary.</p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ammonia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Conventional European ammonia production commonly produces hydrogen from natural gas before combining it with nitrogen in the Haber-Bosch process.</p>
+<p><strong>Direct emissions:</strong> about <strong>1.91 tCO<span class="math inline">\(_2\)</span>/t ammonia</strong> in the JRC EU estimate <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<p><strong>Electricity input:</strong> about <strong>0.84 GJ/t</strong>, equivalent to:</p>
+<p><span class="math display">\[
+0.84/3.6\approx0.233\ \mathrm{MWh/t}.
+\]</span></p>
+<p><span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></p>
+<p>Here, the fossil feedstock used to produce hydrogen is a major part of the conventional production emissions profile.</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#fig-industrial-dashboard" class="quarto-xref">Figure&nbsp;4</a> puts the four examples together using source-specific values.</p>
+<div id="fig-industrial-dashboard" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Representative industrial carbon intensity and electricity data for aluminium, steel, cement, and ammonia">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-industrial-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../images/energy-climate/tracing-industrial-carbon/figure-4-industrial-carbon-evidence-dashboard.png" class="img-fluid figure-img" alt="Representative industrial carbon intensity and electricity data for aluminium, steel, cement, and ammonia">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-industrial-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Representative industrial evidence for primary aluminium, steel, cement or clinker, and ammonia. Values are source-specific and should be read with their stated process boundaries.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-compact-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="a-compact-comparison">6. A compact comparison</h2>
+<p>The table below is deliberately compact. It is a reference summary, not a ranking of industries.</p>
+<div id="tbl-industrial-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-industrial-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Representative industrial emissions and electricity data. Values are source-specific and should not be interpreted as if every accounting boundary were identical.
+</figcaption>
+<div aria-describedby="tbl-industrial-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 28%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product / route</th>
+<th style="text-align: right;">Representative emissions data</th>
+<th style="text-align: right;">Electricity requirement</th>
+<th>Reference boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Primary aluminium</strong></td>
+<td style="text-align: right;"><strong>4.13 tCO<span class="math inline">\(_2\)</span>e/t</strong> total in JRC EU modelling: 1.87 direct + 2.26 indirect <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td style="text-align: right;"><strong>14.79 MWh/t</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td>JRC 2019 modelling boundary</td>
+</tr>
+<tr class="even">
+<td><strong>Primary steel route</strong></td>
+<td style="text-align: right;"><strong>2.28 tCO<span class="math inline">\(_2\)</span>/t</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td style="text-align: right;">Route-dependent</td>
+<td>Worldsteel-aligned JRC comparison</td>
+</tr>
+<tr class="odd">
+<td><strong>EAF steel, melting step</strong></td>
+<td style="text-align: right;">Route and metallic-input dependent</td>
+<td style="text-align: right;"><strong>~0.575 MWh/t semi-finished steel</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td>EAF melting subprocess</td>
+</tr>
+<tr class="even">
+<td><strong>Grey clinker / cement</strong></td>
+<td style="text-align: right;">Grey clinker direct: <strong>~0.79 tCO<span class="math inline">\(_2\)</span>/t clinker</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td style="text-align: right;">Cement: <strong>~0.1135 MWh/t</strong> <span class="citation" data-cites="jrc131246">(<a href="#ref-jrc131246" role="doc-biblioref">Marmier 2023</a>)</span></td>
+<td>Clinker and cement use different boundaries</td>
+</tr>
+<tr class="odd">
+<td><strong>Ammonia</strong></td>
+<td style="text-align: right;">EU direct: <strong>~1.91 tCO<span class="math inline">\(_2\)</span>/t ammonia</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td style="text-align: right;"><strong>~0.233 MWh/t</strong> <span class="citation" data-cites="jrc134682">(<a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span></td>
+<td>JRC EU process data</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Do not compare every number as if the boundaries were identical.</strong> Product definition, process stage, year, geography and accounting method all matter.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="from-one-tonne-to-european-scale" class="level2">
+<h2 class="anchored" data-anchor-id="from-one-tonne-to-european-scale">7. From one tonne to European scale</h2>
+<p>Per-tonne intensity is only half of the picture. The wider significance of a sector also depends on <strong>how much material is produced</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th style="text-align: right;">Selected Europe-scale quantity</th>
+<th>Geography / year</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Primary aluminium</strong></td>
+<td style="text-align: right;"><strong>0.9 Mt</strong></td>
+<td>EU, 2023</td>
+<td><span class="citation" data-cites="european_aluminium">(<a href="#ref-european_aluminium" role="doc-biblioref">European Aluminium 2025</a>)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Finished steel</strong></td>
+<td style="text-align: right;"><strong>~146 Mt/year</strong></td>
+<td>EU, recent average</td>
+<td><span class="citation" data-cites="eurofer">(<a href="#ref-eurofer" role="doc-biblioref">European Steel Association (EUROFER) 2026</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Cement</strong></td>
+<td style="text-align: right;"><strong>165 Mt</strong></td>
+<td>EU27, 2020</td>
+<td><span class="citation" data-cites="jrc131246">(<a href="#ref-jrc131246" role="doc-biblioref">Marmier 2023</a>)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Ammonia</strong></td>
+<td style="text-align: right;"><strong>15.4 Mt</strong></td>
+<td>Europe, 2020</td>
+<td><span class="citation" data-cites="fertilizers_europe">(<a href="#ref-fertilizers_europe" role="doc-biblioref">Fertilizers Europe 2023</a>)</span></td>
+</tr>
+</tbody>
+</table>
+<p>These values provide scale, but they are <strong>not a harmonized same-year dataset</strong>. I therefore use them as context rather than as a direct statistical ranking.</p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Intensity and scale answer different questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Intensity</strong> asks how much carbon or electricity is associated with one tonne.</p>
+<p><strong>Scale</strong> asks how many tonnes the industrial system produces.</p>
+<p>Both are needed to understand system-wide significance.</p>
+</div>
+</div>
+<section id="scaling-electricity-from-one-tonne-to-annual-production" class="level3">
+<h3 class="anchored" data-anchor-id="scaling-electricity-from-one-tonne-to-annual-production">Scaling electricity from one tonne to annual production</h3>
+<p>A transparent first-order estimate is:</p>
+<p><span class="math display">\[
+\text{Annual electricity requirement}
+\approx
+\text{annual production}
+\times
+\text{electricity intensity}.
+\]</span></p>
+<p>For example, combining <strong>0.9 Mt</strong> of EU primary aluminium production with the representative JRC intensity of <strong>14.79 MWh/t</strong> gives:</p>
+<p><span class="math display">\[
+0.9\ \mathrm{Mt}\times14.79\ \mathrm{MWh/t}
+\approx
+13.3\ \mathrm{TWh}.
+\]</span></p>
+<p>This is an <strong>order-of-magnitude scaling example</strong>, not an official EU electricity-consumption inventory. The production quantity and electricity-intensity parameter come from different sources and years <span class="citation" data-cites="european_aluminium jrc134682">(<a href="#ref-european_aluminium" role="doc-biblioref">European Aluminium 2025</a>; <a href="#ref-jrc134682" role="doc-biblioref">Vidovic et al. 2023</a>)</span>.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Production and consumption are different geographical views
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Electricity used to make <strong>EU-produced material</strong> is physically consumed in Europe. Electricity embodied in an <strong>imported material</strong> was consumed in the exporting country.</p>
+<p>So multiplying EU production by a representative electricity intensity can approximate electricity associated with European production. Apparent European consumption should not automatically be multiplied by a European electricity factor.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="organization-product-and-policy-connected-not-identical" class="level2">
+<h2 class="anchored" data-anchor-id="organization-product-and-policy-connected-not-identical">8. Organization, product and policy: connected, not identical</h2>
+<p>We can now return to the three views from the beginning.</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Organization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Question:</strong> Where do the reporting organization’s emissions occur?</p>
+<p><strong>Output:</strong> Scope 1, Scope 2 and Scope 3 <span class="citation" data-cites="ghgprotocol_corporate">(<a href="#ref-ghgprotocol_corporate" role="doc-biblioref">Greenhouse Gas Protocol 2004</a>)</span>.</p>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Product
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Question:</strong> How much GHG is associated with producing one unit of product under a defined boundary?</p>
+<p><strong>Output:</strong> values such as tCO<span class="math inline">\(_2\)</span>e/t product <span class="citation" data-cites="ghgprotocol_product">(<a href="#ref-ghgprotocol_product" role="doc-biblioref">Greenhouse Gas Protocol 2011b</a>)</span>.</p>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Policy / trade
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Question:</strong> Which emissions count under this legal mechanism?</p>
+<p><strong>Output:</strong> a regulatory emissions measure defined by the relevant rules.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The EU Emissions Trading System and the Carbon Border Adjustment Mechanism are examples of policy systems with legally defined emissions boundaries <span class="citation" data-cites="ec_cbam">(<a href="#ref-ec_cbam" role="doc-biblioref">European Commission 2026</a>)</span>. Those boundaries can overlap with corporate or product accounting, but they are designed for a different purpose.</p>
+<blockquote class="blockquote">
+<p><strong>Not every carbon number is trying to answer the same question.</strong></p>
+</blockquote>
+</section>
+<section id="closing-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="closing-perspective">9. Closing perspective</h2>
+<p>Scope 1, Scope 2 and Scope 3 become easier to understand when they are connected to the physical production process.</p>
+<p>For primary aluminium, electricity demand is a major part of the production system. For conventional steelmaking, carbon-based reduction is central. For cement, process chemistry itself releases substantial CO<span class="math inline">\(_2\)</span>. For conventional ammonia, the hydrogen-production feedstock is critical.</p>
+<p>The scopes organize emissions from the perspective of a reporting organization. Product-level intensities connect those emissions to a tonne of material. Production volumes then show why per-tonne emissions are only one part of the industrial picture. Regulation can add yet another accounting boundary for its own purpose.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Four questions I keep in mind
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before comparing industrial carbon numbers, I ask:</p>
+<ol type="1">
+<li><strong>What exactly is being measured?</strong></li>
+<li><strong>Whose boundary is being used?</strong></li>
+<li><strong>Per tonne of what product?</strong></li>
+<li><strong>Under which production route and accounting method?</strong></li>
+</ol>
+</div>
+</div>
+<p>Those questions often matter just as much as the number itself.</p>
+</section>
+<section id="sources-and-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-further-reading">Sources and further reading</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-european_aluminium" class="csl-entry" role="listitem">
+European Aluminium. 2025. <em>EU Free Trade Agenda</em>. <a href="https://european-aluminium.eu/wp-content/uploads/2025/11/2025-11-14_EA_FTAs_position_paper.pdf">https://european-aluminium.eu/wp-content/uploads/2025/11/2025-11-14_EA_FTAs_position_paper.pdf</a>.
+</div>
+<div id="ref-ec_cbam" class="csl-entry" role="listitem">
+European Commission. 2026. <span>“Carbon Border Adjustment Mechanism.”</span> <a href="https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en">https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en</a>.
+</div>
+<div id="ref-eurofer" class="csl-entry" role="listitem">
+European Steel Association (EUROFER). 2026. <span>“Statistics.”</span> <a href="https://www.eurofer.eu/statistics">https://www.eurofer.eu/statistics</a>.
+</div>
+<div id="ref-fertilizers_europe" class="csl-entry" role="listitem">
+Fertilizers Europe. 2023. <em>Decarbonisation Roadmap 2050</em>. <a href="https://www.fertilizerseurope.com/wp-content/uploads/2023/11/DEF_2023_Decarbonisation_Roadmap_digital.pdf">https://www.fertilizerseurope.com/wp-content/uploads/2023/11/DEF_2023_Decarbonisation_Roadmap_digital.pdf</a>.
+</div>
+<div id="ref-ghgprotocol_corporate" class="csl-entry" role="listitem">
+Greenhouse Gas Protocol. 2004. <em>The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard (Revised Edition)</em>. <a href="https://ghgprotocol.org/corporate-standard">https://ghgprotocol.org/corporate-standard</a>.
+</div>
+<div id="ref-ghgprotocol_scope3" class="csl-entry" role="listitem">
+Greenhouse Gas Protocol. 2011a. <em>Corporate Value Chain (Scope 3) Accounting and Reporting Standard</em>. <a href="https://ghgprotocol.org/corporate-value-chain-scope-3-standard">https://ghgprotocol.org/corporate-value-chain-scope-3-standard</a>.
+</div>
+<div id="ref-ghgprotocol_product" class="csl-entry" role="listitem">
+Greenhouse Gas Protocol. 2011b. <em>Product Life Cycle Accounting and Reporting Standard</em>. <a href="https://ghgprotocol.org/product-standard">https://ghgprotocol.org/product-standard</a>.
+</div>
+<div id="ref-ghgprotocol_scope2" class="csl-entry" role="listitem">
+Greenhouse Gas Protocol. 2015. <em>GHG Protocol Scope 2 Guidance: An Amendment to the GHG Protocol Corporate Standard</em>. <a href="https://ghgprotocol.org/scope-2-guidance">https://ghgprotocol.org/scope-2-guidance</a>.
+</div>
+<div id="ref-jrc131246" class="csl-entry" role="listitem">
+Marmier, A. 2023. <em>Decarbonisation Options for the Cement Industry</em>. Publications Office of the European Union. <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC131246">https://publications.jrc.ec.europa.eu/repository/handle/JRC131246</a>.
+</div>
+<div id="ref-jrc134682" class="csl-entry" role="listitem">
+Vidovic, D., A. Marmier, L. Zore, and J. Moya. 2023. <em>Greenhouse Gas Emission Intensities of the Steel, Fertilisers, Aluminium and Cement Industries in the EU and Its Main Trading Partners</em>. Publications Office of the European Union. <a href="https://doi.org/10.2760/359533">https://doi.org/10.2760/359533</a>.
+</div>
+</div>
+</section>
+<section id="a-personal-note" class="level2">
+<h2 class="anchored" data-anchor-id="a-personal-note">A personal note</h2>
+<p>I prepared this article as part of my own effort to connect carbon-accounting terminology with the physical energy and industrial processes behind the numbers.</p>
+<p>Scope 1, Scope 2 and Scope 3 can look like simple labels when we first encounter them. I find them much more useful when I ask what is physically happening inside the plant, where its electricity comes from, what sits outside the company boundary, and what changes when we move from a company inventory to a product or regulatory calculation.</p>
+<p>Thanks for reading. I hope this gives you a clearer framework for interpreting industrial carbon numbers when you encounter them in company reports, technical studies or climate-policy discussions.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="../../article-counts.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/paingheinsoe\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Paing Hein Soe</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/">
+<p>LinkedIn</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/paingheinsoe">
+<p>GitHub</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
