@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a936ae4e6a5e93c89dc0fa869f06dea4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-98277be5ff534c0e6368ef17dadd0b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -251,7 +251,55 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
-<script src="../../article-counts.js"></script>
+<aside class="ai-transparency" aria-labelledby="ai-transparency-title">
+  <div class="ai-transparency__heading">
+    <div class="ai-transparency__icon" aria-hidden="true">✦</div>
+    <div class="ai-transparency__label" id="ai-transparency-title">AI Transparency</div>
+  </div>
+  <div class="ai-transparency__content">
+    <p>I use AI tools to develop selected illustrative figures to communicate my ideas clearly and provide <span class="ai-ribbon ai-ribbon--visuals">visual aids</span>. The ideas, analysis, technical interpretation, and final judgment are <span class="ai-ribbon ai-ribbon--ownership">my own</span>.</p>
+  </div>
+</aside>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const panel = document.querySelector(".ai-transparency");
+    const main = document.querySelector("main.content");
+
+    if (!panel || !main) return;
+
+    const titleBlock = main.querySelector("#title-block-header, .quarto-title-block");
+
+    if (titleBlock) {
+      titleBlock.insertAdjacentElement("afterend", panel);
+    } else {
+      main.insertAdjacentElement("afterbegin", panel);
+    }
+  });
+</script>
+<script src="../../assets/js/article-counts.js"></script>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+  <svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+  </svg>
+</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".back-to-top");
+    if (!button) return;
+
+    const updateVisibility = function () {
+      button.classList.toggle("back-to-top--visible", window.scrollY > 600);
+    };
+
+    updateVisibility();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+
+    button.addEventListener("click", function () {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  });
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -325,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/paingheinsoe\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
