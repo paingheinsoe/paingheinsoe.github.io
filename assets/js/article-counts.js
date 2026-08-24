@@ -19,9 +19,33 @@
     return items;
   }
 
+  function setCount(id, value) {
+    const element = document.getElementById(id);
+    if (element) element.textContent = String(value || 0);
+  }
+
+  function updateFromGeneratedSummary() {
+    const articleSummary = window.__ARTICLE_SUMMARY__;
+    if (!articleSummary || !articleSummary.categories) return false;
+
+    setCount("article-total", articleSummary.all);
+    setCount("count-locked", articleSummary.locked);
+    setCount("count-energy-climate", articleSummary.categories["Energy & Climate"]);
+    setCount("count-ai-agents", articleSummary.categories["AI & Agents"]);
+    setCount("count-data-analytics", articleSummary.categories["Data Analytics"]);
+    setCount(
+      "count-programming-technology",
+      articleSummary.categories["Programming & Technology"]
+    );
+
+    return true;
+  }
+
   function updateCounts() {
     const summary = document.getElementById("learning-hub-summary");
     if (!summary) return;
+
+    if (updateFromGeneratedSummary()) return;
 
     const listing =
       document.getElementById("listing-all-articles") ||
@@ -37,8 +61,13 @@
       "Data Analytics": 0,
       "Programming & Technology": 0
     };
+    let lockedCount = 0;
 
     items.forEach((item) => {
+      if (item.querySelector(".article-status--locked")) {
+        lockedCount += 1;
+      }
+
       const categoryNodes = item.querySelectorAll(
         ".listing-category, .quarto-category, .category"
       );
@@ -52,11 +81,8 @@
       });
     });
 
-    const totalEl = document.getElementById("article-total");
-
-    if (totalEl) {
-      totalEl.textContent = String(items.length);
-    }
+    setCount("article-total", items.length);
+    setCount("count-locked", lockedCount);
 
     const map = {
       "Energy & Climate": "count-energy-climate",
@@ -66,11 +92,7 @@
     };
 
     Object.entries(map).forEach(([category, id]) => {
-      const el = document.getElementById(id);
-
-      if (el) {
-        el.textContent = String(counts[category] || 0);
-      }
+      setCount(id, counts[category]);
     });
   }
 

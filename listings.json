@@ -1,56 +1,26 @@
 [
   {
-    "listing": "/programming-technology.html",
-    "items": [
-      "/articles/programming-technology/from-quarto-to-github-pages.html",
-      "/articles/programming-technology/preparing-for-general-coding-assessment.html",
-      "/articles/programming-technology/getting-started-with-quarto.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/articles/energy-climate/tracing-industrial-carbon.html",
-      "/articles/energy-climate/from-eu-ets-to-cbam.html",
-      "/articles/programming-technology/from-quarto-to-github-pages.html",
-      "/articles/programming-technology/preparing-for-general-coding-assessment.html",
-      "/articles/programming-technology/getting-started-with-quarto.html",
-      "/articles/ai-agents/sample-ai-agents.html",
-      "/articles/energy-climate/sample-energy-climate.html",
-      "/articles/data-analytics/sample-data-analytics.html"
-    ]
-  },
-  {
-    "listing": "/data-analytics.html",
-    "items": [
-      "/articles/data-analytics/sample-data-analytics.html"
-    ]
-  },
-  {
-    "listing": "/ai-agents.html",
-    "items": [
-      "/articles/ai-agents/sample-ai-agents.html"
-    ]
+    "listing": "/energy-climate.html",
+    "items": []
   },
   {
     "listing": "/articles.html",
-    "items": [
-      "/articles/energy-climate/tracing-industrial-carbon.html",
-      "/articles/energy-climate/from-eu-ets-to-cbam.html",
-      "/articles/programming-technology/from-quarto-to-github-pages.html",
-      "/articles/programming-technology/preparing-for-general-coding-assessment.html",
-      "/articles/programming-technology/getting-started-with-quarto.html",
-      "/articles/ai-agents/sample-ai-agents.html",
-      "/articles/energy-climate/sample-energy-climate.html",
-      "/articles/data-analytics/sample-data-analytics.html"
-    ]
+    "items": []
   },
   {
-    "listing": "/energy-climate.html",
-    "items": [
-      "/articles/energy-climate/tracing-industrial-carbon.html",
-      "/articles/energy-climate/from-eu-ets-to-cbam.html",
-      "/articles/energy-climate/sample-energy-climate.html"
-    ]
+    "listing": "/ai-agents.html",
+    "items": []
+  },
+  {
+    "listing": "/data-analytics.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/programming-technology.html",
+    "items": []
   }
 ]
