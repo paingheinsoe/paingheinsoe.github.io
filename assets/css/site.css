@@ -1122,7 +1122,7 @@ body:has(nav[role="doc-toc"]) .margin-sidebar {
   font-weight: 500;
 }
 
-/* Article access status and date share one restrained metadata row. */
+/* Article access metadata stays compact, while Private reference codes get a full row. */
 .quarto-listing .card-body {
   display: flex;
   flex-direction: column;
@@ -1135,6 +1135,19 @@ body:has(nav[role="doc-toc"]) .margin-sidebar {
   margin-top: auto;
   padding-top: 0.7rem;
   border-top: 1px solid #edf1f6;
+}
+
+.article-card-meta--private {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.55rem;
+}
+
+.article-card-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 .article-status {
@@ -1170,10 +1183,24 @@ body:has(nav[role="doc-toc"]) .margin-sidebar {
 }
 
 .article-private-code {
-  color: #66758a;
-  font-size: 0.64rem;
-  font-weight: 670;
-  letter-spacing: 0.035em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  color: #53647b;
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.045em;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.article-private-code-label {
+  color: #9aa4b2;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
 .article-card-date {
@@ -2133,7 +2160,7 @@ footer.footer a {
 }
 
 @media (max-width: 640px) {
-  .article-card-meta {
+  .article-card-meta-row {
     flex-wrap: wrap;
   }
 
