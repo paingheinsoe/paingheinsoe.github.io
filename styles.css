@@ -411,6 +411,14 @@ body:has(nav[role="doc-toc"]) .margin-sidebar {
 
 .access-card__heading {
   display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.access-card__heading-main {
+  display: flex;
+  min-width: 0;
   gap: 0.85rem;
   align-items: center;
 }
@@ -451,6 +459,13 @@ body:has(nav[role="doc-toc"]) .margin-sidebar {
 .access-card__heading h2 {
   margin: 0;
   font-size: clamp(1.3rem, 2vw, 1.65rem);
+}
+
+.access-card__cloudflare-badge {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(8.75rem, 13vw, 11.5rem);
+  height: auto;
 }
 
 .access-card__summary {
@@ -590,7 +605,17 @@ body:has(nav[role="doc-toc"]) .margin-sidebar {
   }
 
   .access-card__heading {
+    flex-wrap: wrap;
     align-items: flex-start;
+  }
+
+  .access-card__heading-main {
+    align-items: flex-start;
+  }
+
+  .access-card__cloudflare-badge {
+    width: 9.25rem;
+    margin-left: 3.15rem;
   }
 
   .access-actions {

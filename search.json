@@ -172,7 +172,7 @@
     "href": "workspace-access.html",
     "title": "Private Workspace Access",
     "section": "",
-    "text": "The Private Workspace contains unpublished working material and is available only to its approved readers.\n\n  \n    \n      \n        \n        \n        \n      \n    \n    \n      Secured by Cloudflare Access\n      Open the Private Workspace\n    \n  \n\n  Cloudflare will verify your Private Workspace access. If your session is active, the workspace opens directly. Otherwise, Cloudflare will send a temporary code to an approved email address.\n\n  \n    i\n    The Private Workspace has a separate approved-reader list. Only approved email addresses receive a login code.\n  \n\n  \n    \n      Open Private Workspace\n      \n    \n    Back to Home\n  \n\n  \n    \n    Authentication is handled by Cloudflare Access. This website does not collect or store reader passwords."
+    "text": "The Private Workspace contains unpublished working material and is available only to its approved readers.\n\n  \n    \n      \n        \n          \n          \n          \n        \n      \n      \n        Private Workspace\n        Open the Private Workspace\n      \n    \n    \n  \n\n  Cloudflare will verify your Private Workspace access. If your session is active, the workspace opens directly. Otherwise, Cloudflare will send a temporary code to an approved email address.\n\n  \n    i\n    The Private Workspace has a separate approved-reader list. Only approved email addresses receive a login code.\n  \n\n  \n    \n      Open Private Workspace\n      \n    \n    Back to Home\n  \n\n  \n    \n    Authentication is handled by Cloudflare Access. This website does not collect or store reader passwords."
   },
   {
     "objectID": "portfolio.html",
@@ -200,7 +200,7 @@
     "href": "access.html",
     "title": "Protected Article Access",
     "section": "",
-    "text": "Secured by Cloudflare Access\n      Open this protected article\n    \n  \n\n  Cloudflare will verify your approved-reader access. If your session is active, the article opens directly. Otherwise, Cloudflare will send a temporary code to an approved email address.\n\n  \n    i\n    Only approved email addresses receive a login code.\n  \n\n  \n    \n      Open protected article\n      \n    \n    Back to Learning Hub\n  \n\n  \n    \n    Authentication is handled by Cloudflare Access. This website does not collect or store reader passwords."
+    "text": "Approved-reader access\n        Open this protected article\n      \n    \n    \n  \n\n  Cloudflare will verify your approved-reader access. If your session is active, the article opens directly. Otherwise, Cloudflare will send a temporary code to an approved email address.\n\n  \n    i\n    Only approved email addresses receive a login code.\n  \n\n  \n    \n      Open protected article\n      \n    \n    Back to Learning Hub\n  \n\n  \n    \n    Authentication is handled by Cloudflare Access. This website does not collect or store reader passwords."
   },
   {
     "objectID": "about.html",
