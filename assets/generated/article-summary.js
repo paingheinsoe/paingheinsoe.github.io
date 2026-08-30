@@ -1,1 +1,1 @@
-window.__ARTICLE_SUMMARY__ = Object.freeze({"all":7,"public":6,"locked":1,"categories":{"Energy & Climate":3,"AI & Agents":1,"Data Analytics":0,"Programming & Technology":3}});
+window.__ARTICLE_SUMMARY__ = Object.freeze({"all":8,"public":6,"locked":2,"categories":{"energy-carbon-economics":{"label":"Energy & Carbon Economics","count":4},"ai-agents":{"label":"AI & Agents","count":1},"data-analytics":{"label":"Data Analytics","count":0},"programming-technology":{"label":"Programming & Technology","count":3}}});

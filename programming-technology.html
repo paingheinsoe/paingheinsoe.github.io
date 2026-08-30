@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Articles related to programming, software tools, Quarto, Git, GitHub, and technology workflows.">
+<meta name="description" content="Programming, technical systems, digital tools, and reliable development workflows.">
 
 <title>Programming &amp; Technology – Paing Hein Soe</title>
 <style>
@@ -86,9 +86,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-category','listing-categories','listing-image','listing-href','listing-publication-status','listing-status-label','listing-date-label',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-date','listing-category','listing-category-id','listing-categories','listing-image','listing-href','listing-publication-status','listing-status-label','listing-date-label',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-date","listing-category","listing-categories","listing-image","listing-href","listing-publication-status","listing-status-label","listing-date-label"],
+      searchColumns: ["listing-title","listing-description","listing-date","listing-category","listing-category-id","listing-categories","listing-image","listing-href","listing-publication-status","listing-status-label","listing-date-label"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -141,7 +141,7 @@ window.Quarto = {
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 
-<body class="nav-fixed inner-page topic-page quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -176,8 +176,8 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./energy-climate.html">
- <span class="dropdown-text">Energy &amp; Climate</span></a>
+    <a class="dropdown-item" href="./energy-carbon-economics.html">
+ <span class="dropdown-text">Energy &amp; Carbon Economics</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./ai-agents.html">
@@ -236,7 +236,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    Articles related to programming, software tools, Quarto, Git, GitHub, and technology workflows.
+    Programming, technical systems, digital tools, and reliable development workflows.
   </div>
 </div>
 
@@ -253,12 +253,18 @@ window.Quarto = {
 </header>
 
 
-<p>Browse articles and learning notes related to programming and technology.</p>
+<p>Programming, technical systems, digital tools, and reliable development workflows.</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 
 <div class="list grid quarto-listing-cols-3">
 
@@ -267,7 +273,7 @@ window.Quarto = {
       <div class="quarto-grid-item card h-100 card-left article-card article-card--public">
         
         <p class="card-img-top">
-          <img loading="lazy" src="assets/images/article-covers/from-quarto-to-github-pages.png" class="thumbnail-image card-img" style="height: 170px;" alt="">
+          <img loading="lazy" src="assets/images/article-covers/from-quarto-to-github-pages.png" class="thumbnail-image card-img" style="height: 150px;" alt="">
         </p>
         
         <div class="card-body post-contents">
@@ -305,7 +311,7 @@ window.Quarto = {
       <div class="quarto-grid-item card h-100 card-left article-card article-card--public">
         
         <p class="card-img-top">
-          <img loading="lazy" src="assets/images/article-covers/general-coding-assessment-prep.png" class="thumbnail-image card-img" style="height: 170px;" alt="">
+          <img loading="lazy" src="assets/images/article-covers/general-coding-assessment-prep.png" class="thumbnail-image card-img" style="height: 150px;" alt="">
         </p>
         
         <div class="card-body post-contents">
@@ -343,7 +349,7 @@ window.Quarto = {
       <div class="quarto-grid-item card h-100 card-left article-card article-card--public">
         
         <p class="card-img-top">
-          <img loading="lazy" src="assets/images/article-covers/getting-started-with-quarto.png" class="thumbnail-image card-img" style="height: 170px;" alt="">
+          <img loading="lazy" src="assets/images/article-covers/getting-started-with-quarto.png" class="thumbnail-image card-img" style="height: 150px;" alt="">
         </p>
         
         <div class="card-body post-contents">

@@ -30,13 +30,12 @@
 
     setCount("article-total", articleSummary.all);
     setCount("count-locked", articleSummary.locked);
-    setCount("count-energy-climate", articleSummary.categories["Energy & Climate"]);
-    setCount("count-ai-agents", articleSummary.categories["AI & Agents"]);
-    setCount("count-data-analytics", articleSummary.categories["Data Analytics"]);
-    setCount(
-      "count-programming-technology",
-      articleSummary.categories["Programming & Technology"]
-    );
+
+    document.querySelectorAll("[data-category-id]").forEach((element) => {
+      const category = articleSummary.categories[element.dataset.categoryId];
+      const count = typeof category === "number" ? category : category?.count;
+      element.textContent = String(count || 0);
+    });
 
     return true;
   }
@@ -55,12 +54,17 @@
     const items = getListingItems(listing);
     if (!items.length) return;
 
-    const counts = {
-      "Energy & Climate": 0,
-      "AI & Agents": 0,
-      "Data Analytics": 0,
-      "Programming & Technology": 0
-    };
+    const categoryElements = Array.from(
+      summary.querySelectorAll("[data-category-id]")
+    );
+    const categories = new Map(
+      categoryElements.map((element) => {
+        const label = normalize(
+          element.closest(".learning-hub-category")?.querySelector("a")?.textContent
+        );
+        return [label, { element, count: 0 }];
+      })
+    );
     let lockedCount = 0;
 
     items.forEach((item) => {
@@ -75,24 +79,16 @@
       categoryNodes.forEach((node) => {
         const category = normalize(node.textContent);
 
-        if (Object.prototype.hasOwnProperty.call(counts, category)) {
-          counts[category] += 1;
-        }
+        const categoryEntry = categories.get(category);
+        if (categoryEntry) categoryEntry.count += 1;
       });
     });
 
     setCount("article-total", items.length);
     setCount("count-locked", lockedCount);
 
-    const map = {
-      "Energy & Climate": "count-energy-climate",
-      "AI & Agents": "count-ai-agents",
-      "Data Analytics": "count-data-analytics",
-      "Programming & Technology": "count-programming-technology"
-    };
-
-    Object.entries(map).forEach(([category, id]) => {
-      setCount(id, counts[category]);
+    categories.forEach(({ element, count }) => {
+      element.textContent = String(count);
     });
   }
 
