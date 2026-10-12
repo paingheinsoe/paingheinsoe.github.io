@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Paing Hein Soe">
+<meta name="dcterms.date" content="2026-10-11">
+<meta name="description" content="A practical guide to how supply, demand, taxes, tariffs, price controls, and causal reasoning shape economic outcomes.">
+
+<title>How Supply, Demand, and Policy Shape Economic Outcomes – Paing Hein Soe</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6b3087685eb70e71d9de086601fab730.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script>window.__SITE_ACCESS_MODE__ = "public";</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Paing Hein Soe</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">My Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../articles.html"> 
+<span class="menu-text">Articles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../../economics-public-policy.html">
+ <span class="dropdown-text">Economics &amp; Public Policy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../energy-carbon-economics.html">
+ <span class="dropdown-text">Energy &amp; Carbon Economics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ai-agents.html">
+ <span class="dropdown-text">AI &amp; Agents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../data-analytics.html">
+ <span class="dropdown-text">Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../programming-technology.html">
+ <span class="dropdown-text">Programming &amp; Technology</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/paingheinsoe"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../workspace-access.html"> <i class="bi bi-lock" role="img" aria-label="Private Workspace">
+</i> 
+<span class="menu-text">Workspace</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#start-where-supply-and-demand-meet" id="toc-start-where-supply-and-demand-meet" class="nav-link active" data-scroll-target="#start-where-supply-and-demand-meet">1. Start where supply and demand meet</a></li>
+  <li><a href="#a-tax-creates-a-new-market-adjustment" id="toc-a-tax-creates-a-new-market-adjustment" class="nav-link" data-scroll-target="#a-tax-creates-a-new-market-adjustment">2. A tax creates a new market adjustment</a></li>
+  <li><a href="#incidence-depends-on-who-can-adjust" id="toc-incidence-depends-on-who-can-adjust" class="nav-link" data-scroll-target="#incidence-depends-on-who-can-adjust">3. Incidence depends on who can adjust</a></li>
+  <li><a href="#tariffs-show-why-the-distinction-matters-in-practice" id="toc-tariffs-show-why-the-distinction-matters-in-practice" class="nav-link" data-scroll-target="#tariffs-show-why-the-distinction-matters-in-practice">4. Tariffs show why the distinction matters in practice</a></li>
+  <li><a href="#price-controls-change-the-price-rule-not-the-underlying-incentives" id="toc-price-controls-change-the-price-rule-not-the-underlying-incentives" class="nav-link" data-scroll-target="#price-controls-change-the-price-rule-not-the-underlying-incentives">5. Price controls change the price rule, not the underlying incentives</a></li>
+  <li><a href="#what-we-observe-is-not-necessarily-what-caused-it" id="toc-what-we-observe-is-not-necessarily-what-caused-it" class="nav-link" data-scroll-target="#what-we-observe-is-not-necessarily-what-caused-it">6. What we observe is not necessarily what caused it</a></li>
+  <li><a href="#policy-and-markets-interact" id="toc-policy-and-markets-interact" class="nav-link" data-scroll-target="#policy-and-markets-interact">7. Policy and markets interact</a></li>
+  <li><a href="#sources-and-further-reading" id="toc-sources-and-further-reading" class="nav-link" data-scroll-target="#sources-and-further-reading">Sources and further reading</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How Supply, Demand, and Policy Shape Economic Outcomes</h1>
+<p class="subtitle lead">Why the legal design of a policy is only the beginning of its economic story</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Economics &amp; Public Policy</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A practical guide to how supply, demand, taxes, tariffs, price controls, and causal reasoning shape economic outcomes.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Paing Hein Soe </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 11, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Series:</strong> Microeconomics Foundations<br>
+<strong>Thematic area:</strong> Economics &amp; Public Policy</p>
+<p>A policy can impose a tax, cap a price, or raise the cost of importing a product. But it cannot directly command the final economic outcome.</p>
+<p>Markets respond.</p>
+<p>Consumers change what they buy. Firms change what they sell. Prices move. Quantities adjust. And the person legally responsible for a cost is not always the person who ultimately bears it.</p>
+<p>To understand policy, we therefore need to begin with a more basic question:</p>
+<blockquote class="blockquote">
+<p><strong>How does a market respond when something changes?</strong></p>
+</blockquote>
+<section id="start-where-supply-and-demand-meet" class="level2">
+<h2 class="anchored" data-anchor-id="start-where-supply-and-demand-meet">1. Start where supply and demand meet</h2>
+<p>Demand represents how much buyers are willing to purchase at different prices. Supply represents how much sellers are willing to provide.</p>
+<p>Their interaction determines the market equilibrium:</p>
+<p><span class="math display">\[
+Q_D(P^*)=Q_S(P^*)
+\]</span></p>
+<p>At <span class="math inline">\(P^*\)</span>, the quantity buyers want equals the quantity sellers want to provide.</p>
+<p>But an equilibrium is not permanent.</p>
+<p>Demand may increase because incomes rise, preferences change, population grows, or a substitute becomes more expensive. Supply may fall because energy, materials, wages, transport, or other production costs rise.</p>
+<p>A useful distinction is:</p>
+<blockquote class="blockquote">
+<p><strong>A change in the product’s own price moves us along an existing curve. A change in another underlying factor shifts the curve itself.</strong></p>
+</blockquote>
+<p>Suppose production costs rise. Firms now supply less at each price. At the old equilibrium price, consumers still want the previous quantity, but producers are no longer willing to provide it. The market temporarily has <strong>excess demand</strong>.</p>
+<p>Price then rises. Consumers reduce quantity demanded. Producers respond along the new supply curve. Eventually, a new equilibrium forms.</p>
+<div id="fig-cost-shock" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Supply and demand chart showing an initial equilibrium, a supply contraction, excess demand at the old price, and a new equilibrium">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cost-shock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/images/economics-public-policy/how-supply-demand-and-policy-shape-economic-outcomes/figure-1-cost-shock-and-new-equilibrium.png" class="img-fluid figure-img" alt="Supply and demand chart showing an initial equilibrium, a supply contraction, excess demand at the old price, and a new equilibrium">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cost-shock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A cost shock shifts supply inward. At the old price there is excess demand, and the market moves to a new equilibrium with a higher price and lower quantity.
+</figcaption>
+</figure>
+</div>
+<p>The sequence matters:</p>
+<p><span class="math display">\[
+\text{cost shock}
+\rightarrow
+\text{supply contracts}
+\rightarrow
+\text{excess demand at old price}
+\rightarrow
+\text{price adjusts}
+\rightarrow
+\text{new equilibrium}
+\]</span></p>
+<p>A demand increase produces a different pattern. Price also rises, but quantity usually rises rather than falls:</p>
+<p><span class="math display">\[
+D\uparrow \Rightarrow P\uparrow,\ Q\uparrow
+\]</span></p>
+<p>while:</p>
+<p><span class="math display">\[
+S\downarrow \Rightarrow P\uparrow,\ Q\downarrow
+\]</span></p>
+<p>This gives us the first useful lesson:</p>
+<blockquote class="blockquote">
+<p><strong>A higher price tells us that the market changed. It does not tell us what caused the change.</strong></p>
+</blockquote>
+<p>That becomes particularly important when government policy enters the market.</p>
+</section>
+<section id="a-tax-creates-a-new-market-adjustment" class="level2">
+<h2 class="anchored" data-anchor-id="a-tax-creates-a-new-market-adjustment">2. A tax creates a new market adjustment</h2>
+<p>Suppose a market initially settles at a price of <strong>$40</strong> and a quantity of <strong>40 units</strong>.</p>
+<p>Now the government introduces a <strong>$15 tax per unit</strong> and requires sellers to remit it.</p>
+<p>It may seem that sellers therefore bear the entire $15. But that conclusion ignores the market response.</p>
+<p>A tax creates a gap between what buyers pay and what sellers keep:</p>
+<p><span class="math display">\[
+P_B-P_S=t
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(P_B\)</span> is the price paid by buyers,</li>
+<li><span class="math inline">\(P_S\)</span> is the net price received by sellers,</li>
+<li><span class="math inline">\(t\)</span> is the tax.</li>
+</ul>
+<p>In the illustrative market shown below, the new outcome is:</p>
+<p><span class="math display">\[
+P_B=\$50,\qquad P_S=\$35,\qquad Q=30
+\]</span></p>
+<p>The buyer now pays <strong>$10 more</strong> than before. The seller receives <strong>$5 less</strong>. Therefore:</p>
+<p><span class="math display">\[
+\underbrace{\$10}_{\text{buyer burden}}
++
+\underbrace{\$5}_{\text{seller burden}}
+=
+\underbrace{\$15}_{\text{tax}}
+\]</span></p>
+<div id="fig-tax-incidence" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Supply and demand chart showing a pre-tax equilibrium, a taxed supply curve, and the buyer and seller sides of the tax burden">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tax-incidence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/images/economics-public-policy/how-supply-demand-and-policy-shape-economic-outcomes/figure-2-tax-bill-and-economic-burden.png" class="img-fluid figure-img" alt="Supply and demand chart showing a pre-tax equilibrium, a taxed supply curve, and the buyer and seller sides of the tax burden">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tax-incidence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A $15 per-unit tax creates a wedge between the buyer price and seller price. The chart highlights the new buyer and seller prices, the tax wedge, and the division of burden.
+</figcaption>
+</figure>
+</div>
+<p>This gives us an important distinction.</p>
+<p><strong>Statutory incidence</strong> tells us who is legally responsible for remitting the tax.</p>
+<p><strong>Economic incidence</strong> tells us who actually bears the cost after the market adjusts.</p>
+<p>In this example, sellers remit the tax, but buyers bear two-thirds of the economic burden.</p>
+<p>If the same tax were legally imposed on buyers instead, the standard competitive model gives the same final economic outcome. The bookkeeping changes. The underlying tax wedge does not.</p>
+<p>So:</p>
+<p><span class="math display">\[
+\text{Who sends the tax payment}
+\neq
+\text{Who necessarily bears the tax}
+\]</span></p>
+<p>The next question is more interesting: <strong>Why do buyers bear $10 while sellers bear only $5?</strong></p>
+</section>
+<section id="incidence-depends-on-who-can-adjust" class="level2">
+<h2 class="anchored" data-anchor-id="incidence-depends-on-who-can-adjust">3. Incidence depends on who can adjust</h2>
+<p>This is where <strong>elasticity</strong> becomes useful.</p>
+<p>Price elasticity measures how strongly quantity responds to a change in price:</p>
+<p><span class="math display">\[
+\varepsilon_D=
+\frac{\%\Delta Q_D}{\%\Delta P}
+\]</span></p>
+<p>The formula matters, but the intuition can be simpler:</p>
+<blockquote class="blockquote">
+<p><strong>How easily can someone change their behavior?</strong></p>
+</blockquote>
+<p>Imagine two buyers. One can switch immediately to several close substitutes. The other has almost no practical alternative. The first buyer can respond strongly when price rises. The second cannot.</p>
+<p>The same logic applies to producers. Some can redirect output, substitute inputs, change suppliers, or enter another market. Others face fixed equipment, contracts, capacity constraints, or limited alternatives.</p>
+<p>Under the standard competitive model:</p>
+<p><span class="math display">\[
+\text{The less elastic side tends to bear more of the tax}
+\]</span></p>
+<p>Several factors can affect that responsiveness:</p>
+<ul>
+<li>availability of substitutes;</li>
+<li>whether the product is necessary or discretionary;</li>
+<li>switching costs;</li>
+<li>how much time buyers or firms have to adjust;</li>
+<li>production flexibility;</li>
+<li>access to alternative suppliers or markets.</li>
+</ul>
+<p>This makes tax incidence much more than an accounting question. It is a question about <strong>behavior and alternatives</strong>.</p>
+</section>
+<section id="tariffs-show-why-the-distinction-matters-in-practice" class="level2">
+<h2 class="anchored" data-anchor-id="tariffs-show-why-the-distinction-matters-in-practice">4. Tariffs show why the distinction matters in practice</h2>
+<p>A tariff provides a useful real-world extension of the same idea.</p>
+<p>When goods enter the United States, the <strong>importer of record</strong> is responsible for applicable duties, taxes, and fees. That identifies the statutory responsibility.</p>
+<p>It does not tell us the full economic incidence.</p>
+<p>After a tariff raises the cost of importing a product, several adjustments are possible.</p>
+<div id="fig-tariff-incidence" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flow diagram showing the importer of record paying at the border and several downstream economic incidence channels">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tariff-incidence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/images/economics-public-policy/how-supply-demand-and-policy-shape-economic-outcomes/figure-3-tariff-incidence-channels.png" class="img-fluid figure-img" alt="Flow diagram showing the importer of record paying at the border and several downstream economic incidence channels">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tariff-incidence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: A tariff has one statutory payer, but its economic burden can move through several channels such as consumer prices, importer margins, supplier prices, and sourcing or quantity changes.
+</figcaption>
+</figure>
+</div>
+<p>The importer may accept a smaller margin. The foreign supplier may lower its price. The importer may raise its selling price. A manufacturer using the imported product may face higher input costs. Consumers may eventually pay more. Businesses may also switch suppliers or reduce the quantity imported.</p>
+<p>The economic burden can therefore move through a supply chain:</p>
+<p><span class="math display">\[
+\text{tariff}
+\rightarrow
+\text{import price}
+\rightarrow
+\text{firm costs and margins}
+\rightarrow
+\text{supply-chain response}
+\rightarrow
+\text{consumer price}
+\]</span></p>
+<p>Recent research on U.S. tariffs has shown that pass-through can differ by stage. Importer prices, firm margins, and final consumer prices do not always adjust in the same way or by the same amount.</p>
+<p>That distinction is important.</p>
+<p>Saying that a tariff is imposed on imports does not, by itself, tell us who ultimately bears the cost. Neither does saying that consumers “pay the tariff.”</p>
+<p>The answer depends on <strong>pass-through, elasticities, market structure, substitution, supply chains, exchange rates, and time</strong>.</p>
+<p>The policy defines the rule. Market conditions help determine its incidence.</p>
+</section>
+<section id="price-controls-change-the-price-rule-not-the-underlying-incentives" class="level2">
+<h2 class="anchored" data-anchor-id="price-controls-change-the-price-rule-not-the-underlying-incentives">5. Price controls change the price rule, not the underlying incentives</h2>
+<p>Taxes allow prices to adjust while creating a wedge between buyer and seller prices. A <strong>price control</strong> does something different: it limits the price itself.</p>
+<p>Suppose equilibrium is <strong>$20</strong>, but a government imposes a maximum legal price of <strong>$15</strong>.</p>
+<p>At the lower price:</p>
+<p><span class="math display">\[
+Q_D&gt;Q_S
+\]</span></p>
+<p>Consumers want more than producers are willing to supply. The result is a <strong>shortage</strong>.</p>
+<p>A <strong>binding price floor</strong> reverses the imbalance:</p>
+<p><span class="math display">\[
+Q_S&gt;Q_D
+\]</span></p>
+<p>and creates <strong>excess supply</strong>.</p>
+<p>The key point is not that price controls are automatically good or bad. It is that:</p>
+<blockquote class="blockquote">
+<p><strong>Changing the legal price does not remove the underlying responses of buyers and sellers.</strong></p>
+</blockquote>
+<p>This is also why several policy questions need to remain separate:</p>
+<ul>
+<li><strong>Affordability</strong> asks what people pay.</li>
+<li><strong>Availability</strong> asks whether they can actually obtain the product.</li>
+<li><strong>Efficiency</strong> asks whether mutually beneficial exchanges are being lost.</li>
+<li><strong>Equity</strong> asks how benefits and costs are distributed.</li>
+</ul>
+<p>A policy may improve one dimension while creating costs in another. Price alone does not settle the policy question.</p>
+</section>
+<section id="what-we-observe-is-not-necessarily-what-caused-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-observe-is-not-necessarily-what-caused-it">6. What we observe is not necessarily what caused it</h2>
+<p>There is another challenge.</p>
+<p>Suppose we collect market data and observe:</p>
+<p><span class="math display">\[
+P\uparrow,\qquad Q\uparrow
+\]</span></p>
+<p>Price and quantity are positively correlated.</p>
+<p>Does that mean a higher price caused consumers to demand more?</p>
+<p>No.</p>
+<p>Imagine a major event brings thousands of people into a city. Demand for ride services increases. The new demand pushes both the equilibrium fare and the number of trips upward.</p>
+<p>So the actual sequence is:</p>
+<p><span class="math display">\[
+\text{major event}
+\rightarrow
+D\uparrow
+\rightarrow
+P\uparrow,\ Q\uparrow
+\]</span></p>
+<p>Higher prices and higher quantities appear together, but the higher price did not cause the increase in demand.</p>
+<div id="fig-correlation-causation" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Infographic contrasting a tempting but incorrect causal conclusion with the correct demand-shift mechanism">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-correlation-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/images/economics-public-policy/how-supply-demand-and-policy-shape-economic-outcomes/figure-4-correlation-and-causation.png" class="img-fluid figure-img" alt="Infographic contrasting a tempting but incorrect causal conclusion with the correct demand-shift mechanism">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlation-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: A reader may see price and quantity rising together and jump to the wrong causal conclusion. The lower panels show the correct mechanism: a demand shift moves the market to a new equilibrium with both higher price and higher quantity.
+</figcaption>
+</figure>
+</div>
+<p>This is the difference between <strong>correlation and causation</strong>.</p>
+<p>Correlation tells us that two variables move together. Causation asks whether changing one actually changes the other.</p>
+<p>Supply and demand make the problem especially clear. Two observed market equilibria do not automatically trace out a demand curve.</p>
+<p>If demand shifted between those observations, calculating</p>
+<p><span class="math display">\[
+\frac{\%\Delta Q}{\%\Delta P}
+\]</span></p>
+<p>from the two market outcomes does not automatically give us the causal price elasticity of demand.</p>
+<p>To identify that effect, economists need a way to separate the price change from other factors that may also change demand. That may come from an external supply shock, a natural experiment, randomized variation, or another credible empirical strategy.</p>
+<p>So economic analysis has two related tasks:</p>
+<p><span class="math display">\[
+\text{Theory asks: What mechanism could produce this outcome?}
+\]</span></p>
+<p><span class="math display">\[
+\text{Empirical analysis asks: Does the evidence identify that mechanism?}
+\]</span></p>
+</section>
+<section id="policy-and-markets-interact" class="level2">
+<h2 class="anchored" data-anchor-id="policy-and-markets-interact">7. Policy and markets interact</h2>
+<p>We began with a simple market equilibrium. Supply and demand meet. A shock changes one side. The old equilibrium no longer works. Buyers and sellers respond until a new outcome emerges.</p>
+<p>Policy enters the same system.</p>
+<p>A tax changes the effective prices faced by buyers and sellers. Elasticity affects how the burden is divided. A tariff can move through importers, suppliers, firms, and consumers. A price control can prevent the price from clearing the market and create shortages or surpluses. Empirical analysis then asks whether the patterns we observe actually reveal the causal mechanism we think is operating.</p>
+<p>Four questions provide a useful way to connect these ideas:</p>
+<ol type="1">
+<li><strong>What changed in the market?</strong></li>
+<li><strong>How can buyers and sellers adjust?</strong></li>
+<li><strong>Who ultimately bears the benefits or costs?</strong></li>
+<li><strong>What evidence tells us why the outcome occurred?</strong></li>
+</ol>
+<p>Those questions do not automatically tell us whether a policy is good or bad. They do something more fundamental first.</p>
+<p>They help us understand <strong>how the policy interacts with the market it is trying to change</strong>.</p>
+</section>
+<section id="sources-and-further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-further-reading">Sources and further reading</h2>
+<ul>
+<li>U.S. Customs and Border Protection. <em>Importing Into the United States: A Guide for Commercial Importers.</em> https://www.cbp.gov/trade/basic-import-export/importing-into-the-united-states</li>
+<li>Amiti, Mary, Stephen J. Redding, and David E. Weinstein. <em>The Impact of the 2018 Tariffs on Prices and Welfare.</em> Journal of Economic Perspectives, 2019.</li>
+<li>Cavallo, Alberto, Gita Gopinath, Brent Neiman, and Jenny Tang. <em>Tariff Pass-Through at the Border and at the Store: Evidence from US Trade Policy.</em> American Economic Review: Insights, 2021.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<aside class="ai-transparency" aria-labelledby="ai-transparency-title">
+  <div class="ai-transparency__heading">
+    <div class="ai-transparency__icon" aria-hidden="true">✦</div>
+    <div class="ai-transparency__label" id="ai-transparency-title">AI Transparency</div>
+  </div>
+  <div class="ai-transparency__content">
+    <p>I use AI tools to develop selected illustrative figures to communicate my ideas clearly and provide <span class="ai-ribbon ai-ribbon--visuals">visual aids</span>. The ideas, analysis, technical interpretation, and final judgment are <span class="ai-ribbon ai-ribbon--ownership">my own</span>.</p>
+  </div>
+</aside>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const panel = document.querySelector(".ai-transparency");
+    const main = document.querySelector("main.content");
+
+    if (!panel || !main) return;
+
+    const titleBlock = main.querySelector("#title-block-header, .quarto-title-block");
+
+    if (titleBlock) {
+      titleBlock.insertAdjacentElement("afterend", panel);
+    } else {
+      main.insertAdjacentElement("afterbegin", panel);
+    }
+  });
+</script>
+<script src="../../assets/generated/article-summary.js"></script>
+<script src="../../assets/js/article-counts.js"></script>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+  <svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+  </svg>
+</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".back-to-top");
+    if (!button) return;
+
+    const updateVisibility = function () {
+      button.classList.toggle("back-to-top--visible", window.scrollY > 600);
+    };
+
+    updateVisibility();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+
+    button.addEventListener("click", function () {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  });
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/paingheinsoe\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Paing Hein Soe</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/in/paing-hein-soe/">
+<p>LinkedIn</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/paingheinsoe">
+<p>GitHub</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
